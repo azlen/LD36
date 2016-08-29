@@ -287,7 +287,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "385",
+			build: "386",
 			company: "HaxeFlixel",
 			file: "HelloWorld",
 			fps: 60,

@@ -143,7 +143,7 @@ ApplicationMain.init = function() {
 	}
 };
 ApplicationMain.main = function() {
-	ApplicationMain.config = { build : "385", company : "HaxeFlixel", file : "HelloWorld", fps : 60, name : "HelloWorld", orientation : "", packageName : "com.example.myapp", version : "0.0.1", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 675, parameters : "{}", resizable : false, stencilBuffer : true, title : "HelloWorld", vsync : true, width : 1080, x : null, y : null}]};
+	ApplicationMain.config = { build : "386", company : "HaxeFlixel", file : "HelloWorld", fps : 60, name : "HelloWorld", orientation : "", packageName : "com.example.myapp", version : "0.0.1", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 675, parameters : "{}", resizable : false, stencilBuffer : true, title : "HelloWorld", vsync : true, width : 1080, x : null, y : null}]};
 };
 ApplicationMain.start = function() {
 	var hasMain = false;
