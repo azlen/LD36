@@ -23,12 +23,92 @@ ApplicationMain.create = function() {
 	ApplicationMain.preloader.create(ApplicationMain.config);
 	var urls = [];
 	var types = [];
+	urls.push("assets/Achafont.eot");
+	types.push("BINARY");
+	urls.push("assets/Achafont.svg");
+	types.push("TEXT");
+	urls.push("A Charming Font");
+	types.push("FONT");
+	urls.push("assets/Achafont.woff");
+	types.push("BINARY");
 	urls.push("assets/data/data-goes-here.txt");
 	types.push("TEXT");
+	urls.push("assets/images/children/child1.png");
+	types.push("IMAGE");
+	urls.push("assets/images/children/child2.png");
+	types.push("IMAGE");
+	urls.push("assets/images/clouds/cloud1.png");
+	types.push("IMAGE");
+	urls.push("assets/images/clouds/cloud10.png");
+	types.push("IMAGE");
+	urls.push("assets/images/clouds/cloud11.png");
+	types.push("IMAGE");
+	urls.push("assets/images/clouds/cloud2.png");
+	types.push("IMAGE");
+	urls.push("assets/images/clouds/cloud3.png");
+	types.push("IMAGE");
+	urls.push("assets/images/clouds/cloud4.png");
+	types.push("IMAGE");
+	urls.push("assets/images/clouds/cloud5.png");
+	types.push("IMAGE");
+	urls.push("assets/images/clouds/cloud6.png");
+	types.push("IMAGE");
+	urls.push("assets/images/clouds/cloud7.png");
+	types.push("IMAGE");
+	urls.push("assets/images/clouds/cloud8.png");
+	types.push("IMAGE");
+	urls.push("assets/images/clouds/cloud9.png");
+	types.push("IMAGE");
 	urls.push("assets/images/images-go-here.txt");
 	types.push("TEXT");
+	urls.push("assets/images/menuscreen.png");
+	types.push("IMAGE");
+	urls.push("assets/images/moon.png");
+	types.push("IMAGE");
+	urls.push("assets/images/playbtn.png");
+	types.push("IMAGE");
+	urls.push("assets/images/playbtn_hover.png");
+	types.push("IMAGE");
+	urls.push("assets/images/playbutton.png");
+	types.push("IMAGE");
+	urls.push("assets/images/player.png");
+	types.push("IMAGE");
+	urls.push("assets/images/player_old.png");
+	types.push("IMAGE");
+	urls.push("assets/images/trees/tree1.png");
+	types.push("IMAGE");
+	urls.push("assets/images/trees/tree2.png");
+	types.push("IMAGE");
+	urls.push("assets/images/trees/tree3.png");
+	types.push("IMAGE");
+	urls.push("assets/images/trees/tree4.png");
+	types.push("IMAGE");
+	urls.push("assets/images/trees/tree5.png");
+	types.push("IMAGE");
+	urls.push("assets/images/trees/tree6.png");
+	types.push("IMAGE");
+	urls.push("assets/images/trees/tree7.png");
+	types.push("IMAGE");
+	urls.push("assets/images/trees/tree8.png");
+	types.push("IMAGE");
+	urls.push("assets/images/trees/tree9.png");
+	types.push("IMAGE");
+	urls.push("assets/Metamorphous-Regular.eot");
+	types.push("BINARY");
+	urls.push("assets/Metamorphous-Regular.svg");
+	types.push("TEXT");
+	urls.push("Metamorphous");
+	types.push("FONT");
+	urls.push("assets/Metamorphous-Regular.woff");
+	types.push("BINARY");
 	urls.push("assets/music/music-goes-here.txt");
 	types.push("TEXT");
+	urls.push("assets/sounds/child.wav");
+	types.push("SOUND");
+	urls.push("assets/sounds/playbtn_click.wav");
+	types.push("SOUND");
+	urls.push("assets/sounds/playbtn_hover.wav");
+	types.push("SOUND");
 	urls.push("assets/sounds/sounds-go-here.txt");
 	types.push("TEXT");
 	urls.push("flixel/sounds/beep.ogg");
@@ -63,7 +143,7 @@ ApplicationMain.init = function() {
 	}
 };
 ApplicationMain.main = function() {
-	ApplicationMain.config = { build : "10", company : "HaxeFlixel", file : "HelloWorld", fps : 60, name : "HelloWorld", orientation : "", packageName : "com.example.myapp", version : "0.0.1", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 480, parameters : "{}", resizable : false, stencilBuffer : true, title : "HelloWorld", vsync : true, width : 640, x : null, y : null}]};
+	ApplicationMain.config = { build : "385", company : "HaxeFlixel", file : "HelloWorld", fps : 60, name : "HelloWorld", orientation : "", packageName : "com.example.myapp", version : "0.0.1", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 675, parameters : "{}", resizable : false, stencilBuffer : true, title : "HelloWorld", vsync : true, width : 1080, x : null, y : null}]};
 };
 ApplicationMain.start = function() {
 	var hasMain = false;
@@ -2091,126 +2171,650 @@ var DefaultAssetLibrary = function() {
 	this.path = new haxe_ds_StringMap();
 	this.className = new haxe_ds_StringMap();
 	lime_AssetLibrary.call(this);
+	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$assets_$achafont_$ttf);
+	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$assets_$metamorphous_$regular_$ttf);
 	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$flixel_$fonts_$nokiafc22_$ttf);
 	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$flixel_$fonts_$monsterrat_$ttf);
 	var _this = this.path;
-	if(__map_reserved["assets/data/data-goes-here.txt"] != null) {
-		_this.setReserved("assets/data/data-goes-here.txt","assets/data/data-goes-here.txt");
+	if(__map_reserved["assets/Achafont.eot"] != null) {
+		_this.setReserved("assets/Achafont.eot","assets/Achafont.eot");
 	} else {
-		_this.h["assets/data/data-goes-here.txt"] = "assets/data/data-goes-here.txt";
+		_this.h["assets/Achafont.eot"] = "assets/Achafont.eot";
 	}
 	var _this1 = this.type;
-	var value = "TEXT";
-	if(__map_reserved["assets/data/data-goes-here.txt"] != null) {
-		_this1.setReserved("assets/data/data-goes-here.txt",value);
+	var value = "BINARY";
+	if(__map_reserved["assets/Achafont.eot"] != null) {
+		_this1.setReserved("assets/Achafont.eot",value);
 	} else {
-		_this1.h["assets/data/data-goes-here.txt"] = value;
+		_this1.h["assets/Achafont.eot"] = value;
 	}
 	var _this2 = this.path;
-	if(__map_reserved["assets/images/images-go-here.txt"] != null) {
-		_this2.setReserved("assets/images/images-go-here.txt","assets/images/images-go-here.txt");
+	if(__map_reserved["assets/Achafont.svg"] != null) {
+		_this2.setReserved("assets/Achafont.svg","assets/Achafont.svg");
 	} else {
-		_this2.h["assets/images/images-go-here.txt"] = "assets/images/images-go-here.txt";
+		_this2.h["assets/Achafont.svg"] = "assets/Achafont.svg";
 	}
 	var _this3 = this.type;
 	var value1 = "TEXT";
-	if(__map_reserved["assets/images/images-go-here.txt"] != null) {
-		_this3.setReserved("assets/images/images-go-here.txt",value1);
+	if(__map_reserved["assets/Achafont.svg"] != null) {
+		_this3.setReserved("assets/Achafont.svg",value1);
 	} else {
-		_this3.h["assets/images/images-go-here.txt"] = value1;
+		_this3.h["assets/Achafont.svg"] = value1;
 	}
-	var _this4 = this.path;
-	if(__map_reserved["assets/music/music-goes-here.txt"] != null) {
-		_this4.setReserved("assets/music/music-goes-here.txt","assets/music/music-goes-here.txt");
+	var _this4 = this.className;
+	var value2 = _$_$ASSET_$_$assets_$achafont_$ttf;
+	if(__map_reserved["assets/Achafont.ttf"] != null) {
+		_this4.setReserved("assets/Achafont.ttf",value2);
 	} else {
-		_this4.h["assets/music/music-goes-here.txt"] = "assets/music/music-goes-here.txt";
+		_this4.h["assets/Achafont.ttf"] = value2;
 	}
 	var _this5 = this.type;
-	var value2 = "TEXT";
-	if(__map_reserved["assets/music/music-goes-here.txt"] != null) {
-		_this5.setReserved("assets/music/music-goes-here.txt",value2);
+	var value3 = "FONT";
+	if(__map_reserved["assets/Achafont.ttf"] != null) {
+		_this5.setReserved("assets/Achafont.ttf",value3);
 	} else {
-		_this5.h["assets/music/music-goes-here.txt"] = value2;
+		_this5.h["assets/Achafont.ttf"] = value3;
 	}
 	var _this6 = this.path;
-	if(__map_reserved["assets/sounds/sounds-go-here.txt"] != null) {
-		_this6.setReserved("assets/sounds/sounds-go-here.txt","assets/sounds/sounds-go-here.txt");
+	if(__map_reserved["assets/Achafont.woff"] != null) {
+		_this6.setReserved("assets/Achafont.woff","assets/Achafont.woff");
 	} else {
-		_this6.h["assets/sounds/sounds-go-here.txt"] = "assets/sounds/sounds-go-here.txt";
+		_this6.h["assets/Achafont.woff"] = "assets/Achafont.woff";
 	}
 	var _this7 = this.type;
-	var value3 = "TEXT";
-	if(__map_reserved["assets/sounds/sounds-go-here.txt"] != null) {
-		_this7.setReserved("assets/sounds/sounds-go-here.txt",value3);
+	var value4 = "BINARY";
+	if(__map_reserved["assets/Achafont.woff"] != null) {
+		_this7.setReserved("assets/Achafont.woff",value4);
 	} else {
-		_this7.h["assets/sounds/sounds-go-here.txt"] = value3;
+		_this7.h["assets/Achafont.woff"] = value4;
 	}
 	var _this8 = this.path;
-	if(__map_reserved["flixel/sounds/beep.ogg"] != null) {
-		_this8.setReserved("flixel/sounds/beep.ogg","flixel/sounds/beep.ogg");
+	if(__map_reserved["assets/data/data-goes-here.txt"] != null) {
+		_this8.setReserved("assets/data/data-goes-here.txt","assets/data/data-goes-here.txt");
 	} else {
-		_this8.h["flixel/sounds/beep.ogg"] = "flixel/sounds/beep.ogg";
+		_this8.h["assets/data/data-goes-here.txt"] = "assets/data/data-goes-here.txt";
 	}
 	var _this9 = this.type;
-	var value4 = "SOUND";
-	if(__map_reserved["flixel/sounds/beep.ogg"] != null) {
-		_this9.setReserved("flixel/sounds/beep.ogg",value4);
+	var value5 = "TEXT";
+	if(__map_reserved["assets/data/data-goes-here.txt"] != null) {
+		_this9.setReserved("assets/data/data-goes-here.txt",value5);
 	} else {
-		_this9.h["flixel/sounds/beep.ogg"] = value4;
+		_this9.h["assets/data/data-goes-here.txt"] = value5;
 	}
 	var _this10 = this.path;
-	if(__map_reserved["flixel/sounds/flixel.ogg"] != null) {
-		_this10.setReserved("flixel/sounds/flixel.ogg","flixel/sounds/flixel.ogg");
+	if(__map_reserved["assets/images/children/child1.png"] != null) {
+		_this10.setReserved("assets/images/children/child1.png","assets/images/children/child1.png");
 	} else {
-		_this10.h["flixel/sounds/flixel.ogg"] = "flixel/sounds/flixel.ogg";
+		_this10.h["assets/images/children/child1.png"] = "assets/images/children/child1.png";
 	}
 	var _this11 = this.type;
-	var value5 = "SOUND";
-	if(__map_reserved["flixel/sounds/flixel.ogg"] != null) {
-		_this11.setReserved("flixel/sounds/flixel.ogg",value5);
+	var value6 = "IMAGE";
+	if(__map_reserved["assets/images/children/child1.png"] != null) {
+		_this11.setReserved("assets/images/children/child1.png",value6);
 	} else {
-		_this11.h["flixel/sounds/flixel.ogg"] = value5;
+		_this11.h["assets/images/children/child1.png"] = value6;
 	}
-	var _this12 = this.className;
-	var value6 = _$_$ASSET_$_$flixel_$fonts_$nokiafc22_$ttf;
-	if(__map_reserved["flixel/fonts/nokiafc22.ttf"] != null) {
-		_this12.setReserved("flixel/fonts/nokiafc22.ttf",value6);
+	var _this12 = this.path;
+	if(__map_reserved["assets/images/children/child2.png"] != null) {
+		_this12.setReserved("assets/images/children/child2.png","assets/images/children/child2.png");
 	} else {
-		_this12.h["flixel/fonts/nokiafc22.ttf"] = value6;
+		_this12.h["assets/images/children/child2.png"] = "assets/images/children/child2.png";
 	}
 	var _this13 = this.type;
-	var value7 = "FONT";
-	if(__map_reserved["flixel/fonts/nokiafc22.ttf"] != null) {
-		_this13.setReserved("flixel/fonts/nokiafc22.ttf",value7);
+	var value7 = "IMAGE";
+	if(__map_reserved["assets/images/children/child2.png"] != null) {
+		_this13.setReserved("assets/images/children/child2.png",value7);
 	} else {
-		_this13.h["flixel/fonts/nokiafc22.ttf"] = value7;
+		_this13.h["assets/images/children/child2.png"] = value7;
 	}
-	var _this14 = this.className;
-	var value8 = _$_$ASSET_$_$flixel_$fonts_$monsterrat_$ttf;
-	if(__map_reserved["flixel/fonts/monsterrat.ttf"] != null) {
-		_this14.setReserved("flixel/fonts/monsterrat.ttf",value8);
+	var _this14 = this.path;
+	if(__map_reserved["assets/images/clouds/cloud1.png"] != null) {
+		_this14.setReserved("assets/images/clouds/cloud1.png","assets/images/clouds/cloud1.png");
 	} else {
-		_this14.h["flixel/fonts/monsterrat.ttf"] = value8;
+		_this14.h["assets/images/clouds/cloud1.png"] = "assets/images/clouds/cloud1.png";
 	}
 	var _this15 = this.type;
-	var value9 = "FONT";
-	if(__map_reserved["flixel/fonts/monsterrat.ttf"] != null) {
-		_this15.setReserved("flixel/fonts/monsterrat.ttf",value9);
+	var value8 = "IMAGE";
+	if(__map_reserved["assets/images/clouds/cloud1.png"] != null) {
+		_this15.setReserved("assets/images/clouds/cloud1.png",value8);
 	} else {
-		_this15.h["flixel/fonts/monsterrat.ttf"] = value9;
+		_this15.h["assets/images/clouds/cloud1.png"] = value8;
 	}
 	var _this16 = this.path;
-	if(__map_reserved["flixel/images/ui/button.png"] != null) {
-		_this16.setReserved("flixel/images/ui/button.png","flixel/images/ui/button.png");
+	if(__map_reserved["assets/images/clouds/cloud10.png"] != null) {
+		_this16.setReserved("assets/images/clouds/cloud10.png","assets/images/clouds/cloud10.png");
 	} else {
-		_this16.h["flixel/images/ui/button.png"] = "flixel/images/ui/button.png";
+		_this16.h["assets/images/clouds/cloud10.png"] = "assets/images/clouds/cloud10.png";
 	}
 	var _this17 = this.type;
-	var value10 = "IMAGE";
-	if(__map_reserved["flixel/images/ui/button.png"] != null) {
-		_this17.setReserved("flixel/images/ui/button.png",value10);
+	var value9 = "IMAGE";
+	if(__map_reserved["assets/images/clouds/cloud10.png"] != null) {
+		_this17.setReserved("assets/images/clouds/cloud10.png",value9);
 	} else {
-		_this17.h["flixel/images/ui/button.png"] = value10;
+		_this17.h["assets/images/clouds/cloud10.png"] = value9;
+	}
+	var _this18 = this.path;
+	if(__map_reserved["assets/images/clouds/cloud11.png"] != null) {
+		_this18.setReserved("assets/images/clouds/cloud11.png","assets/images/clouds/cloud11.png");
+	} else {
+		_this18.h["assets/images/clouds/cloud11.png"] = "assets/images/clouds/cloud11.png";
+	}
+	var _this19 = this.type;
+	var value10 = "IMAGE";
+	if(__map_reserved["assets/images/clouds/cloud11.png"] != null) {
+		_this19.setReserved("assets/images/clouds/cloud11.png",value10);
+	} else {
+		_this19.h["assets/images/clouds/cloud11.png"] = value10;
+	}
+	var _this20 = this.path;
+	if(__map_reserved["assets/images/clouds/cloud2.png"] != null) {
+		_this20.setReserved("assets/images/clouds/cloud2.png","assets/images/clouds/cloud2.png");
+	} else {
+		_this20.h["assets/images/clouds/cloud2.png"] = "assets/images/clouds/cloud2.png";
+	}
+	var _this21 = this.type;
+	var value11 = "IMAGE";
+	if(__map_reserved["assets/images/clouds/cloud2.png"] != null) {
+		_this21.setReserved("assets/images/clouds/cloud2.png",value11);
+	} else {
+		_this21.h["assets/images/clouds/cloud2.png"] = value11;
+	}
+	var _this22 = this.path;
+	if(__map_reserved["assets/images/clouds/cloud3.png"] != null) {
+		_this22.setReserved("assets/images/clouds/cloud3.png","assets/images/clouds/cloud3.png");
+	} else {
+		_this22.h["assets/images/clouds/cloud3.png"] = "assets/images/clouds/cloud3.png";
+	}
+	var _this23 = this.type;
+	var value12 = "IMAGE";
+	if(__map_reserved["assets/images/clouds/cloud3.png"] != null) {
+		_this23.setReserved("assets/images/clouds/cloud3.png",value12);
+	} else {
+		_this23.h["assets/images/clouds/cloud3.png"] = value12;
+	}
+	var _this24 = this.path;
+	if(__map_reserved["assets/images/clouds/cloud4.png"] != null) {
+		_this24.setReserved("assets/images/clouds/cloud4.png","assets/images/clouds/cloud4.png");
+	} else {
+		_this24.h["assets/images/clouds/cloud4.png"] = "assets/images/clouds/cloud4.png";
+	}
+	var _this25 = this.type;
+	var value13 = "IMAGE";
+	if(__map_reserved["assets/images/clouds/cloud4.png"] != null) {
+		_this25.setReserved("assets/images/clouds/cloud4.png",value13);
+	} else {
+		_this25.h["assets/images/clouds/cloud4.png"] = value13;
+	}
+	var _this26 = this.path;
+	if(__map_reserved["assets/images/clouds/cloud5.png"] != null) {
+		_this26.setReserved("assets/images/clouds/cloud5.png","assets/images/clouds/cloud5.png");
+	} else {
+		_this26.h["assets/images/clouds/cloud5.png"] = "assets/images/clouds/cloud5.png";
+	}
+	var _this27 = this.type;
+	var value14 = "IMAGE";
+	if(__map_reserved["assets/images/clouds/cloud5.png"] != null) {
+		_this27.setReserved("assets/images/clouds/cloud5.png",value14);
+	} else {
+		_this27.h["assets/images/clouds/cloud5.png"] = value14;
+	}
+	var _this28 = this.path;
+	if(__map_reserved["assets/images/clouds/cloud6.png"] != null) {
+		_this28.setReserved("assets/images/clouds/cloud6.png","assets/images/clouds/cloud6.png");
+	} else {
+		_this28.h["assets/images/clouds/cloud6.png"] = "assets/images/clouds/cloud6.png";
+	}
+	var _this29 = this.type;
+	var value15 = "IMAGE";
+	if(__map_reserved["assets/images/clouds/cloud6.png"] != null) {
+		_this29.setReserved("assets/images/clouds/cloud6.png",value15);
+	} else {
+		_this29.h["assets/images/clouds/cloud6.png"] = value15;
+	}
+	var _this30 = this.path;
+	if(__map_reserved["assets/images/clouds/cloud7.png"] != null) {
+		_this30.setReserved("assets/images/clouds/cloud7.png","assets/images/clouds/cloud7.png");
+	} else {
+		_this30.h["assets/images/clouds/cloud7.png"] = "assets/images/clouds/cloud7.png";
+	}
+	var _this31 = this.type;
+	var value16 = "IMAGE";
+	if(__map_reserved["assets/images/clouds/cloud7.png"] != null) {
+		_this31.setReserved("assets/images/clouds/cloud7.png",value16);
+	} else {
+		_this31.h["assets/images/clouds/cloud7.png"] = value16;
+	}
+	var _this32 = this.path;
+	if(__map_reserved["assets/images/clouds/cloud8.png"] != null) {
+		_this32.setReserved("assets/images/clouds/cloud8.png","assets/images/clouds/cloud8.png");
+	} else {
+		_this32.h["assets/images/clouds/cloud8.png"] = "assets/images/clouds/cloud8.png";
+	}
+	var _this33 = this.type;
+	var value17 = "IMAGE";
+	if(__map_reserved["assets/images/clouds/cloud8.png"] != null) {
+		_this33.setReserved("assets/images/clouds/cloud8.png",value17);
+	} else {
+		_this33.h["assets/images/clouds/cloud8.png"] = value17;
+	}
+	var _this34 = this.path;
+	if(__map_reserved["assets/images/clouds/cloud9.png"] != null) {
+		_this34.setReserved("assets/images/clouds/cloud9.png","assets/images/clouds/cloud9.png");
+	} else {
+		_this34.h["assets/images/clouds/cloud9.png"] = "assets/images/clouds/cloud9.png";
+	}
+	var _this35 = this.type;
+	var value18 = "IMAGE";
+	if(__map_reserved["assets/images/clouds/cloud9.png"] != null) {
+		_this35.setReserved("assets/images/clouds/cloud9.png",value18);
+	} else {
+		_this35.h["assets/images/clouds/cloud9.png"] = value18;
+	}
+	var _this36 = this.path;
+	if(__map_reserved["assets/images/images-go-here.txt"] != null) {
+		_this36.setReserved("assets/images/images-go-here.txt","assets/images/images-go-here.txt");
+	} else {
+		_this36.h["assets/images/images-go-here.txt"] = "assets/images/images-go-here.txt";
+	}
+	var _this37 = this.type;
+	var value19 = "TEXT";
+	if(__map_reserved["assets/images/images-go-here.txt"] != null) {
+		_this37.setReserved("assets/images/images-go-here.txt",value19);
+	} else {
+		_this37.h["assets/images/images-go-here.txt"] = value19;
+	}
+	var _this38 = this.path;
+	if(__map_reserved["assets/images/menuscreen.png"] != null) {
+		_this38.setReserved("assets/images/menuscreen.png","assets/images/menuscreen.png");
+	} else {
+		_this38.h["assets/images/menuscreen.png"] = "assets/images/menuscreen.png";
+	}
+	var _this39 = this.type;
+	var value20 = "IMAGE";
+	if(__map_reserved["assets/images/menuscreen.png"] != null) {
+		_this39.setReserved("assets/images/menuscreen.png",value20);
+	} else {
+		_this39.h["assets/images/menuscreen.png"] = value20;
+	}
+	var _this40 = this.path;
+	if(__map_reserved["assets/images/moon.png"] != null) {
+		_this40.setReserved("assets/images/moon.png","assets/images/moon.png");
+	} else {
+		_this40.h["assets/images/moon.png"] = "assets/images/moon.png";
+	}
+	var _this41 = this.type;
+	var value21 = "IMAGE";
+	if(__map_reserved["assets/images/moon.png"] != null) {
+		_this41.setReserved("assets/images/moon.png",value21);
+	} else {
+		_this41.h["assets/images/moon.png"] = value21;
+	}
+	var _this42 = this.path;
+	if(__map_reserved["assets/images/playbtn.png"] != null) {
+		_this42.setReserved("assets/images/playbtn.png","assets/images/playbtn.png");
+	} else {
+		_this42.h["assets/images/playbtn.png"] = "assets/images/playbtn.png";
+	}
+	var _this43 = this.type;
+	var value22 = "IMAGE";
+	if(__map_reserved["assets/images/playbtn.png"] != null) {
+		_this43.setReserved("assets/images/playbtn.png",value22);
+	} else {
+		_this43.h["assets/images/playbtn.png"] = value22;
+	}
+	var _this44 = this.path;
+	if(__map_reserved["assets/images/playbtn_hover.png"] != null) {
+		_this44.setReserved("assets/images/playbtn_hover.png","assets/images/playbtn_hover.png");
+	} else {
+		_this44.h["assets/images/playbtn_hover.png"] = "assets/images/playbtn_hover.png";
+	}
+	var _this45 = this.type;
+	var value23 = "IMAGE";
+	if(__map_reserved["assets/images/playbtn_hover.png"] != null) {
+		_this45.setReserved("assets/images/playbtn_hover.png",value23);
+	} else {
+		_this45.h["assets/images/playbtn_hover.png"] = value23;
+	}
+	var _this46 = this.path;
+	if(__map_reserved["assets/images/playbutton.png"] != null) {
+		_this46.setReserved("assets/images/playbutton.png","assets/images/playbutton.png");
+	} else {
+		_this46.h["assets/images/playbutton.png"] = "assets/images/playbutton.png";
+	}
+	var _this47 = this.type;
+	var value24 = "IMAGE";
+	if(__map_reserved["assets/images/playbutton.png"] != null) {
+		_this47.setReserved("assets/images/playbutton.png",value24);
+	} else {
+		_this47.h["assets/images/playbutton.png"] = value24;
+	}
+	var _this48 = this.path;
+	if(__map_reserved["assets/images/player.png"] != null) {
+		_this48.setReserved("assets/images/player.png","assets/images/player.png");
+	} else {
+		_this48.h["assets/images/player.png"] = "assets/images/player.png";
+	}
+	var _this49 = this.type;
+	var value25 = "IMAGE";
+	if(__map_reserved["assets/images/player.png"] != null) {
+		_this49.setReserved("assets/images/player.png",value25);
+	} else {
+		_this49.h["assets/images/player.png"] = value25;
+	}
+	var _this50 = this.path;
+	if(__map_reserved["assets/images/player_old.png"] != null) {
+		_this50.setReserved("assets/images/player_old.png","assets/images/player_old.png");
+	} else {
+		_this50.h["assets/images/player_old.png"] = "assets/images/player_old.png";
+	}
+	var _this51 = this.type;
+	var value26 = "IMAGE";
+	if(__map_reserved["assets/images/player_old.png"] != null) {
+		_this51.setReserved("assets/images/player_old.png",value26);
+	} else {
+		_this51.h["assets/images/player_old.png"] = value26;
+	}
+	var _this52 = this.path;
+	if(__map_reserved["assets/images/trees/tree1.png"] != null) {
+		_this52.setReserved("assets/images/trees/tree1.png","assets/images/trees/tree1.png");
+	} else {
+		_this52.h["assets/images/trees/tree1.png"] = "assets/images/trees/tree1.png";
+	}
+	var _this53 = this.type;
+	var value27 = "IMAGE";
+	if(__map_reserved["assets/images/trees/tree1.png"] != null) {
+		_this53.setReserved("assets/images/trees/tree1.png",value27);
+	} else {
+		_this53.h["assets/images/trees/tree1.png"] = value27;
+	}
+	var _this54 = this.path;
+	if(__map_reserved["assets/images/trees/tree2.png"] != null) {
+		_this54.setReserved("assets/images/trees/tree2.png","assets/images/trees/tree2.png");
+	} else {
+		_this54.h["assets/images/trees/tree2.png"] = "assets/images/trees/tree2.png";
+	}
+	var _this55 = this.type;
+	var value28 = "IMAGE";
+	if(__map_reserved["assets/images/trees/tree2.png"] != null) {
+		_this55.setReserved("assets/images/trees/tree2.png",value28);
+	} else {
+		_this55.h["assets/images/trees/tree2.png"] = value28;
+	}
+	var _this56 = this.path;
+	if(__map_reserved["assets/images/trees/tree3.png"] != null) {
+		_this56.setReserved("assets/images/trees/tree3.png","assets/images/trees/tree3.png");
+	} else {
+		_this56.h["assets/images/trees/tree3.png"] = "assets/images/trees/tree3.png";
+	}
+	var _this57 = this.type;
+	var value29 = "IMAGE";
+	if(__map_reserved["assets/images/trees/tree3.png"] != null) {
+		_this57.setReserved("assets/images/trees/tree3.png",value29);
+	} else {
+		_this57.h["assets/images/trees/tree3.png"] = value29;
+	}
+	var _this58 = this.path;
+	if(__map_reserved["assets/images/trees/tree4.png"] != null) {
+		_this58.setReserved("assets/images/trees/tree4.png","assets/images/trees/tree4.png");
+	} else {
+		_this58.h["assets/images/trees/tree4.png"] = "assets/images/trees/tree4.png";
+	}
+	var _this59 = this.type;
+	var value30 = "IMAGE";
+	if(__map_reserved["assets/images/trees/tree4.png"] != null) {
+		_this59.setReserved("assets/images/trees/tree4.png",value30);
+	} else {
+		_this59.h["assets/images/trees/tree4.png"] = value30;
+	}
+	var _this60 = this.path;
+	if(__map_reserved["assets/images/trees/tree5.png"] != null) {
+		_this60.setReserved("assets/images/trees/tree5.png","assets/images/trees/tree5.png");
+	} else {
+		_this60.h["assets/images/trees/tree5.png"] = "assets/images/trees/tree5.png";
+	}
+	var _this61 = this.type;
+	var value31 = "IMAGE";
+	if(__map_reserved["assets/images/trees/tree5.png"] != null) {
+		_this61.setReserved("assets/images/trees/tree5.png",value31);
+	} else {
+		_this61.h["assets/images/trees/tree5.png"] = value31;
+	}
+	var _this62 = this.path;
+	if(__map_reserved["assets/images/trees/tree6.png"] != null) {
+		_this62.setReserved("assets/images/trees/tree6.png","assets/images/trees/tree6.png");
+	} else {
+		_this62.h["assets/images/trees/tree6.png"] = "assets/images/trees/tree6.png";
+	}
+	var _this63 = this.type;
+	var value32 = "IMAGE";
+	if(__map_reserved["assets/images/trees/tree6.png"] != null) {
+		_this63.setReserved("assets/images/trees/tree6.png",value32);
+	} else {
+		_this63.h["assets/images/trees/tree6.png"] = value32;
+	}
+	var _this64 = this.path;
+	if(__map_reserved["assets/images/trees/tree7.png"] != null) {
+		_this64.setReserved("assets/images/trees/tree7.png","assets/images/trees/tree7.png");
+	} else {
+		_this64.h["assets/images/trees/tree7.png"] = "assets/images/trees/tree7.png";
+	}
+	var _this65 = this.type;
+	var value33 = "IMAGE";
+	if(__map_reserved["assets/images/trees/tree7.png"] != null) {
+		_this65.setReserved("assets/images/trees/tree7.png",value33);
+	} else {
+		_this65.h["assets/images/trees/tree7.png"] = value33;
+	}
+	var _this66 = this.path;
+	if(__map_reserved["assets/images/trees/tree8.png"] != null) {
+		_this66.setReserved("assets/images/trees/tree8.png","assets/images/trees/tree8.png");
+	} else {
+		_this66.h["assets/images/trees/tree8.png"] = "assets/images/trees/tree8.png";
+	}
+	var _this67 = this.type;
+	var value34 = "IMAGE";
+	if(__map_reserved["assets/images/trees/tree8.png"] != null) {
+		_this67.setReserved("assets/images/trees/tree8.png",value34);
+	} else {
+		_this67.h["assets/images/trees/tree8.png"] = value34;
+	}
+	var _this68 = this.path;
+	if(__map_reserved["assets/images/trees/tree9.png"] != null) {
+		_this68.setReserved("assets/images/trees/tree9.png","assets/images/trees/tree9.png");
+	} else {
+		_this68.h["assets/images/trees/tree9.png"] = "assets/images/trees/tree9.png";
+	}
+	var _this69 = this.type;
+	var value35 = "IMAGE";
+	if(__map_reserved["assets/images/trees/tree9.png"] != null) {
+		_this69.setReserved("assets/images/trees/tree9.png",value35);
+	} else {
+		_this69.h["assets/images/trees/tree9.png"] = value35;
+	}
+	var _this70 = this.path;
+	if(__map_reserved["assets/Metamorphous-Regular.eot"] != null) {
+		_this70.setReserved("assets/Metamorphous-Regular.eot","assets/Metamorphous-Regular.eot");
+	} else {
+		_this70.h["assets/Metamorphous-Regular.eot"] = "assets/Metamorphous-Regular.eot";
+	}
+	var _this71 = this.type;
+	var value36 = "BINARY";
+	if(__map_reserved["assets/Metamorphous-Regular.eot"] != null) {
+		_this71.setReserved("assets/Metamorphous-Regular.eot",value36);
+	} else {
+		_this71.h["assets/Metamorphous-Regular.eot"] = value36;
+	}
+	var _this72 = this.path;
+	if(__map_reserved["assets/Metamorphous-Regular.svg"] != null) {
+		_this72.setReserved("assets/Metamorphous-Regular.svg","assets/Metamorphous-Regular.svg");
+	} else {
+		_this72.h["assets/Metamorphous-Regular.svg"] = "assets/Metamorphous-Regular.svg";
+	}
+	var _this73 = this.type;
+	var value37 = "TEXT";
+	if(__map_reserved["assets/Metamorphous-Regular.svg"] != null) {
+		_this73.setReserved("assets/Metamorphous-Regular.svg",value37);
+	} else {
+		_this73.h["assets/Metamorphous-Regular.svg"] = value37;
+	}
+	var _this74 = this.className;
+	var value38 = _$_$ASSET_$_$assets_$metamorphous_$regular_$ttf;
+	if(__map_reserved["assets/Metamorphous-Regular.ttf"] != null) {
+		_this74.setReserved("assets/Metamorphous-Regular.ttf",value38);
+	} else {
+		_this74.h["assets/Metamorphous-Regular.ttf"] = value38;
+	}
+	var _this75 = this.type;
+	var value39 = "FONT";
+	if(__map_reserved["assets/Metamorphous-Regular.ttf"] != null) {
+		_this75.setReserved("assets/Metamorphous-Regular.ttf",value39);
+	} else {
+		_this75.h["assets/Metamorphous-Regular.ttf"] = value39;
+	}
+	var _this76 = this.path;
+	if(__map_reserved["assets/Metamorphous-Regular.woff"] != null) {
+		_this76.setReserved("assets/Metamorphous-Regular.woff","assets/Metamorphous-Regular.woff");
+	} else {
+		_this76.h["assets/Metamorphous-Regular.woff"] = "assets/Metamorphous-Regular.woff";
+	}
+	var _this77 = this.type;
+	var value40 = "BINARY";
+	if(__map_reserved["assets/Metamorphous-Regular.woff"] != null) {
+		_this77.setReserved("assets/Metamorphous-Regular.woff",value40);
+	} else {
+		_this77.h["assets/Metamorphous-Regular.woff"] = value40;
+	}
+	var _this78 = this.path;
+	if(__map_reserved["assets/music/music-goes-here.txt"] != null) {
+		_this78.setReserved("assets/music/music-goes-here.txt","assets/music/music-goes-here.txt");
+	} else {
+		_this78.h["assets/music/music-goes-here.txt"] = "assets/music/music-goes-here.txt";
+	}
+	var _this79 = this.type;
+	var value41 = "TEXT";
+	if(__map_reserved["assets/music/music-goes-here.txt"] != null) {
+		_this79.setReserved("assets/music/music-goes-here.txt",value41);
+	} else {
+		_this79.h["assets/music/music-goes-here.txt"] = value41;
+	}
+	var _this80 = this.path;
+	if(__map_reserved["assets/sounds/child.wav"] != null) {
+		_this80.setReserved("assets/sounds/child.wav","assets/sounds/child.wav");
+	} else {
+		_this80.h["assets/sounds/child.wav"] = "assets/sounds/child.wav";
+	}
+	var _this81 = this.type;
+	var value42 = "SOUND";
+	if(__map_reserved["assets/sounds/child.wav"] != null) {
+		_this81.setReserved("assets/sounds/child.wav",value42);
+	} else {
+		_this81.h["assets/sounds/child.wav"] = value42;
+	}
+	var _this82 = this.path;
+	if(__map_reserved["assets/sounds/playbtn_click.wav"] != null) {
+		_this82.setReserved("assets/sounds/playbtn_click.wav","assets/sounds/playbtn_click.wav");
+	} else {
+		_this82.h["assets/sounds/playbtn_click.wav"] = "assets/sounds/playbtn_click.wav";
+	}
+	var _this83 = this.type;
+	var value43 = "SOUND";
+	if(__map_reserved["assets/sounds/playbtn_click.wav"] != null) {
+		_this83.setReserved("assets/sounds/playbtn_click.wav",value43);
+	} else {
+		_this83.h["assets/sounds/playbtn_click.wav"] = value43;
+	}
+	var _this84 = this.path;
+	if(__map_reserved["assets/sounds/playbtn_hover.wav"] != null) {
+		_this84.setReserved("assets/sounds/playbtn_hover.wav","assets/sounds/playbtn_hover.wav");
+	} else {
+		_this84.h["assets/sounds/playbtn_hover.wav"] = "assets/sounds/playbtn_hover.wav";
+	}
+	var _this85 = this.type;
+	var value44 = "SOUND";
+	if(__map_reserved["assets/sounds/playbtn_hover.wav"] != null) {
+		_this85.setReserved("assets/sounds/playbtn_hover.wav",value44);
+	} else {
+		_this85.h["assets/sounds/playbtn_hover.wav"] = value44;
+	}
+	var _this86 = this.path;
+	if(__map_reserved["assets/sounds/sounds-go-here.txt"] != null) {
+		_this86.setReserved("assets/sounds/sounds-go-here.txt","assets/sounds/sounds-go-here.txt");
+	} else {
+		_this86.h["assets/sounds/sounds-go-here.txt"] = "assets/sounds/sounds-go-here.txt";
+	}
+	var _this87 = this.type;
+	var value45 = "TEXT";
+	if(__map_reserved["assets/sounds/sounds-go-here.txt"] != null) {
+		_this87.setReserved("assets/sounds/sounds-go-here.txt",value45);
+	} else {
+		_this87.h["assets/sounds/sounds-go-here.txt"] = value45;
+	}
+	var _this88 = this.path;
+	if(__map_reserved["flixel/sounds/beep.ogg"] != null) {
+		_this88.setReserved("flixel/sounds/beep.ogg","flixel/sounds/beep.ogg");
+	} else {
+		_this88.h["flixel/sounds/beep.ogg"] = "flixel/sounds/beep.ogg";
+	}
+	var _this89 = this.type;
+	var value46 = "SOUND";
+	if(__map_reserved["flixel/sounds/beep.ogg"] != null) {
+		_this89.setReserved("flixel/sounds/beep.ogg",value46);
+	} else {
+		_this89.h["flixel/sounds/beep.ogg"] = value46;
+	}
+	var _this90 = this.path;
+	if(__map_reserved["flixel/sounds/flixel.ogg"] != null) {
+		_this90.setReserved("flixel/sounds/flixel.ogg","flixel/sounds/flixel.ogg");
+	} else {
+		_this90.h["flixel/sounds/flixel.ogg"] = "flixel/sounds/flixel.ogg";
+	}
+	var _this91 = this.type;
+	var value47 = "SOUND";
+	if(__map_reserved["flixel/sounds/flixel.ogg"] != null) {
+		_this91.setReserved("flixel/sounds/flixel.ogg",value47);
+	} else {
+		_this91.h["flixel/sounds/flixel.ogg"] = value47;
+	}
+	var _this92 = this.className;
+	var value48 = _$_$ASSET_$_$flixel_$fonts_$nokiafc22_$ttf;
+	if(__map_reserved["flixel/fonts/nokiafc22.ttf"] != null) {
+		_this92.setReserved("flixel/fonts/nokiafc22.ttf",value48);
+	} else {
+		_this92.h["flixel/fonts/nokiafc22.ttf"] = value48;
+	}
+	var _this93 = this.type;
+	var value49 = "FONT";
+	if(__map_reserved["flixel/fonts/nokiafc22.ttf"] != null) {
+		_this93.setReserved("flixel/fonts/nokiafc22.ttf",value49);
+	} else {
+		_this93.h["flixel/fonts/nokiafc22.ttf"] = value49;
+	}
+	var _this94 = this.className;
+	var value50 = _$_$ASSET_$_$flixel_$fonts_$monsterrat_$ttf;
+	if(__map_reserved["flixel/fonts/monsterrat.ttf"] != null) {
+		_this94.setReserved("flixel/fonts/monsterrat.ttf",value50);
+	} else {
+		_this94.h["flixel/fonts/monsterrat.ttf"] = value50;
+	}
+	var _this95 = this.type;
+	var value51 = "FONT";
+	if(__map_reserved["flixel/fonts/monsterrat.ttf"] != null) {
+		_this95.setReserved("flixel/fonts/monsterrat.ttf",value51);
+	} else {
+		_this95.h["flixel/fonts/monsterrat.ttf"] = value51;
+	}
+	var _this96 = this.path;
+	if(__map_reserved["flixel/images/ui/button.png"] != null) {
+		_this96.setReserved("flixel/images/ui/button.png","flixel/images/ui/button.png");
+	} else {
+		_this96.h["flixel/images/ui/button.png"] = "flixel/images/ui/button.png";
+	}
+	var _this97 = this.type;
+	var value52 = "IMAGE";
+	if(__map_reserved["flixel/images/ui/button.png"] != null) {
+		_this97.setReserved("flixel/images/ui/button.png",value52);
+	} else {
+		_this97.h["flixel/images/ui/button.png"] = value52;
 	}
 	var assetsPrefix = null;
 	if(ApplicationMain.config != null && Object.prototype.hasOwnProperty.call(ApplicationMain.config,"assetsPrefix")) {
@@ -2220,13 +2824,13 @@ var DefaultAssetLibrary = function() {
 		var tmp = this.path.keys();
 		while(tmp.hasNext()) {
 			var k = tmp.next();
-			var _this18 = this.path;
-			var value11 = assetsPrefix + (__map_reserved[k] != null?_this18.getReserved(k):_this18.h[k]);
-			var _this19 = this.path;
+			var _this98 = this.path;
+			var value53 = assetsPrefix + (__map_reserved[k] != null?_this98.getReserved(k):_this98.h[k]);
+			var _this99 = this.path;
 			if(__map_reserved[k] != null) {
-				_this19.setReserved(k,value11);
+				_this99.setReserved(k,value53);
 			} else {
-				_this19.h[k] = value11;
+				_this99.h[k] = value53;
 			}
 		}
 	}
@@ -2447,6 +3051,26 @@ lime_text_Font.prototype = {
 	,__class__: lime_text_Font
 	,__properties__: {get_unitsPerEM:"get_unitsPerEM",get_underlineThickness:"get_underlineThickness",get_underlinePosition:"get_underlinePosition",get_numGlyphs:"get_numGlyphs",get_height:"get_height",get_descender:"get_descender",get_ascender:"get_ascender"}
 };
+var _$_$ASSET_$_$assets_$achafont_$ttf = function() {
+	lime_text_Font.call(this);
+	this.name = "A Charming Font";
+};
+$hxClasses["__ASSET__assets_achafont_ttf"] = _$_$ASSET_$_$assets_$achafont_$ttf;
+_$_$ASSET_$_$assets_$achafont_$ttf.__name__ = ["__ASSET__assets_achafont_ttf"];
+_$_$ASSET_$_$assets_$achafont_$ttf.__super__ = lime_text_Font;
+_$_$ASSET_$_$assets_$achafont_$ttf.prototype = $extend(lime_text_Font.prototype,{
+	__class__: _$_$ASSET_$_$assets_$achafont_$ttf
+});
+var _$_$ASSET_$_$assets_$metamorphous_$regular_$ttf = function() {
+	lime_text_Font.call(this);
+	this.name = "Metamorphous";
+};
+$hxClasses["__ASSET__assets_metamorphous_regular_ttf"] = _$_$ASSET_$_$assets_$metamorphous_$regular_$ttf;
+_$_$ASSET_$_$assets_$metamorphous_$regular_$ttf.__name__ = ["__ASSET__assets_metamorphous_regular_ttf"];
+_$_$ASSET_$_$assets_$metamorphous_$regular_$ttf.__super__ = lime_text_Font;
+_$_$ASSET_$_$assets_$metamorphous_$regular_$ttf.prototype = $extend(lime_text_Font.prototype,{
+	__class__: _$_$ASSET_$_$assets_$metamorphous_$regular_$ttf
+});
 var _$_$ASSET_$_$flixel_$fonts_$nokiafc22_$ttf = function() {
 	lime_text_Font.call(this);
 	this.name = "Nokia Cellphone FC Small";
@@ -2511,6 +3135,30 @@ openfl_text_Font.prototype = $extend(lime_text_Font.prototype,{
 	,__class__: openfl_text_Font
 	,__properties__: $extend(lime_text_Font.prototype.__properties__,{set_fontName:"set_fontName",get_fontName:"get_fontName"})
 });
+var _$_$ASSET_$_$OPENFL_$_$assets_$achafont_$ttf = function() {
+	var font = new _$_$ASSET_$_$assets_$achafont_$ttf();
+	this.src = font.src;
+	this.name = font.name;
+	openfl_text_Font.call(this);
+};
+$hxClasses["__ASSET__OPENFL__assets_achafont_ttf"] = _$_$ASSET_$_$OPENFL_$_$assets_$achafont_$ttf;
+_$_$ASSET_$_$OPENFL_$_$assets_$achafont_$ttf.__name__ = ["__ASSET__OPENFL__assets_achafont_ttf"];
+_$_$ASSET_$_$OPENFL_$_$assets_$achafont_$ttf.__super__ = openfl_text_Font;
+_$_$ASSET_$_$OPENFL_$_$assets_$achafont_$ttf.prototype = $extend(openfl_text_Font.prototype,{
+	__class__: _$_$ASSET_$_$OPENFL_$_$assets_$achafont_$ttf
+});
+var _$_$ASSET_$_$OPENFL_$_$assets_$metamorphous_$regular_$ttf = function() {
+	var font = new _$_$ASSET_$_$assets_$metamorphous_$regular_$ttf();
+	this.src = font.src;
+	this.name = font.name;
+	openfl_text_Font.call(this);
+};
+$hxClasses["__ASSET__OPENFL__assets_metamorphous_regular_ttf"] = _$_$ASSET_$_$OPENFL_$_$assets_$metamorphous_$regular_$ttf;
+_$_$ASSET_$_$OPENFL_$_$assets_$metamorphous_$regular_$ttf.__name__ = ["__ASSET__OPENFL__assets_metamorphous_regular_ttf"];
+_$_$ASSET_$_$OPENFL_$_$assets_$metamorphous_$regular_$ttf.__super__ = openfl_text_Font;
+_$_$ASSET_$_$OPENFL_$_$assets_$metamorphous_$regular_$ttf.prototype = $extend(openfl_text_Font.prototype,{
+	__class__: _$_$ASSET_$_$OPENFL_$_$assets_$metamorphous_$regular_$ttf
+});
 var _$_$ASSET_$_$OPENFL_$_$flixel_$fonts_$nokiafc22_$ttf = function() {
 	var font = new _$_$ASSET_$_$flixel_$fonts_$nokiafc22_$ttf();
 	this.src = font.src;
@@ -2562,134 +3210,6 @@ EReg.prototype = {
 	}
 	,__class__: EReg
 };
-var HxOverrides = function() { };
-$hxClasses["HxOverrides"] = HxOverrides;
-HxOverrides.__name__ = ["HxOverrides"];
-HxOverrides.strDate = function(s) {
-	var _g = s.length;
-	switch(_g) {
-	case 8:
-		var k = s.split(":");
-		var d = new Date();
-		d.setTime(0);
-		d.setUTCHours(k[0]);
-		d.setUTCMinutes(k[1]);
-		d.setUTCSeconds(k[2]);
-		return d;
-	case 10:
-		var k1 = s.split("-");
-		return new Date(k1[0],k1[1] - 1,k1[2],0,0,0);
-	case 19:
-		var k2 = s.split(" ");
-		var y = k2[0].split("-");
-		var t = k2[1].split(":");
-		return new Date(y[0],y[1] - 1,y[2],t[0],t[1],t[2]);
-	default:
-		throw new js__$Boot_HaxeError("Invalid date format : " + s);
-	}
-};
-HxOverrides.cca = function(s,index) {
-	var x = s.charCodeAt(index);
-	if(x != x) {
-		return undefined;
-	}
-	return x;
-};
-HxOverrides.substr = function(s,pos,len) {
-	if(len == null) {
-		len = s.length;
-	} else if(len < 0) {
-		if(pos == 0) {
-			len = s.length + len;
-		} else {
-			return "";
-		}
-	}
-	return s.substr(pos,len);
-};
-HxOverrides.remove = function(a,obj) {
-	var i = a.indexOf(obj);
-	if(i == -1) {
-		return false;
-	}
-	a.splice(i,1);
-	return true;
-};
-HxOverrides.iter = function(a) {
-	return { cur : 0, arr : a, hasNext : function() {
-		return this.cur < this.arr.length;
-	}, next : function() {
-		return this.arr[this.cur++];
-	}};
-};
-var Lambda = function() { };
-$hxClasses["Lambda"] = Lambda;
-Lambda.__name__ = ["Lambda"];
-Lambda.array = function(it) {
-	var a = [];
-	var tmp = $iterator(it)();
-	while(tmp.hasNext()) a.push(tmp.next());
-	return a;
-};
-var List = function() {
-	this.length = 0;
-};
-$hxClasses["List"] = List;
-List.__name__ = ["List"];
-List.prototype = {
-	add: function(item) {
-		var x = new _$List_ListNode(item,null);
-		if(this.h == null) {
-			this.h = x;
-		} else {
-			this.q.next = x;
-		}
-		this.q = x;
-		this.length++;
-	}
-	,pop: function() {
-		if(this.h == null) {
-			return null;
-		}
-		var x = this.h.item;
-		this.h = this.h.next;
-		if(this.h == null) {
-			this.q = null;
-		}
-		this.length--;
-		return x;
-	}
-	,iterator: function() {
-		return new _$List_ListIterator(this.h);
-	}
-	,__class__: List
-};
-var _$List_ListNode = function(item,next) {
-	this.item = item;
-	this.next = next;
-};
-$hxClasses["_List.ListNode"] = _$List_ListNode;
-_$List_ListNode.__name__ = ["_List","ListNode"];
-_$List_ListNode.prototype = {
-	__class__: _$List_ListNode
-};
-var _$List_ListIterator = function(head) {
-	this.head = head;
-};
-$hxClasses["_List.ListIterator"] = _$List_ListIterator;
-_$List_ListIterator.__name__ = ["_List","ListIterator"];
-_$List_ListIterator.prototype = {
-	hasNext: function() {
-		return this.head != null;
-	}
-	,next: function() {
-		var val = this.head.item;
-		this.head = this.head.next;
-		return val;
-	}
-	,__class__: _$List_ListIterator
-};
-Math.__name__ = ["Math"];
 var flixel_util_IFlxDestroyable = function() { };
 $hxClasses["flixel.util.IFlxDestroyable"] = flixel_util_IFlxDestroyable;
 flixel_util_IFlxDestroyable.__name__ = ["flixel","util","IFlxDestroyable"];
@@ -3339,6 +3859,170 @@ flixel_FlxState.prototype = $extend(flixel_group_FlxTypedGroup.prototype,{
 	,__class__: flixel_FlxState
 	,__properties__: $extend(flixel_group_FlxTypedGroup.prototype.__properties__,{set_bgColor:"set_bgColor",get_bgColor:"get_bgColor"})
 });
+var EndState = function(MaxSize) {
+	flixel_FlxState.call(this,MaxSize);
+};
+$hxClasses["EndState"] = EndState;
+EndState.__name__ = ["EndState"];
+EndState.__super__ = flixel_FlxState;
+EndState.prototype = $extend(flixel_FlxState.prototype,{
+	create: function() {
+		var _gameover = new flixel_text_FlxText(40,100,1000);
+		_gameover.set_text("Game Over");
+		_gameover.scrollFactor.set(0,0);
+		_gameover.setFormat("assets/Metamorphous-Regular.ttf",100,-16777216,"center");
+		this.add(_gameover);
+		var _gameover2 = new flixel_text_FlxText(40,300,1000);
+		_gameover2.set_text("Delicious! you captured " + Std.string(Reg.children) + " children.");
+		_gameover2.scrollFactor.set(0,0);
+		_gameover2.setFormat("assets/Metamorphous-Regular.ttf",32,-16777216,"center");
+		this.add(_gameover2);
+		var _menuBtn = new flixel_ui_FlxButton(520,455.625,"Menu",$bind(this,this.clickMenu));
+		_menuBtn.onOver.sound = flixel_FlxG.sound.load("assets/sounds/playbtn_hover.wav");
+		_menuBtn.onDown.sound = flixel_FlxG.sound.load("assets/sounds/playbtn_click.wav");
+		this.add(_menuBtn);
+		flixel_FlxG.camera.bgColor = -11305598;
+		flixel_FlxState.prototype.create.call(this);
+	}
+	,update: function(elapsed) {
+		flixel_FlxState.prototype.update.call(this,elapsed);
+	}
+	,clickMenu: function() {
+		var nextState = new MenuState();
+		if(flixel_FlxG.game._state.switchTo(nextState)) {
+			flixel_FlxG.game._requestedState = nextState;
+		}
+	}
+	,__class__: EndState
+});
+var HxOverrides = function() { };
+$hxClasses["HxOverrides"] = HxOverrides;
+HxOverrides.__name__ = ["HxOverrides"];
+HxOverrides.strDate = function(s) {
+	var _g = s.length;
+	switch(_g) {
+	case 8:
+		var k = s.split(":");
+		var d = new Date();
+		d.setTime(0);
+		d.setUTCHours(k[0]);
+		d.setUTCMinutes(k[1]);
+		d.setUTCSeconds(k[2]);
+		return d;
+	case 10:
+		var k1 = s.split("-");
+		return new Date(k1[0],k1[1] - 1,k1[2],0,0,0);
+	case 19:
+		var k2 = s.split(" ");
+		var y = k2[0].split("-");
+		var t = k2[1].split(":");
+		return new Date(y[0],y[1] - 1,y[2],t[0],t[1],t[2]);
+	default:
+		throw new js__$Boot_HaxeError("Invalid date format : " + s);
+	}
+};
+HxOverrides.cca = function(s,index) {
+	var x = s.charCodeAt(index);
+	if(x != x) {
+		return undefined;
+	}
+	return x;
+};
+HxOverrides.substr = function(s,pos,len) {
+	if(len == null) {
+		len = s.length;
+	} else if(len < 0) {
+		if(pos == 0) {
+			len = s.length + len;
+		} else {
+			return "";
+		}
+	}
+	return s.substr(pos,len);
+};
+HxOverrides.remove = function(a,obj) {
+	var i = a.indexOf(obj);
+	if(i == -1) {
+		return false;
+	}
+	a.splice(i,1);
+	return true;
+};
+HxOverrides.iter = function(a) {
+	return { cur : 0, arr : a, hasNext : function() {
+		return this.cur < this.arr.length;
+	}, next : function() {
+		return this.arr[this.cur++];
+	}};
+};
+var Lambda = function() { };
+$hxClasses["Lambda"] = Lambda;
+Lambda.__name__ = ["Lambda"];
+Lambda.array = function(it) {
+	var a = [];
+	var tmp = $iterator(it)();
+	while(tmp.hasNext()) a.push(tmp.next());
+	return a;
+};
+var List = function() {
+	this.length = 0;
+};
+$hxClasses["List"] = List;
+List.__name__ = ["List"];
+List.prototype = {
+	add: function(item) {
+		var x = new _$List_ListNode(item,null);
+		if(this.h == null) {
+			this.h = x;
+		} else {
+			this.q.next = x;
+		}
+		this.q = x;
+		this.length++;
+	}
+	,pop: function() {
+		if(this.h == null) {
+			return null;
+		}
+		var x = this.h.item;
+		this.h = this.h.next;
+		if(this.h == null) {
+			this.q = null;
+		}
+		this.length--;
+		return x;
+	}
+	,iterator: function() {
+		return new _$List_ListIterator(this.h);
+	}
+	,__class__: List
+};
+var _$List_ListNode = function(item,next) {
+	this.item = item;
+	this.next = next;
+};
+$hxClasses["_List.ListNode"] = _$List_ListNode;
+_$List_ListNode.__name__ = ["_List","ListNode"];
+_$List_ListNode.prototype = {
+	__class__: _$List_ListNode
+};
+var _$List_ListIterator = function(head) {
+	this.head = head;
+};
+$hxClasses["_List.ListIterator"] = _$List_ListIterator;
+_$List_ListIterator.__name__ = ["_List","ListIterator"];
+_$List_ListIterator.prototype = {
+	hasNext: function() {
+		return this.head != null;
+	}
+	,next: function() {
+		var val = this.head.item;
+		this.head = this.head.next;
+		return val;
+	}
+	,__class__: _$List_ListIterator
+};
+Math.__name__ = ["Math"];
 var MenuState = function(MaxSize) {
 	flixel_FlxState.call(this,MaxSize);
 };
@@ -3347,9 +4031,20 @@ MenuState.__name__ = ["MenuState"];
 MenuState.__super__ = flixel_FlxState;
 MenuState.prototype = $extend(flixel_FlxState.prototype,{
 	create: function() {
-		this._btnPlay = new flixel_ui_FlxButton(0,0,"Play",$bind(this,this.clickPlay));
+		var _background = new flixel_FlxSprite(-420.,-262.5);
+		_background.loadGraphic("assets/images/menuscreen.png");
+		_background.scale.set(0.5625,0.5625);
+		this.add(_background);
+		this._btnPlay = new flixel_ui_FlxButton(548.4375,455.625,"",$bind(this,this.clickPlay));
+		this._btnPlay.loadGraphic("assets/images/playbtn.png");
+		this._btnPlay.onOver.callback = $bind(this,this.onOver);
+		this._btnPlay.onOut.callback = $bind(this,this.onOut);
+		this._btnPlay.onOver.sound = flixel_FlxG.sound.load("assets/sounds/playbtn_hover.wav");
+		this._btnPlay.onDown.sound = flixel_FlxG.sound.load("assets/sounds/playbtn_click.wav");
+		this._btnPlay.scale.set(0.5625,0.5625);
 		this.add(this._btnPlay);
-		this._btnPlay.screenCenter();
+		flixel_FlxG.camera.set_antialiasing(true);
+		flixel_FlxG.mouse.set_useSystemCursor(true);
 		flixel_FlxState.prototype.create.call(this);
 	}
 	,update: function(elapsed) {
@@ -3360,6 +4055,12 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 		if(flixel_FlxG.game._state.switchTo(nextState)) {
 			flixel_FlxG.game._requestedState = nextState;
 		}
+	}
+	,onOver: function() {
+		this._btnPlay.loadGraphic("assets/images/playbtn_hover.png");
+	}
+	,onOut: function() {
+		this._btnPlay.loadGraphic("assets/images/playbtn.png");
 	}
 	,__class__: MenuState
 });
@@ -3395,10 +4096,10 @@ NMEPreloader.prototype = $extend(openfl_display_Sprite.prototype,{
 		return 0;
 	}
 	,getHeight: function() {
-		return 480;
+		return 675;
 	}
 	,getWidth: function() {
-		return 640;
+		return 1080;
 	}
 	,onInit: function() {
 	}
@@ -3415,6 +4116,7 @@ NMEPreloader.prototype = $extend(openfl_display_Sprite.prototype,{
 	,__class__: NMEPreloader
 });
 var PlayState = function(MaxSize) {
+	this._children = [];
 	flixel_FlxState.call(this,MaxSize);
 };
 $hxClasses["PlayState"] = PlayState;
@@ -3422,12 +4124,2253 @@ PlayState.__name__ = ["PlayState"];
 PlayState.__super__ = flixel_FlxState;
 PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	create: function() {
+		Reg.state = this;
+		Reg.children = 0;
+		Reg.timer = Reg.totalTime = 60;
+		var _gradient = flixel_util_FlxGradient.createGradientFlxSprite(1080,675,[-15712691,-13818806]);
+		_gradient.scrollFactor.set(0,0);
+		this.add(_gradient);
+		this._timer = new flixel_text_FlxText(40,20,1000);
+		this._timer.set_text("5:00");
+		this._timer.scrollFactor.set(0,0);
+		this._timer.setFormat("assets/Metamorphous-Regular.ttf",42,-16777216,"left");
+		this.add(this._timer);
+		this._random = new flixel_math_FlxRandom();
+		this._moon = new flixel_FlxSprite(800,40);
+		this._moon.loadGraphic("assets/images/moon.png");
+		this._moon.scale.set(0.7,0.7);
+		this._moon.scrollFactor.set(0.018,0.3);
+		this.add(this._moon);
+		var _g = 0;
+		while(_g < 500) {
+			var _cloud = new flixel_FlxSprite(_g++ * 100,this._random["int"](-100,100));
+			var _n = this._random["int"](1,11,[11]);
+			_cloud.loadGraphic("assets/images/clouds/cloud" + (_n == null?"null":"" + _n) + ".png");
+			var _scale = this._random["float"](0.35,0.65);
+			_cloud.scale.set(_scale,_scale);
+			_cloud.set_alpha(this._random["float"](0.2,0.5));
+			_cloud.scrollFactor.set(this._random["float"](0.2,0.7),this._random["float"](0.2,0.7));
+			_cloud.set_flipX([false,true][this._random["int"](0,1)]);
+			this.add(_cloud);
+		}
+		this._killSound = flixel_FlxG.sound.load("assets/sounds/child.wav");
+		var _ground2 = new flixel_FlxSprite(0,390);
+		_ground2.makeGraphic(1080,999,-16777216);
+		_ground2.scrollFactor.set(0,1);
+		this.add(_ground2);
+		var _trees = new flixel_group_FlxTypedSpriteGroup(0,0);
+		var _last = 0;
+		var _g1 = 0;
+		while(_g1 < 200) {
+			var i = _g1++;
+			if(this._random["int"](1,5) == 1) {
+				continue;
+			}
+			var _tree = new flixel_FlxSprite(i * 200,-530);
+			var _n1 = this._random["int"](1,9,[_last]);
+			_last = _n1;
+			_tree.loadGraphic("assets/images/trees/tree" + (_n1 == null?"null":"" + _n1) + ".png");
+			_tree.scale.set(0.5625,0.5625);
+			_tree.set_flipX([false,true][this._random["int"](0,1)]);
+			_trees.add(_tree);
+		}
+		this.add(_trees);
+		var _g2 = 0;
+		while(_g2 < 700) {
+			var i1 = _g2++;
+			if(this._random["int"](1,5) == 1) {
+				continue;
+			}
+			var _tree1 = new flixel_FlxSprite(i1 * 100,-370);
+			var _n2 = this._random["int"](1,9,[_last]);
+			_last = _n2;
+			_tree1.loadGraphic("assets/images/trees/tree" + (_n2 == null?"null":"" + _n2) + ".png");
+			_tree1.set_alpha(0.5);
+			_tree1.scrollFactor.set(this._random["float"](0.4,0.6),0.9);
+			_tree1.set_flipX([false,true][this._random["int"](0,1)]);
+			_tree1.scale.set(0.3,0.3);
+			this.add(_tree1);
+		}
+		this._player = new Player(20,20);
+		this.add(this._player);
+		var _g3 = 0;
+		while(_g3 < 20) {
+			var i2 = _g3++;
+			if(this._random["int"](1,3) < 3) {
+				continue;
+			}
+			var _child = new flixel_FlxSprite(1080 + i2 * 1300,200);
+			var _n3 = this._random["int"](1,2,[_last]);
+			_last = _n3;
+			_child.loadGraphic("assets/images/children/child" + (_n3 == null?"null":"" + _n3) + ".png");
+			_child.set_flipX([false,true][this._random["int"](0,1)]);
+			_child.scale.set(0.3,0.3);
+			this._children[i2] = _child;
+			_child.updateHitbox();
+			this.add(_child);
+		}
+		flixel_FlxG.camera.follow(this._player,flixel_FlxCameraFollowStyle.PLATFORMER,1);
+		flixel_FlxG.camera.setScrollBoundsRect(0,-1000,40000,1500,true);
+		flixel_FlxG.camera.set_antialiasing(true);
+		flixel_FlxG.camera.bgColor = -13818806;
 		flixel_FlxState.prototype.create.call(this);
 	}
 	,update: function(elapsed) {
+		Reg.timer -= elapsed;
+		if(Reg.timer < 0) {
+			Reg.timer = 0;
+			var nextState = new EndState();
+			if(flixel_FlxG.game._state.switchTo(nextState)) {
+				flixel_FlxG.game._requestedState = nextState;
+			}
+		}
+		var _seconds = Std.string(Reg.timer % 60 | 0);
+		if(_seconds.length == 1) {
+			_seconds = "0" + _seconds;
+		}
+		this._timer.set_text(Std.string(Reg.timer / 60 | 0) + ":" + _seconds);
+		this._moon.set_y(40 + (1 - Reg.timer / Reg.totalTime) * 200);
+		var _g1 = 0;
+		var _g = this._children.length - 1;
+		while(_g1 < _g) {
+			var i = _g1++;
+			if(flixel_FlxG.overlap(this._player,this._children[i])) {
+				var _temp = this._children[i];
+				HxOverrides.remove(this._children,_temp);
+				_temp.destroy();
+				this._killSound.play();
+				Reg.children += 1;
+			}
+		}
 		flixel_FlxState.prototype.update.call(this,elapsed);
 	}
 	,__class__: PlayState
+});
+var flixel_util_IFlxPooled = function() { };
+$hxClasses["flixel.util.IFlxPooled"] = flixel_util_IFlxPooled;
+flixel_util_IFlxPooled.__name__ = ["flixel","util","IFlxPooled"];
+flixel_util_IFlxPooled.__interfaces__ = [flixel_util_IFlxDestroyable];
+flixel_util_IFlxPooled.prototype = {
+	__class__: flixel_util_IFlxPooled
+};
+var flixel_util_IFlxPool = function() { };
+$hxClasses["flixel.util.IFlxPool"] = flixel_util_IFlxPool;
+flixel_util_IFlxPool.__name__ = ["flixel","util","IFlxPool"];
+flixel_util_IFlxPool.prototype = {
+	__class__: flixel_util_IFlxPool
+};
+var flixel_util_FlxPool_$flixel_$math_$FlxRect = function(classObj) {
+	this._count = 0;
+	this._pool = [];
+	this._class = classObj;
+};
+$hxClasses["flixel.util.FlxPool_flixel_math_FlxRect"] = flixel_util_FlxPool_$flixel_$math_$FlxRect;
+flixel_util_FlxPool_$flixel_$math_$FlxRect.__name__ = ["flixel","util","FlxPool_flixel_math_FlxRect"];
+flixel_util_FlxPool_$flixel_$math_$FlxRect.__interfaces__ = [flixel_util_IFlxPool];
+flixel_util_FlxPool_$flixel_$math_$FlxRect.prototype = {
+	get: function() {
+		if(this._count == 0) {
+			return Type.createInstance(this._class,[]);
+		}
+		return this._pool[--this._count];
+	}
+	,put: function(obj) {
+		if(obj != null) {
+			var i = this._pool.indexOf(obj);
+			if(i == -1 || i >= this._count) {
+				obj.destroy();
+				this._pool[this._count++] = obj;
+			}
+		}
+	}
+	,putUnsafe: function(obj) {
+		if(obj != null) {
+			obj.destroy();
+			this._pool[this._count++] = obj;
+		}
+	}
+	,preAllocate: function(numObjects) {
+		while(numObjects-- > 0) this._pool[this._count++] = Type.createInstance(this._class,[]);
+	}
+	,clear: function() {
+		this._count = 0;
+		var oldPool = this._pool;
+		this._pool = [];
+		return oldPool;
+	}
+	,get_length: function() {
+		return this._count;
+	}
+	,__class__: flixel_util_FlxPool_$flixel_$math_$FlxRect
+	,__properties__: {get_length:"get_length"}
+};
+var flixel_math_FlxRect = function(X,Y,Width,Height) {
+	if(Height == null) {
+		Height = 0;
+	}
+	if(Width == null) {
+		Width = 0;
+	}
+	if(Y == null) {
+		Y = 0;
+	}
+	if(X == null) {
+		X = 0;
+	}
+	this._inPool = false;
+	this._weak = false;
+	this.x = X;
+	this.y = Y;
+	this.width = Width;
+	this.height = Height;
+};
+$hxClasses["flixel.math.FlxRect"] = flixel_math_FlxRect;
+flixel_math_FlxRect.__name__ = ["flixel","math","FlxRect"];
+flixel_math_FlxRect.__interfaces__ = [flixel_util_IFlxPooled];
+flixel_math_FlxRect.__properties__ = {get_pool:"get_pool"}
+flixel_math_FlxRect.get = function(X,Y,Width,Height) {
+	if(Height == null) {
+		Height = 0;
+	}
+	if(Width == null) {
+		Width = 0;
+	}
+	if(Y == null) {
+		Y = 0;
+	}
+	if(X == null) {
+		X = 0;
+	}
+	var _this = flixel_math_FlxRect._pool.get();
+	_this.x = X;
+	_this.y = Y;
+	_this.width = Width;
+	_this.height = Height;
+	_this._inPool = false;
+	return _this;
+};
+flixel_math_FlxRect.weak = function(X,Y,Width,Height) {
+	if(Height == null) {
+		Height = 0;
+	}
+	if(Width == null) {
+		Width = 0;
+	}
+	if(Y == null) {
+		Y = 0;
+	}
+	if(X == null) {
+		X = 0;
+	}
+	var _this = flixel_math_FlxRect._pool.get();
+	_this.x = X;
+	_this.y = Y;
+	_this.width = Width;
+	_this.height = Height;
+	_this._inPool = false;
+	_this._weak = true;
+	return _this;
+};
+flixel_math_FlxRect.get_pool = function() {
+	return flixel_math_FlxRect._pool;
+};
+flixel_math_FlxRect.prototype = {
+	put: function() {
+		if(!this._inPool) {
+			this._inPool = true;
+			this._weak = false;
+			flixel_math_FlxRect._pool.putUnsafe(this);
+		}
+	}
+	,putWeak: function() {
+		if(this._weak) {
+			if(!this._inPool) {
+				this._inPool = true;
+				this._weak = false;
+				flixel_math_FlxRect._pool.putUnsafe(this);
+			}
+		}
+	}
+	,setSize: function(Width,Height) {
+		this.width = Width;
+		this.height = Height;
+		return this;
+	}
+	,setPosition: function(x,y) {
+		this.x = x;
+		this.y = y;
+		return this;
+	}
+	,set: function(X,Y,Width,Height) {
+		if(Height == null) {
+			Height = 0;
+		}
+		if(Width == null) {
+			Width = 0;
+		}
+		if(Y == null) {
+			Y = 0;
+		}
+		if(X == null) {
+			X = 0;
+		}
+		this.x = X;
+		this.y = Y;
+		this.width = Width;
+		this.height = Height;
+		return this;
+	}
+	,copyFrom: function(Rect) {
+		this.x = Rect.x;
+		this.y = Rect.y;
+		this.width = Rect.width;
+		this.height = Rect.height;
+		if(Rect._weak) {
+			if(!Rect._inPool) {
+				Rect._inPool = true;
+				Rect._weak = false;
+				flixel_math_FlxRect._pool.putUnsafe(Rect);
+			}
+		}
+		return this;
+	}
+	,copyTo: function(Rect) {
+		Rect.x = this.x;
+		Rect.y = this.y;
+		Rect.width = this.width;
+		Rect.height = this.height;
+		if(Rect._weak) {
+			if(!Rect._inPool) {
+				Rect._inPool = true;
+				Rect._weak = false;
+				flixel_math_FlxRect._pool.putUnsafe(Rect);
+			}
+		}
+		return Rect;
+	}
+	,copyFromFlash: function(FlashRect) {
+		this.x = FlashRect.x;
+		this.y = FlashRect.y;
+		this.width = FlashRect.width;
+		this.height = FlashRect.height;
+		return this;
+	}
+	,copyToFlash: function(FlashRect) {
+		if(FlashRect == null) {
+			FlashRect = new openfl_geom_Rectangle();
+		}
+		FlashRect.x = this.x;
+		FlashRect.y = this.y;
+		FlashRect.width = this.width;
+		FlashRect.height = this.height;
+		return FlashRect;
+	}
+	,overlaps: function(Rect) {
+		var result = Rect.x + Rect.width > this.x && Rect.x < this.x + this.width && Rect.y + Rect.height > this.y && Rect.y < this.y + this.height;
+		if(Rect._weak) {
+			if(!Rect._inPool) {
+				Rect._inPool = true;
+				Rect._weak = false;
+				flixel_math_FlxRect._pool.putUnsafe(Rect);
+			}
+		}
+		return result;
+	}
+	,containsPoint: function(Point) {
+		var result = flixel_math_FlxMath.pointInFlxRect(Point.x,Point.y,this);
+		if(Point._weak) {
+			Point.put();
+		}
+		return result;
+	}
+	,union: function(Rect) {
+		var minX = Math.min(this.x,Rect.x);
+		var minY = Math.min(this.y,Rect.y);
+		var maxX = Math.max(this.x + this.width,Rect.x + Rect.width);
+		var maxY = Math.max(this.y + this.height,Rect.y + Rect.height);
+		if(Rect._weak) {
+			if(!Rect._inPool) {
+				Rect._inPool = true;
+				Rect._weak = false;
+				flixel_math_FlxRect._pool.putUnsafe(Rect);
+			}
+		}
+		this.x = minX;
+		this.y = minY;
+		this.width = maxX - minX;
+		this.height = maxY - minY;
+		return this;
+	}
+	,floor: function() {
+		this.x = Math.floor(this.x);
+		this.y = Math.floor(this.y);
+		this.width = Math.floor(this.width);
+		this.height = Math.floor(this.height);
+		return this;
+	}
+	,ceil: function() {
+		this.x = Math.ceil(this.x);
+		this.y = Math.ceil(this.y);
+		this.width = Math.ceil(this.width);
+		this.height = Math.ceil(this.height);
+		return this;
+	}
+	,round: function() {
+		this.x = Math.round(this.x);
+		this.y = Math.round(this.y);
+		this.width = Math.round(this.width);
+		this.height = Math.round(this.height);
+		return this;
+	}
+	,fromTwoPoints: function(Point1,Point2) {
+		var minX = Math.min(Point1.x,Point2.x);
+		var minY = Math.min(Point1.y,Point2.y);
+		var maxX = Math.max(Point1.x,Point2.x);
+		var maxY = Math.max(Point1.y,Point2.y);
+		if(Point1._weak) {
+			Point1.put();
+		}
+		if(Point2._weak) {
+			Point2.put();
+		}
+		this.x = minX;
+		this.y = minY;
+		this.width = maxX - minX;
+		this.height = maxY - minY;
+		return this;
+	}
+	,unionWithPoint: function(Point) {
+		var minX = Math.min(this.x,Point.x);
+		var minY = Math.min(this.y,Point.y);
+		var maxX = Math.max(this.x + this.width,Point.x);
+		var maxY = Math.max(this.y + this.height,Point.y);
+		if(Point._weak) {
+			Point.put();
+		}
+		this.x = minX;
+		this.y = minY;
+		this.width = maxX - minX;
+		this.height = maxY - minY;
+		return this;
+	}
+	,offset: function(dx,dy) {
+		this.x += dx;
+		this.y += dy;
+		return this;
+	}
+	,destroy: function() {
+	}
+	,equals: function(rect) {
+		var result = Math.abs(this.x - rect.x) <= 0.0000001 && Math.abs(this.y - rect.y) <= 0.0000001 && Math.abs(this.width - rect.width) <= 0.0000001 && Math.abs(this.height - rect.height) <= 0.0000001;
+		if(rect._weak) {
+			if(!rect._inPool) {
+				rect._inPool = true;
+				rect._weak = false;
+				flixel_math_FlxRect._pool.putUnsafe(rect);
+			}
+		}
+		return result;
+	}
+	,intersection: function(rect) {
+		var x0 = this.x < rect.x?rect.x:this.x;
+		var x1 = this.x + this.width > rect.x + rect.width?rect.x + rect.width:this.x + this.width;
+		if(x1 <= x0) {
+			if(rect._weak) {
+				if(!rect._inPool) {
+					rect._inPool = true;
+					rect._weak = false;
+					flixel_math_FlxRect._pool.putUnsafe(rect);
+				}
+			}
+			var _this = flixel_math_FlxRect._pool.get();
+			_this.x = 0;
+			_this.y = 0;
+			_this.width = 0;
+			_this.height = 0;
+			_this._inPool = false;
+			return _this;
+		}
+		var y0 = this.y < rect.y?rect.y:this.y;
+		var y1 = this.y + this.height > rect.y + rect.height?rect.y + rect.height:this.y + this.height;
+		if(y1 <= y0) {
+			if(rect._weak) {
+				if(!rect._inPool) {
+					rect._inPool = true;
+					rect._weak = false;
+					flixel_math_FlxRect._pool.putUnsafe(rect);
+				}
+			}
+			var _this1 = flixel_math_FlxRect._pool.get();
+			_this1.x = 0;
+			_this1.y = 0;
+			_this1.width = 0;
+			_this1.height = 0;
+			_this1._inPool = false;
+			return _this1;
+		}
+		if(rect._weak) {
+			if(!rect._inPool) {
+				rect._inPool = true;
+				rect._weak = false;
+				flixel_math_FlxRect._pool.putUnsafe(rect);
+			}
+		}
+		var _this2 = flixel_math_FlxRect._pool.get();
+		_this2.x = x0;
+		_this2.y = y0;
+		_this2.width = x1 - x0;
+		_this2.height = y1 - y0;
+		_this2._inPool = false;
+		return _this2;
+	}
+	,toString: function() {
+		var value = this.x;
+		var _this = flixel_util_LabelValuePair._pool.get();
+		_this.label = "x";
+		_this.value = value;
+		var value1 = this.y;
+		var _this1 = flixel_util_LabelValuePair._pool.get();
+		_this1.label = "y";
+		_this1.value = value1;
+		var value2 = this.width;
+		var _this2 = flixel_util_LabelValuePair._pool.get();
+		_this2.label = "w";
+		_this2.value = value2;
+		var value3 = this.height;
+		var _this3 = flixel_util_LabelValuePair._pool.get();
+		_this3.label = "h";
+		_this3.value = value3;
+		return flixel_util_FlxStringUtil.getDebugString([_this,_this1,_this2,_this3]);
+	}
+	,get_left: function() {
+		return this.x;
+	}
+	,set_left: function(Value) {
+		this.width -= Value - this.x;
+		return this.x = Value;
+	}
+	,get_right: function() {
+		return this.x + this.width;
+	}
+	,set_right: function(Value) {
+		this.width = Value - this.x;
+		return Value;
+	}
+	,get_top: function() {
+		return this.y;
+	}
+	,set_top: function(Value) {
+		this.height -= Value - this.y;
+		return this.y = Value;
+	}
+	,get_bottom: function() {
+		return this.y + this.height;
+	}
+	,set_bottom: function(Value) {
+		this.height = Value - this.y;
+		return Value;
+	}
+	,get_isEmpty: function() {
+		if(this.width != 0) {
+			return this.height == 0;
+		} else {
+			return true;
+		}
+	}
+	,__class__: flixel_math_FlxRect
+	,__properties__: {get_isEmpty:"get_isEmpty",set_bottom:"set_bottom",get_bottom:"get_bottom",set_top:"set_top",get_top:"get_top",set_right:"set_right",get_right:"get_right",set_left:"set_left",get_left:"get_left"}
+};
+var flixel_FlxObject = function(X,Y,Width,Height) {
+	if(Height == null) {
+		Height = 0;
+	}
+	if(Width == null) {
+		Width = 0;
+	}
+	if(Y == null) {
+		Y = 0;
+	}
+	if(X == null) {
+		X = 0;
+	}
+	var _this = flixel_math_FlxRect._pool.get();
+	_this.x = 0;
+	_this.y = 0;
+	_this.width = 0;
+	_this.height = 0;
+	_this._inPool = false;
+	this._rect = _this;
+	var point = flixel_math_FlxPoint._pool.get().set(0,0);
+	point._inPool = false;
+	this._point = point;
+	this.collisonXDrag = true;
+	this.allowCollisions = 4369;
+	this.wasTouching = 0;
+	this.touching = 0;
+	this.health = 1;
+	this.maxAngular = 10000;
+	this.angularDrag = 0;
+	this.angularAcceleration = 0;
+	this.angularVelocity = 0;
+	this.elasticity = 0;
+	this.mass = 1;
+	this.immovable = false;
+	this.moves = true;
+	this.angle = 0;
+	this.pixelPerfectPosition = true;
+	this.y = 0;
+	this.x = 0;
+	flixel_FlxBasic.call(this);
+	this.set_x(X);
+	this.set_y(Y);
+	this.set_width(Width);
+	this.set_height(Height);
+	this.initVars();
+};
+$hxClasses["flixel.FlxObject"] = flixel_FlxObject;
+flixel_FlxObject.__name__ = ["flixel","FlxObject"];
+flixel_FlxObject.separate = function(Object1,Object2) {
+	var separatedX = flixel_FlxObject.separateX(Object1,Object2);
+	var separatedY = flixel_FlxObject.separateY(Object1,Object2);
+	if(!separatedX) {
+		return separatedY;
+	} else {
+		return true;
+	}
+};
+flixel_FlxObject.updateTouchingFlags = function(Object1,Object2) {
+	var touchingX = flixel_FlxObject.updateTouchingFlagsX(Object1,Object2);
+	var touchingY = flixel_FlxObject.updateTouchingFlagsY(Object1,Object2);
+	if(!touchingX) {
+		return touchingY;
+	} else {
+		return true;
+	}
+};
+flixel_FlxObject.computeOverlapX = function(Object1,Object2,checkMaxOverlap) {
+	if(checkMaxOverlap == null) {
+		checkMaxOverlap = true;
+	}
+	var overlap = 0;
+	var obj1delta = Object1.x - Object1.last.x;
+	var obj2delta = Object2.x - Object2.last.x;
+	if(obj1delta != obj2delta) {
+		var obj1deltaAbs = obj1delta > 0?obj1delta:-obj1delta;
+		var obj2deltaAbs = obj2delta > 0?obj2delta:-obj2delta;
+		var _this = flixel_FlxObject._firstSeparateFlxRect;
+		var X = Object1.x - (obj1delta > 0?obj1delta:0);
+		var Y = Object1.last.y;
+		var Width = Object1.get_width() + obj1deltaAbs;
+		var Height = Object1.get_height();
+		_this.x = X;
+		_this.y = Y;
+		_this.width = Width;
+		_this.height = Height;
+		var _this1 = flixel_FlxObject._secondSeparateFlxRect;
+		var X1 = Object2.x - (obj2delta > 0?obj2delta:0);
+		var Y1 = Object2.last.y;
+		var Width1 = Object2.get_width() + obj2deltaAbs;
+		var Height1 = Object2.get_height();
+		_this1.x = X1;
+		_this1.y = Y1;
+		_this1.width = Width1;
+		_this1.height = Height1;
+		if(_this.x + _this.width > _this1.x && _this.x < _this1.x + _this1.width && _this.y + _this.height > _this1.y && _this.y < _this1.y + _this1.height) {
+			var maxOverlap = checkMaxOverlap?obj1deltaAbs + obj2deltaAbs + flixel_FlxObject.SEPARATE_BIAS:0;
+			if(obj1delta > obj2delta) {
+				overlap = Object1.x + Object1.get_width() - Object2.x;
+				if(checkMaxOverlap && overlap > maxOverlap || (Object1.allowCollisions & 16) == 0 || (Object2.allowCollisions & 1) == 0) {
+					overlap = 0;
+				} else {
+					Object1.touching |= 16;
+					Object2.touching |= 1;
+				}
+			} else if(obj1delta < obj2delta) {
+				overlap = Object1.x - Object2.get_width() - Object2.x;
+				if(checkMaxOverlap && -overlap > maxOverlap || (Object1.allowCollisions & 1) == 0 || (Object2.allowCollisions & 16) == 0) {
+					overlap = 0;
+				} else {
+					Object1.touching |= 1;
+					Object2.touching |= 16;
+				}
+			}
+		}
+	}
+	return overlap;
+};
+flixel_FlxObject.separateX = function(Object1,Object2) {
+	var obj1immovable = Object1.immovable;
+	var obj2immovable = Object2.immovable;
+	if(obj1immovable && obj2immovable) {
+		return false;
+	}
+	if(Object1.flixelType == 3) {
+		return Object1.overlapsWithCallback(Object2,flixel_FlxObject.separateX);
+	}
+	if(Object2.flixelType == 3) {
+		return Object2.overlapsWithCallback(Object1,flixel_FlxObject.separateX,true);
+	}
+	var overlap = flixel_FlxObject.computeOverlapX(Object1,Object2);
+	if(overlap != 0) {
+		var obj1v = Object1.velocity.x;
+		var obj2v = Object2.velocity.x;
+		if(!obj1immovable && !obj2immovable) {
+			overlap *= 0.5;
+			Object1.set_x(Object1.x - overlap);
+			Object2.set_x(Object2.x + overlap);
+			var obj1velocity = Math.sqrt(obj2v * obj2v * Object2.mass / Object1.mass) * (obj2v > 0?1:-1);
+			var obj2velocity = Math.sqrt(obj1v * obj1v * Object1.mass / Object2.mass) * (obj1v > 0?1:-1);
+			var average = (obj1velocity + obj2velocity) * 0.5;
+			obj1velocity -= average;
+			obj2velocity -= average;
+			Object1.velocity.set_x(average + obj1velocity * Object1.elasticity);
+			Object2.velocity.set_x(average + obj2velocity * Object2.elasticity);
+		} else if(!obj1immovable) {
+			Object1.set_x(Object1.x - overlap);
+			Object1.velocity.set_x(obj2v - obj1v * Object1.elasticity);
+		} else if(!obj2immovable) {
+			Object2.set_x(Object2.x + overlap);
+			Object2.velocity.set_x(obj1v - obj2v * Object2.elasticity);
+		}
+		return true;
+	}
+	return false;
+};
+flixel_FlxObject.updateTouchingFlagsX = function(Object1,Object2) {
+	if(Object1.flixelType == 3) {
+		return Object1.overlapsWithCallback(Object2,flixel_FlxObject.updateTouchingFlagsX);
+	}
+	if(Object2.flixelType == 3) {
+		return Object2.overlapsWithCallback(Object1,flixel_FlxObject.updateTouchingFlagsX,true);
+	}
+	return flixel_FlxObject.computeOverlapX(Object1,Object2,false) != 0;
+};
+flixel_FlxObject.computeOverlapY = function(Object1,Object2,checkMaxOverlap) {
+	if(checkMaxOverlap == null) {
+		checkMaxOverlap = true;
+	}
+	var overlap = 0;
+	var obj1delta = Object1.y - Object1.last.y;
+	var obj2delta = Object2.y - Object2.last.y;
+	if(obj1delta != obj2delta) {
+		var obj1deltaAbs = obj1delta > 0?obj1delta:-obj1delta;
+		var obj2deltaAbs = obj2delta > 0?obj2delta:-obj2delta;
+		var _this = flixel_FlxObject._firstSeparateFlxRect;
+		var X = Object1.x;
+		var Y = Object1.y - (obj1delta > 0?obj1delta:0);
+		var Width = Object1.get_width();
+		var Height = Object1.get_height() + obj1deltaAbs;
+		_this.x = X;
+		_this.y = Y;
+		_this.width = Width;
+		_this.height = Height;
+		var _this1 = flixel_FlxObject._secondSeparateFlxRect;
+		var X1 = Object2.x;
+		var Y1 = Object2.y - (obj2delta > 0?obj2delta:0);
+		var Width1 = Object2.get_width();
+		var Height1 = Object2.get_height() + obj2deltaAbs;
+		_this1.x = X1;
+		_this1.y = Y1;
+		_this1.width = Width1;
+		_this1.height = Height1;
+		if(_this.x + _this.width > _this1.x && _this.x < _this1.x + _this1.width && _this.y + _this.height > _this1.y && _this.y < _this1.y + _this1.height) {
+			var maxOverlap = checkMaxOverlap?obj1deltaAbs + obj2deltaAbs + flixel_FlxObject.SEPARATE_BIAS:0;
+			if(obj1delta > obj2delta) {
+				overlap = Object1.y + Object1.get_height() - Object2.y;
+				if(checkMaxOverlap && overlap > maxOverlap || (Object1.allowCollisions & 4096) == 0 || (Object2.allowCollisions & 256) == 0) {
+					overlap = 0;
+				} else {
+					Object1.touching |= 4096;
+					Object2.touching |= 256;
+				}
+			} else if(obj1delta < obj2delta) {
+				overlap = Object1.y - Object2.get_height() - Object2.y;
+				if(checkMaxOverlap && -overlap > maxOverlap || (Object1.allowCollisions & 256) == 0 || (Object2.allowCollisions & 4096) == 0) {
+					overlap = 0;
+				} else {
+					Object1.touching |= 256;
+					Object2.touching |= 4096;
+				}
+			}
+		}
+	}
+	return overlap;
+};
+flixel_FlxObject.separateY = function(Object1,Object2) {
+	var obj1immovable = Object1.immovable;
+	var obj2immovable = Object2.immovable;
+	if(obj1immovable && obj2immovable) {
+		return false;
+	}
+	if(Object1.flixelType == 3) {
+		return Object1.overlapsWithCallback(Object2,flixel_FlxObject.separateY);
+	}
+	if(Object2.flixelType == 3) {
+		return Object2.overlapsWithCallback(Object1,flixel_FlxObject.separateY,true);
+	}
+	var overlap = flixel_FlxObject.computeOverlapY(Object1,Object2);
+	if(overlap != 0) {
+		var obj1delta = Object1.y - Object1.last.y;
+		var obj2delta = Object2.y - Object2.last.y;
+		var obj1v = Object1.velocity.y;
+		var obj2v = Object2.velocity.y;
+		if(!obj1immovable && !obj2immovable) {
+			overlap *= 0.5;
+			Object1.set_y(Object1.y - overlap);
+			Object2.set_y(Object2.y + overlap);
+			var obj1velocity = Math.sqrt(obj2v * obj2v * Object2.mass / Object1.mass) * (obj2v > 0?1:-1);
+			var obj2velocity = Math.sqrt(obj1v * obj1v * Object1.mass / Object2.mass) * (obj1v > 0?1:-1);
+			var average = (obj1velocity + obj2velocity) * 0.5;
+			obj1velocity -= average;
+			obj2velocity -= average;
+			Object1.velocity.set_y(average + obj1velocity * Object1.elasticity);
+			Object2.velocity.set_y(average + obj2velocity * Object2.elasticity);
+		} else if(!obj1immovable) {
+			Object1.set_y(Object1.y - overlap);
+			Object1.velocity.set_y(obj2v - obj1v * Object1.elasticity);
+			if(Object1.collisonXDrag && Object2.active && Object2.moves && obj1delta > obj2delta) {
+				Object1.set_x(Object1.x + (Object2.x - Object2.last.x));
+			}
+		} else if(!obj2immovable) {
+			Object2.set_y(Object2.y + overlap);
+			Object2.velocity.set_y(obj1v - obj2v * Object2.elasticity);
+			if(Object2.collisonXDrag && Object1.active && Object1.moves && obj1delta < obj2delta) {
+				Object2.set_x(Object2.x + (Object1.x - Object1.last.x));
+			}
+		}
+		return true;
+	}
+	return false;
+};
+flixel_FlxObject.updateTouchingFlagsY = function(Object1,Object2) {
+	if(Object1.flixelType == 3) {
+		return Object1.overlapsWithCallback(Object2,flixel_FlxObject.updateTouchingFlagsY);
+	}
+	if(Object2.flixelType == 3) {
+		return Object2.overlapsWithCallback(Object1,flixel_FlxObject.updateTouchingFlagsY,true);
+	}
+	return flixel_FlxObject.computeOverlapY(Object1,Object2,false) != 0;
+};
+flixel_FlxObject.__super__ = flixel_FlxBasic;
+flixel_FlxObject.prototype = $extend(flixel_FlxBasic.prototype,{
+	initVars: function() {
+		this.flixelType = 1;
+		var X = this.x;
+		var Y = this.y;
+		var point = flixel_math_FlxPoint._pool.get().set(X,Y);
+		point._inPool = false;
+		this.last = point;
+		var point1 = flixel_math_FlxPoint._pool.get().set(1,1);
+		point1._inPool = false;
+		this.scrollFactor = point1;
+		this.pixelPerfectPosition = flixel_FlxObject.defaultPixelPerfectPosition;
+		var point2 = flixel_math_FlxPoint._pool.get().set(0,0);
+		point2._inPool = false;
+		this.velocity = point2;
+		var point3 = flixel_math_FlxPoint._pool.get().set(0,0);
+		point3._inPool = false;
+		this.acceleration = point3;
+		var point4 = flixel_math_FlxPoint._pool.get().set(0,0);
+		point4._inPool = false;
+		this.drag = point4;
+		var point5 = flixel_math_FlxPoint._pool.get().set(10000,10000);
+		point5._inPool = false;
+		this.maxVelocity = point5;
+	}
+	,initMotionVars: function() {
+		var point = flixel_math_FlxPoint._pool.get().set(0,0);
+		point._inPool = false;
+		this.velocity = point;
+		var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
+		point1._inPool = false;
+		this.acceleration = point1;
+		var point2 = flixel_math_FlxPoint._pool.get().set(0,0);
+		point2._inPool = false;
+		this.drag = point2;
+		var point3 = flixel_math_FlxPoint._pool.get().set(10000,10000);
+		point3._inPool = false;
+		this.maxVelocity = point3;
+	}
+	,destroy: function() {
+		flixel_FlxBasic.prototype.destroy.call(this);
+		this.velocity = flixel_util_FlxDestroyUtil.put(this.velocity);
+		this.acceleration = flixel_util_FlxDestroyUtil.put(this.acceleration);
+		this.drag = flixel_util_FlxDestroyUtil.put(this.drag);
+		this.maxVelocity = flixel_util_FlxDestroyUtil.put(this.maxVelocity);
+		this.scrollFactor = flixel_util_FlxDestroyUtil.put(this.scrollFactor);
+		this.last = flixel_util_FlxDestroyUtil.put(this.last);
+		this._point = flixel_util_FlxDestroyUtil.put(this._point);
+		this._rect = flixel_util_FlxDestroyUtil.put(this._rect);
+	}
+	,update: function(elapsed) {
+		this.last.set_x(this.x);
+		this.last.set_y(this.y);
+		if(this.path != null && this.path.active) {
+			this.path.update(elapsed);
+		}
+		if(this.moves) {
+			this.updateMotion(elapsed);
+		}
+		this.wasTouching = this.touching;
+		this.touching = 0;
+	}
+	,updateMotion: function(elapsed) {
+		var velocityDelta = 0.5 * (flixel_math_FlxVelocity.computeVelocity(this.angularVelocity,this.angularAcceleration,this.angularDrag,this.maxAngular,elapsed) - this.angularVelocity);
+		this.angularVelocity += velocityDelta;
+		var _g = this;
+		_g.set_angle(_g.angle + this.angularVelocity * elapsed);
+		this.angularVelocity += velocityDelta;
+		velocityDelta = 0.5 * (flixel_math_FlxVelocity.computeVelocity(this.velocity.x,this.acceleration.x,this.drag.x,this.maxVelocity.x,elapsed) - this.velocity.x);
+		var _g1 = this.velocity;
+		_g1.set_x(_g1.x + velocityDelta);
+		var delta = this.velocity.x * elapsed;
+		var _g2 = this.velocity;
+		_g2.set_x(_g2.x + velocityDelta);
+		var _g3 = this;
+		_g3.set_x(_g3.x + delta);
+		velocityDelta = 0.5 * (flixel_math_FlxVelocity.computeVelocity(this.velocity.y,this.acceleration.y,this.drag.y,this.maxVelocity.y,elapsed) - this.velocity.y);
+		var _g4 = this.velocity;
+		_g4.set_y(_g4.y + velocityDelta);
+		delta = this.velocity.y * elapsed;
+		var _g5 = this.velocity;
+		_g5.set_y(_g5.y + velocityDelta);
+		var _g6 = this;
+		_g6.set_y(_g6.y + delta);
+	}
+	,draw: function() {
+	}
+	,overlaps: function(ObjectOrGroup,InScreenSpace,Camera) {
+		if(InScreenSpace == null) {
+			InScreenSpace = false;
+		}
+		var group = flixel_group_FlxTypedGroup.resolveGroup(ObjectOrGroup);
+		if(group != null) {
+			return flixel_group_FlxTypedGroup.overlaps($bind(this,this.overlapsCallback),group,0,0,InScreenSpace,Camera);
+		}
+		if(ObjectOrGroup.flixelType == 3) {
+			return ObjectOrGroup.overlaps(this,InScreenSpace,Camera);
+		}
+		var object = ObjectOrGroup;
+		if(!InScreenSpace) {
+			if(object.x + object.get_width() > this.x && object.x < this.x + this.get_width() && object.y + object.get_height() > this.y) {
+				return object.y < this.y + this.get_height();
+			} else {
+				return false;
+			}
+		}
+		if(Camera == null) {
+			Camera = flixel_FlxG.camera;
+		}
+		var objectScreenPos = object.getScreenPosition(null,Camera);
+		this.getScreenPosition(this._point,Camera);
+		if(objectScreenPos.x + object.get_width() > this._point.x && objectScreenPos.x < this._point.x + this.get_width() && objectScreenPos.y + object.get_height() > this._point.y) {
+			return objectScreenPos.y < this._point.y + this.get_height();
+		} else {
+			return false;
+		}
+	}
+	,overlapsCallback: function(ObjectOrGroup,X,Y,InScreenSpace,Camera) {
+		return this.overlaps(ObjectOrGroup,InScreenSpace,Camera);
+	}
+	,overlapsAt: function(X,Y,ObjectOrGroup,InScreenSpace,Camera) {
+		if(InScreenSpace == null) {
+			InScreenSpace = false;
+		}
+		var group = flixel_group_FlxTypedGroup.resolveGroup(ObjectOrGroup);
+		if(group != null) {
+			return flixel_group_FlxTypedGroup.overlaps($bind(this,this.overlapsAtCallback),group,X,Y,InScreenSpace,Camera);
+		}
+		if(ObjectOrGroup.flixelType == 3) {
+			var tilemap = ObjectOrGroup;
+			return tilemap.overlapsAt(tilemap.x - (X - this.x),tilemap.y - (Y - this.y),this,InScreenSpace,Camera);
+		}
+		var object = ObjectOrGroup;
+		if(!InScreenSpace) {
+			if(object.x + object.get_width() > X && object.x < X + this.get_width() && object.y + object.get_height() > Y) {
+				return object.y < Y + this.get_height();
+			} else {
+				return false;
+			}
+		}
+		if(Camera == null) {
+			Camera = flixel_FlxG.camera;
+		}
+		var objectScreenPos = object.getScreenPosition(null,Camera);
+		this.getScreenPosition(this._point,Camera);
+		if(objectScreenPos.x + object.get_width() > this._point.x && objectScreenPos.x < this._point.x + this.get_width() && objectScreenPos.y + object.get_height() > this._point.y) {
+			return objectScreenPos.y < this._point.y + this.get_height();
+		} else {
+			return false;
+		}
+	}
+	,overlapsAtCallback: function(ObjectOrGroup,X,Y,InScreenSpace,Camera) {
+		return this.overlapsAt(X,Y,ObjectOrGroup,InScreenSpace,Camera);
+	}
+	,overlapsPoint: function(point,InScreenSpace,Camera) {
+		if(InScreenSpace == null) {
+			InScreenSpace = false;
+		}
+		if(!InScreenSpace) {
+			if(point.x >= this.x && point.x < this.x + this.get_width() && point.y >= this.y) {
+				return point.y < this.y + this.get_height();
+			} else {
+				return false;
+			}
+		}
+		if(Camera == null) {
+			Camera = flixel_FlxG.camera;
+		}
+		var xPos = point.x - Camera.scroll.x;
+		var yPos = point.y - Camera.scroll.y;
+		this.getScreenPosition(this._point,Camera);
+		if(point._weak) {
+			point.put();
+		}
+		if(xPos >= this._point.x && xPos < this._point.x + this.get_width() && yPos >= this._point.y) {
+			return yPos < this._point.y + this.get_height();
+		} else {
+			return false;
+		}
+	}
+	,inWorldBounds: function() {
+		var tmp;
+		var tmp1;
+		if(this.x + this.get_width() > flixel_FlxG.worldBounds.x) {
+			var _this = flixel_FlxG.worldBounds;
+			tmp1 = this.x < _this.x + _this.width;
+		} else {
+			tmp1 = false;
+		}
+		if(tmp1) {
+			tmp = this.y + this.get_height() > flixel_FlxG.worldBounds.y;
+		} else {
+			tmp = false;
+		}
+		if(tmp) {
+			var _this1 = flixel_FlxG.worldBounds;
+			return this.y < _this1.y + _this1.height;
+		} else {
+			return false;
+		}
+	}
+	,getScreenPosition: function(point,Camera) {
+		if(point == null) {
+			var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
+			point1._inPool = false;
+			point = point1;
+		}
+		if(Camera == null) {
+			Camera = flixel_FlxG.camera;
+		}
+		point.set(this.x,this.y);
+		if(this.pixelPerfectPosition) {
+			point.set_x(Math.floor(point.x));
+			point.set_y(Math.floor(point.y));
+		}
+		var X = Camera.scroll.x * this.scrollFactor.x;
+		var Y = Camera.scroll.y * this.scrollFactor.y;
+		var _g = point;
+		_g.set_x(_g.x - X);
+		var _g1 = point;
+		_g1.set_y(_g1.y - Y);
+		return point;
+	}
+	,getPosition: function(point) {
+		if(point == null) {
+			var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
+			point1._inPool = false;
+			point = point1;
+		}
+		return point.set(this.x,this.y);
+	}
+	,getMidpoint: function(point) {
+		if(point == null) {
+			var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
+			point1._inPool = false;
+			point = point1;
+		}
+		return point.set(this.x + this.get_width() * 0.5,this.y + this.get_height() * 0.5);
+	}
+	,getHitbox: function(rect) {
+		if(rect == null) {
+			var _this = flixel_math_FlxRect._pool.get();
+			_this.x = 0;
+			_this.y = 0;
+			_this.width = 0;
+			_this.height = 0;
+			_this._inPool = false;
+			rect = _this;
+		}
+		var X = this.x;
+		var Y = this.y;
+		var Width = this.get_width();
+		var Height = this.get_height();
+		rect.x = X;
+		rect.y = Y;
+		rect.width = Width;
+		rect.height = Height;
+		return rect;
+	}
+	,reset: function(X,Y) {
+		this.touching = 0;
+		this.wasTouching = 0;
+		this.setPosition(X,Y);
+		this.last.set(this.x,this.y);
+		this.velocity.set();
+		this.revive();
+	}
+	,isOnScreen: function(Camera) {
+		if(Camera == null) {
+			Camera = flixel_FlxG.camera;
+		}
+		this.getScreenPosition(this._point,Camera);
+		if(this._point.x + this.get_width() > 0 && this._point.x < Camera.width && this._point.y + this.get_height() > 0) {
+			return this._point.y < Camera.height;
+		} else {
+			return false;
+		}
+	}
+	,isPixelPerfectRender: function(Camera) {
+		if(Camera == null) {
+			Camera = flixel_FlxG.camera;
+		}
+		if(this.pixelPerfectRender == null) {
+			return Camera.pixelPerfectRender;
+		} else {
+			return this.pixelPerfectRender;
+		}
+	}
+	,isTouching: function(Direction) {
+		return (this.touching & Direction) > 0;
+	}
+	,justTouched: function(Direction) {
+		if((this.touching & Direction) > 0) {
+			return (this.wasTouching & Direction) <= 0;
+		} else {
+			return false;
+		}
+	}
+	,hurt: function(Damage) {
+		this.health = this.health - Damage;
+		if(this.health <= 0) {
+			this.kill();
+		}
+	}
+	,screenCenter: function(axes) {
+		if(axes == null) {
+			axes = flixel_util_FlxAxes.XY;
+		}
+		if(axes != flixel_util_FlxAxes.Y) {
+			this.set_x(flixel_FlxG.width / 2 - this.get_width() / 2);
+		}
+		if(axes != flixel_util_FlxAxes.X) {
+			this.set_y(flixel_FlxG.height / 2 - this.get_height() / 2);
+		}
+		return this;
+	}
+	,setPosition: function(X,Y) {
+		if(Y == null) {
+			Y = 0;
+		}
+		if(X == null) {
+			X = 0;
+		}
+		this.set_x(X);
+		this.set_y(Y);
+	}
+	,setSize: function(Width,Height) {
+		this.set_width(Width);
+		this.set_height(Height);
+	}
+	,getBoundingBox: function(camera) {
+		this.getScreenPosition(this._point,camera);
+		var _this = this._rect;
+		var X = this._point.x;
+		var Y = this._point.y;
+		var Width = this.get_width();
+		var Height = this.get_height();
+		_this.x = X;
+		_this.y = Y;
+		_this.width = Width;
+		_this.height = Height;
+		if(this.isPixelPerfectRender(camera)) {
+			var _this1 = this._rect;
+			_this1.x = Math.floor(_this1.x);
+			_this1.y = Math.floor(_this1.y);
+			_this1.width = Math.floor(_this1.width);
+			_this1.height = Math.floor(_this1.height);
+		}
+		return this._rect;
+	}
+	,toString: function() {
+		var value = this.x;
+		var _this = flixel_util_LabelValuePair._pool.get();
+		_this.label = "x";
+		_this.value = value;
+		var value1 = this.y;
+		var _this1 = flixel_util_LabelValuePair._pool.get();
+		_this1.label = "y";
+		_this1.value = value1;
+		var value2 = this.get_width();
+		var _this2 = flixel_util_LabelValuePair._pool.get();
+		_this2.label = "w";
+		_this2.value = value2;
+		var value3 = this.get_height();
+		var _this3 = flixel_util_LabelValuePair._pool.get();
+		_this3.label = "h";
+		_this3.value = value3;
+		var value4 = this.visible;
+		var _this4 = flixel_util_LabelValuePair._pool.get();
+		_this4.label = "visible";
+		_this4.value = value4;
+		var _this5 = flixel_util_LabelValuePair._pool.get();
+		_this5.label = "velocity";
+		_this5.value = this.velocity;
+		return flixel_util_FlxStringUtil.getDebugString([_this,_this1,_this2,_this3,_this4,_this5]);
+	}
+	,set_x: function(NewX) {
+		return this.x = NewX;
+	}
+	,set_y: function(NewY) {
+		return this.y = NewY;
+	}
+	,set_width: function(Width) {
+		return this.width = Width;
+	}
+	,set_height: function(Height) {
+		return this.height = Height;
+	}
+	,get_width: function() {
+		return this.width;
+	}
+	,get_height: function() {
+		return this.height;
+	}
+	,get_solid: function() {
+		return (this.allowCollisions & 4369) > 0;
+	}
+	,set_solid: function(Solid) {
+		this.set_allowCollisions(Solid?4369:0);
+		return Solid;
+	}
+	,set_angle: function(Value) {
+		return this.angle = Value;
+	}
+	,set_moves: function(Value) {
+		return this.moves = Value;
+	}
+	,set_immovable: function(Value) {
+		return this.immovable = Value;
+	}
+	,set_pixelPerfectRender: function(Value) {
+		return this.pixelPerfectRender = Value;
+	}
+	,set_allowCollisions: function(Value) {
+		return this.allowCollisions = Value;
+	}
+	,set_path: function(path) {
+		if(this.path == path) {
+			return path;
+		}
+		if(this.path != null) {
+			this.path.object = null;
+		}
+		if(path != null) {
+			path.object = this;
+		}
+		return this.path = path;
+	}
+	,__class__: flixel_FlxObject
+	,__properties__: $extend(flixel_FlxBasic.prototype.__properties__,{set_path:"set_path",set_allowCollisions:"set_allowCollisions",set_solid:"set_solid",get_solid:"get_solid",set_immovable:"set_immovable",set_moves:"set_moves",set_angle:"set_angle",set_pixelPerfectRender:"set_pixelPerfectRender",set_height:"set_height",get_height:"get_height",set_width:"set_width",get_width:"get_width",set_y:"set_y",set_x:"set_x"})
+});
+var flixel_FlxSprite = function(X,Y,SimpleGraphic) {
+	if(Y == null) {
+		Y = 0;
+	}
+	if(X == null) {
+		X = 0;
+	}
+	this._facingFlip = new haxe_ds_IntMap();
+	this._angleChanged = true;
+	this._cosAngle = 1;
+	this._sinAngle = 0;
+	this._facingVerticalMult = 1;
+	this._facingHorizontalMult = 1;
+	this.useColorTransform = false;
+	this.color = 16777215;
+	this.flipY = false;
+	this.flipX = false;
+	this.facing = 16;
+	this.alpha = 1.0;
+	this.bakedRotationAngle = 0;
+	this.numFrames = 0;
+	this.frameHeight = 0;
+	this.frameWidth = 0;
+	this.dirty = true;
+	this.antialiasing = false;
+	this.useFramePixels = true;
+	flixel_FlxObject.call(this,X,Y);
+	this.set_useFramePixels(flixel_FlxG.renderBlit);
+	if(SimpleGraphic != null) {
+		this.loadGraphic(SimpleGraphic);
+	}
+};
+$hxClasses["flixel.FlxSprite"] = flixel_FlxSprite;
+flixel_FlxSprite.__name__ = ["flixel","FlxSprite"];
+flixel_FlxSprite.__super__ = flixel_FlxObject;
+flixel_FlxSprite.prototype = $extend(flixel_FlxObject.prototype,{
+	initVars: function() {
+		flixel_FlxObject.prototype.initVars.call(this);
+		this.animation = new flixel_animation_FlxAnimationController(this);
+		this._flashPoint = new openfl_geom_Point();
+		this._flashRect = new openfl_geom_Rectangle();
+		this._flashRect2 = new openfl_geom_Rectangle();
+		this._flashPointZero = new openfl_geom_Point();
+		var point = flixel_math_FlxPoint._pool.get().set(0,0);
+		point._inPool = false;
+		this.offset = point;
+		var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
+		point1._inPool = false;
+		this.origin = point1;
+		var point2 = flixel_math_FlxPoint._pool.get().set(1,1);
+		point2._inPool = false;
+		this.scale = point2;
+		var point3 = flixel_math_FlxPoint._pool.get().set(0,0);
+		point3._inPool = false;
+		this._halfSize = point3;
+		this._matrix = new flixel_math_FlxMatrix();
+		this.colorTransform = new openfl_geom_ColorTransform();
+	}
+	,destroy: function() {
+		flixel_FlxObject.prototype.destroy.call(this);
+		this.animation = flixel_util_FlxDestroyUtil.destroy(this.animation);
+		this.offset = flixel_util_FlxDestroyUtil.put(this.offset);
+		this.origin = flixel_util_FlxDestroyUtil.put(this.origin);
+		this.scale = flixel_util_FlxDestroyUtil.put(this.scale);
+		this._halfSize = flixel_util_FlxDestroyUtil.put(this._halfSize);
+		this.framePixels = flixel_util_FlxDestroyUtil.dispose(this.framePixels);
+		this._flashPoint = null;
+		this._flashRect = null;
+		this._flashRect2 = null;
+		this._flashPointZero = null;
+		this._matrix = null;
+		this.colorTransform = null;
+		this.set_blend(null);
+		this.set_frames(null);
+		this.set_graphic(null);
+		this._frame = flixel_util_FlxDestroyUtil.destroy(this._frame);
+		this._frameGraphic = flixel_util_FlxDestroyUtil.destroy(this._frameGraphic);
+		this.shader = null;
+	}
+	,clone: function() {
+		return new flixel_FlxSprite().loadGraphicFromSprite(this);
+	}
+	,loadGraphicFromSprite: function(Sprite) {
+		this.set_frames(Sprite.frames);
+		this.bakedRotationAngle = Sprite.bakedRotationAngle;
+		if(this.bakedRotationAngle > 0) {
+			this.set_width(Sprite.get_width());
+			this.set_height(Sprite.get_height());
+			this.centerOffsets();
+		}
+		this.set_antialiasing(Sprite.antialiasing);
+		this.animation.copyFrom(Sprite.animation);
+		this.graphicLoaded();
+		this.set_clipRect(Sprite.clipRect);
+		return this;
+	}
+	,loadGraphic: function(Graphic,Animated,Width,Height,Unique,Key) {
+		if(Unique == null) {
+			Unique = false;
+		}
+		if(Height == null) {
+			Height = 0;
+		}
+		if(Width == null) {
+			Width = 0;
+		}
+		if(Animated == null) {
+			Animated = false;
+		}
+		var graph = flixel_FlxG.bitmap.add(Graphic,Unique,Key);
+		if(graph == null) {
+			return this;
+		}
+		if(Width == 0) {
+			if(Animated) {
+				Width = graph.height;
+			} else {
+				Width = graph.width;
+			}
+			if(Width > graph.width) {
+				Width = graph.width;
+			} else {
+				Width = Width;
+			}
+		}
+		if(Height == 0) {
+			if(Animated) {
+				Height = Width;
+			} else {
+				Height = graph.height;
+			}
+			if(Height > graph.height) {
+				Height = graph.height;
+			} else {
+				Height = Height;
+			}
+		}
+		if(Animated) {
+			var point = flixel_math_FlxPoint._pool.get().set(Width,Height);
+			point._inPool = false;
+			this.set_frames(flixel_graphics_frames_FlxTileFrames.fromGraphic(graph,point));
+		} else {
+			this.set_frames(graph.get_imageFrame());
+		}
+		return this;
+	}
+	,loadRotatedGraphic: function(Graphic,Rotations,Frame,AntiAliasing,AutoBuffer,Key) {
+		if(AutoBuffer == null) {
+			AutoBuffer = false;
+		}
+		if(AntiAliasing == null) {
+			AntiAliasing = false;
+		}
+		if(Frame == null) {
+			Frame = -1;
+		}
+		if(Rotations == null) {
+			Rotations = 16;
+		}
+		var brushGraphic = flixel_FlxG.bitmap.add(Graphic,false,Key);
+		if(brushGraphic == null) {
+			return this;
+		}
+		var brush = brushGraphic.bitmap;
+		var key = brushGraphic.key;
+		if(Frame >= 0) {
+			var brushSize = brush.height;
+			var framesNum = brush.width / brushSize | 0;
+			if(framesNum > Frame) {
+				Frame = Frame;
+			} else {
+				Frame %= framesNum;
+			}
+			key += ":" + Frame;
+			var full = brush;
+			brush = new openfl_display_BitmapData(brushSize,brushSize,true,0);
+			this._flashRect.setTo(Frame * brushSize,0,brushSize,brushSize);
+			brush.copyPixels(full,this._flashRect,this._flashPointZero);
+		}
+		key += ":" + Rotations + ":" + (AutoBuffer == null?"null":"" + AutoBuffer);
+		var tempGraph = flixel_FlxG.bitmap.get(key);
+		if(tempGraph == null) {
+			tempGraph = flixel_graphics_FlxGraphic.fromBitmapData(flixel_util_FlxBitmapDataUtil.generateRotations(brush,Rotations,AntiAliasing,AutoBuffer),false,key);
+		}
+		var max = brush.height > brush.width?brush.height:brush.width;
+		if(AutoBuffer) {
+			max = max * 1.5 | 0;
+		} else {
+			max = max;
+		}
+		var point = flixel_math_FlxPoint._pool.get().set(max,max);
+		point._inPool = false;
+		this.set_frames(flixel_graphics_frames_FlxTileFrames.fromGraphic(tempGraph,point));
+		if(AutoBuffer) {
+			this.set_width(brush.width);
+			this.set_height(brush.height);
+			this.centerOffsets();
+		}
+		this.bakedRotationAngle = 360 / Rotations;
+		this.animation.createPrerotated();
+		return this;
+	}
+	,loadRotatedFrame: function(Frame,Rotations,AntiAliasing,AutoBuffer) {
+		if(AutoBuffer == null) {
+			AutoBuffer = false;
+		}
+		if(AntiAliasing == null) {
+			AntiAliasing = false;
+		}
+		if(Rotations == null) {
+			Rotations = 16;
+		}
+		var key = Frame.parent.key;
+		if(Frame.name != null) {
+			key += ":" + Frame.name;
+		} else {
+			var _this = Frame.frame;
+			var value = _this.x;
+			var _this1 = flixel_util_LabelValuePair._pool.get();
+			_this1.label = "x";
+			_this1.value = value;
+			var value1 = _this.y;
+			var _this2 = flixel_util_LabelValuePair._pool.get();
+			_this2.label = "y";
+			_this2.value = value1;
+			var value2 = _this.width;
+			var _this3 = flixel_util_LabelValuePair._pool.get();
+			_this3.label = "w";
+			_this3.value = value2;
+			var value3 = _this.height;
+			var _this4 = flixel_util_LabelValuePair._pool.get();
+			_this4.label = "h";
+			_this4.value = value3;
+			key += ":" + flixel_util_FlxStringUtil.getDebugString([_this1,_this2,_this3,_this4]);
+		}
+		var graphic = flixel_FlxG.bitmap.get(key);
+		if(graphic == null) {
+			graphic = flixel_graphics_FlxGraphic.fromBitmapData(Frame.paint(),false,key);
+		}
+		return this.loadRotatedGraphic(graphic,Rotations,-1,AntiAliasing,AutoBuffer);
+	}
+	,makeGraphic: function(Width,Height,Color,Unique,Key) {
+		if(Unique == null) {
+			Unique = false;
+		}
+		if(Color == null) {
+			Color = -1;
+		}
+		this.set_frames(flixel_FlxG.bitmap.create(Width,Height,Color,Unique,Key).get_imageFrame());
+		return this;
+	}
+	,graphicLoaded: function() {
+	}
+	,resetSize: function() {
+		this._flashRect.x = 0;
+		this._flashRect.y = 0;
+		this._flashRect.width = this.frameWidth;
+		this._flashRect.height = this.frameHeight;
+	}
+	,resetFrameSize: function() {
+		if(this.frame != null) {
+			this.frameWidth = this.frame.sourceSize.x | 0;
+			this.frameHeight = this.frame.sourceSize.y | 0;
+		}
+		this._halfSize.set(0.5 * this.frameWidth,0.5 * this.frameHeight);
+		this._flashRect.x = 0;
+		this._flashRect.y = 0;
+		this._flashRect.width = this.frameWidth;
+		this._flashRect.height = this.frameHeight;
+	}
+	,resetSizeFromFrame: function() {
+		this.set_width(this.frameWidth);
+		this.set_height(this.frameHeight);
+	}
+	,resetFrame: function() {
+		this.set_frame(this.frame);
+	}
+	,setGraphicSize: function(Width,Height) {
+		if(Height == null) {
+			Height = 0;
+		}
+		if(Width == null) {
+			Width = 0;
+		}
+		if(Width <= 0 && Height <= 0) {
+			return;
+		}
+		var newScaleX = Width / this.frameWidth;
+		var newScaleY = Height / this.frameHeight;
+		this.scale.set(newScaleX,newScaleY);
+		if(Width <= 0) {
+			this.scale.set_x(newScaleY);
+		} else if(Height <= 0) {
+			this.scale.set_y(newScaleX);
+		}
+	}
+	,updateHitbox: function() {
+		this.set_width(Math.abs(this.scale.x) * this.frameWidth);
+		this.set_height(Math.abs(this.scale.y) * this.frameHeight);
+		this.offset.set(-0.5 * (this.get_width() - this.frameWidth),-0.5 * (this.get_height() - this.frameHeight));
+		this.origin.set(this.frameWidth * 0.5,this.frameHeight * 0.5);
+	}
+	,resetHelpers: function() {
+		if(this.frame != null) {
+			this.frameWidth = this.frame.sourceSize.x | 0;
+			this.frameHeight = this.frame.sourceSize.y | 0;
+		}
+		this._halfSize.set(0.5 * this.frameWidth,0.5 * this.frameHeight);
+		this._flashRect.x = 0;
+		this._flashRect.y = 0;
+		this._flashRect.width = this.frameWidth;
+		this._flashRect.height = this.frameHeight;
+		this.set_width(this.frameWidth);
+		this.set_height(this.frameHeight);
+		this._flashRect2.x = 0;
+		this._flashRect2.y = 0;
+		if(this.graphic != null) {
+			this._flashRect2.width = this.graphic.width;
+			this._flashRect2.height = this.graphic.height;
+		}
+		this.origin.set(this.frameWidth * 0.5,this.frameHeight * 0.5);
+		if(flixel_FlxG.renderBlit) {
+			this.dirty = true;
+			this.updateFramePixels();
+		}
+	}
+	,update: function(elapsed) {
+		flixel_FlxObject.prototype.update.call(this,elapsed);
+		this.updateAnimation(elapsed);
+	}
+	,updateAnimation: function(elapsed) {
+		this.animation.update(elapsed);
+	}
+	,draw: function() {
+		if(this._frame == null) {
+			this.loadGraphic(flixel_graphics_FlxGraphic.fromClass(flixel__$FlxSprite_GraphicDefault));
+		}
+		if(this.alpha == 0 || this._frame.type == 2) {
+			return;
+		}
+		if(this.dirty) {
+			this.calcFrame(this.useFramePixels);
+		}
+		var _g = 0;
+		var _g1 = this.get_cameras();
+		while(_g < _g1.length) {
+			var camera = _g1[_g];
+			++_g;
+			if(!camera.visible || !camera.exists || !this.isOnScreen(camera)) {
+				continue;
+			}
+			this.getScreenPosition(this._point,camera).subtractPoint(this.offset);
+			if(this.isSimpleRender(camera)) {
+				this.drawSimple(camera);
+			} else {
+				this.drawComplex(camera);
+			}
+		}
+	}
+	,drawSimple: function(camera) {
+		if(this.isPixelPerfectRender(camera)) {
+			var _this = this._point;
+			_this.set_x(Math.floor(_this.x));
+			_this.set_y(Math.floor(_this.y));
+		}
+		var _this1 = this._point;
+		var FlashPoint = this._flashPoint;
+		if(FlashPoint == null) {
+			FlashPoint = new openfl_geom_Point();
+		}
+		FlashPoint.x = _this1.x;
+		FlashPoint.y = _this1.y;
+		camera.copyPixels(this._frame,this.framePixels,this._flashRect,this._flashPoint,this.colorTransform,this.blend,this.antialiasing);
+	}
+	,drawComplex: function(camera) {
+		var doFlipX = this.flipX != this._frame.flipX;
+		var tmp = this.animation._curAnim != null?doFlipX != this.animation._curAnim.flipX:doFlipX;
+		var doFlipY = this.flipY != this._frame.flipY;
+		this._frame.prepareMatrix(this._matrix,0,tmp,this.animation._curAnim != null?doFlipY != this.animation._curAnim.flipY:doFlipY);
+		this._matrix.translate(-this.origin.x,-this.origin.y);
+		this._matrix.scale(this.scale.x,this.scale.y);
+		if(this.bakedRotationAngle <= 0) {
+			if(this._angleChanged) {
+				var radians = this.angle * (Math.PI / 180);
+				this._sinAngle = Math.sin(radians);
+				this._cosAngle = Math.cos(radians);
+				this._angleChanged = false;
+			}
+			if(this.angle != 0) {
+				var _this = this._matrix;
+				var cos = this._cosAngle;
+				var sin = this._sinAngle;
+				var a1 = _this.a * cos - _this.b * sin;
+				_this.b = _this.a * sin + _this.b * cos;
+				_this.a = a1;
+				var c1 = _this.c * cos - _this.d * sin;
+				_this.d = _this.c * sin + _this.d * cos;
+				_this.c = c1;
+				var tx1 = _this.tx * cos - _this.ty * sin;
+				_this.ty = _this.tx * sin + _this.ty * cos;
+				_this.tx = tx1;
+			}
+		}
+		var _this1 = this._point;
+		var X = this.origin.x;
+		var Y = this.origin.y;
+		_this1.set_x(_this1.x + X);
+		_this1.set_y(_this1.y + Y);
+		if(this.isPixelPerfectRender(camera)) {
+			var _this2 = this._point;
+			_this2.set_x(Math.floor(_this2.x));
+			_this2.set_y(Math.floor(_this2.y));
+		}
+		this._matrix.translate(this._point.x,this._point.y);
+		camera.drawPixels(this._frame,this.framePixels,this._matrix,this.colorTransform,this.blend,this.antialiasing,this.shader);
+	}
+	,stamp: function(Brush,X,Y) {
+		if(Y == null) {
+			Y = 0;
+		}
+		if(X == null) {
+			X = 0;
+		}
+		Brush.drawFrame();
+		if(this.graphic == null || Brush.graphic == null) {
+			throw new js__$Boot_HaxeError("Cannot stamp to or from a FlxSprite with no graphics.");
+		}
+		var bitmapData = Brush.framePixels;
+		if(this.isSimpleRenderBlit()) {
+			this._flashPoint.x = X + this.frame.frame.x;
+			this._flashPoint.y = Y + this.frame.frame.y;
+			this._flashRect2.width = bitmapData.width;
+			this._flashRect2.height = bitmapData.height;
+			this.graphic.bitmap.copyPixels(bitmapData,this._flashRect2,this._flashPoint,null,null,true);
+			this._flashRect2.width = this.graphic.bitmap.width;
+			this._flashRect2.height = this.graphic.bitmap.height;
+		} else {
+			this._matrix.identity();
+			this._matrix.translate(-Brush.origin.x,-Brush.origin.y);
+			this._matrix.scale(Brush.scale.x,Brush.scale.y);
+			if(Brush.angle != 0) {
+				this._matrix.rotate(Brush.angle * (Math.PI / 180));
+			}
+			this._matrix.translate(X + this.frame.frame.x + Brush.origin.x,Y + this.frame.frame.y + Brush.origin.y);
+			this.graphic.bitmap.draw(bitmapData,this._matrix,null,Brush.blend,null,Brush.antialiasing);
+		}
+		if(flixel_FlxG.renderBlit) {
+			this.dirty = true;
+			this.calcFrame();
+		}
+	}
+	,drawFrame: function(Force) {
+		if(Force == null) {
+			Force = false;
+		}
+		if(flixel_FlxG.renderBlit) {
+			if(Force || this.dirty) {
+				this.dirty = true;
+				this.calcFrame();
+			}
+		} else {
+			this.dirty = true;
+			this.calcFrame(true);
+		}
+	}
+	,centerOffsets: function(AdjustPosition) {
+		if(AdjustPosition == null) {
+			AdjustPosition = false;
+		}
+		this.offset.set_x((this.frameWidth - this.get_width()) * 0.5);
+		this.offset.set_y((this.frameHeight - this.get_height()) * 0.5);
+		if(AdjustPosition) {
+			var _g = this;
+			_g.set_x(_g.x + this.offset.x);
+			var _g1 = this;
+			_g1.set_y(_g1.y + this.offset.y);
+		}
+	}
+	,centerOrigin: function() {
+		this.origin.set(this.frameWidth * 0.5,this.frameHeight * 0.5);
+	}
+	,replaceColor: function(Color,NewColor,FetchPositions) {
+		if(FetchPositions == null) {
+			FetchPositions = false;
+		}
+		var positions = flixel_util_FlxBitmapDataUtil.replaceColor(this.graphic.bitmap,Color,NewColor,FetchPositions);
+		if(positions != null) {
+			this.dirty = true;
+		}
+		return positions;
+	}
+	,setColorTransform: function(redMultiplier,greenMultiplier,blueMultiplier,alphaMultiplier,redOffset,greenOffset,blueOffset,alphaOffset) {
+		if(alphaOffset == null) {
+			alphaOffset = 0;
+		}
+		if(blueOffset == null) {
+			blueOffset = 0;
+		}
+		if(greenOffset == null) {
+			greenOffset = 0;
+		}
+		if(redOffset == null) {
+			redOffset = 0;
+		}
+		if(alphaMultiplier == null) {
+			alphaMultiplier = 1.0;
+		}
+		if(blueMultiplier == null) {
+			blueMultiplier = 1.0;
+		}
+		if(greenMultiplier == null) {
+			greenMultiplier = 1.0;
+		}
+		if(redMultiplier == null) {
+			redMultiplier = 1.0;
+		}
+		var color = flixel_util__$FlxColor_FlxColor_$Impl_$._new();
+		var Value = Math.round(redMultiplier * 255);
+		color &= -16711681;
+		color |= (Value > 255?255:Value < 0?0:Value) << 16;
+		var Value1 = Math.round(greenMultiplier * 255);
+		color &= -65281;
+		color |= (Value1 > 255?255:Value1 < 0?0:Value1) << 8;
+		var Value2 = Math.round(blueMultiplier * 255);
+		color &= -256;
+		color |= Value2 > 255?255:Value2 < 0?0:Value2;
+		var Value3 = Math.round(255);
+		color &= 16777215;
+		color |= (Value3 > 255?255:Value3 < 0?0:Value3) << 24;
+		this.set_color(color & 16777215);
+		this.set_alpha(alphaMultiplier);
+		flixel_util_FlxColorTransformUtil.setMultipliers(this.colorTransform,redMultiplier,greenMultiplier,blueMultiplier,alphaMultiplier);
+		flixel_util_FlxColorTransformUtil.setOffsets(this.colorTransform,redOffset,greenOffset,blueOffset,alphaOffset);
+		this.useColorTransform = this.alpha != 1 || this.color != 16777215 || flixel_util_FlxColorTransformUtil.hasRGBOffsets(this.colorTransform);
+		this.dirty = true;
+	}
+	,updateColorTransform: function() {
+		if(this.colorTransform == null) {
+			this.colorTransform = new openfl_geom_ColorTransform();
+		}
+		this.useColorTransform = this.alpha != 1 || this.color != 16777215;
+		if(this.useColorTransform) {
+			flixel_util_FlxColorTransformUtil.setMultipliers(this.colorTransform,(this.color >> 16 & 255) / 255,(this.color >> 8 & 255) / 255,(this.color & 255) / 255,this.alpha);
+		} else {
+			flixel_util_FlxColorTransformUtil.setMultipliers(this.colorTransform,1,1,1,1);
+		}
+		this.dirty = true;
+	}
+	,pixelsOverlapPoint: function(point,Mask,Camera) {
+		if(Mask == null) {
+			Mask = 255;
+		}
+		if(Camera == null) {
+			Camera = flixel_FlxG.camera;
+		}
+		this.getScreenPosition(this._point,Camera);
+		this._point.subtractPoint(this.offset);
+		this._flashPoint.x = point.x - Camera.scroll.x - this._point.x;
+		this._flashPoint.y = point.y - Camera.scroll.y - this._point.y;
+		if(point._weak) {
+			point.put();
+		}
+		if(this._flashPoint.x < 0 || this._flashPoint.x > this.frameWidth || this._flashPoint.y < 0 || this._flashPoint.y > this.frameHeight) {
+			return false;
+		} else {
+			var pixelColor = this.updateFramePixels().getPixel32(this._flashPoint.x | 0,this._flashPoint.y | 0);
+			return (pixelColor >> 24 & 255) * this.alpha >= Mask;
+		}
+	}
+	,calcFrame: function(RunOnCpp) {
+		if(RunOnCpp == null) {
+			RunOnCpp = false;
+		}
+		if(this.frame == null) {
+			this.loadGraphic(flixel_graphics_FlxGraphic.fromClass(flixel__$FlxSprite_GraphicDefault));
+		}
+		if(flixel_FlxG.renderTile && !RunOnCpp) {
+			return;
+		}
+		this.updateFramePixels();
+	}
+	,updateFramePixels: function() {
+		if(this._frame == null || !this.dirty) {
+			return this.framePixels;
+		}
+		if(flixel_FlxG.renderTile && this._frameGraphic != null) {
+			this.dirty = false;
+			return this.framePixels;
+		}
+		var doFlipX = this.flipX != this._frame.flipX;
+		var doFlipX1 = this.animation._curAnim != null?doFlipX != this.animation._curAnim.flipX:doFlipX;
+		var doFlipY = this.flipY != this._frame.flipY;
+		var doFlipY1 = this.animation._curAnim != null?doFlipY != this.animation._curAnim.flipY:doFlipY;
+		if(!doFlipX1 && !doFlipY1 && this._frame.type == 0) {
+			this.framePixels = this._frame.paint(this.framePixels,this._flashPointZero,false,true);
+		} else {
+			this.framePixels = this._frame.paintRotatedAndFlipped(this.framePixels,this._flashPointZero,0,doFlipX1,doFlipY1,false,true);
+		}
+		if(this.useColorTransform) {
+			this.framePixels.colorTransform(this._flashRect,this.colorTransform);
+		}
+		if(flixel_FlxG.renderTile && this.useFramePixels) {
+			this._frameGraphic = flixel_util_FlxDestroyUtil.destroy(this._frameGraphic);
+			this._frameGraphic = flixel_graphics_FlxGraphic.fromBitmapData(this.framePixels,false,null,false);
+			this._frame = this._frameGraphic.get_imageFrame().get_frame().copyTo(this._frame);
+		}
+		this.dirty = false;
+		return this.framePixels;
+	}
+	,getGraphicMidpoint: function(point) {
+		if(point == null) {
+			var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
+			point1._inPool = false;
+			point = point1;
+		}
+		return point.set(this.x + this.frameWidth * 0.5,this.y + this.frameHeight * 0.5);
+	}
+	,isOnScreen: function(Camera) {
+		if(Camera == null) {
+			Camera = flixel_FlxG.camera;
+		}
+		var minX = this.x - this.offset.x - Camera.scroll.x * this.scrollFactor.x;
+		var minY = this.y - this.offset.y - Camera.scroll.y * this.scrollFactor.y;
+		if((this.angle == 0 || this.bakedRotationAngle > 0) && this.scale.x == 1 && this.scale.y == 1) {
+			if(minX > Camera.width || minX + this.frameWidth < 0) {
+				return false;
+			}
+			if(minY > Camera.height || minY + this.frameHeight < 0) {
+				return false;
+			}
+		} else {
+			var radiusX = this._halfSize.x;
+			var radiusY = this._halfSize.y;
+			var ox = this.origin.x;
+			if(ox != radiusX) {
+				var x1 = Math.abs(ox);
+				radiusX = Math.max(Math.abs(this.frameWidth - ox),x1);
+			}
+			var oy = this.origin.y;
+			if(oy != radiusY) {
+				var y1 = Math.abs(oy);
+				radiusY = Math.max(Math.abs(this.frameHeight - oy),y1);
+			}
+			radiusX *= Math.abs(this.scale.x);
+			radiusY *= Math.abs(this.scale.y);
+			var radius = Math.max(radiusX,radiusY);
+			radius *= 1.41421356237;
+			minX += ox;
+			var maxX = minX + radius;
+			minX -= radius;
+			if(maxX < 0 || minX > Camera.width) {
+				return false;
+			}
+			minY += oy;
+			var maxY = minY + radius;
+			minY -= radius;
+			if(maxY < 0 || minY > Camera.height) {
+				return false;
+			}
+		}
+		return true;
+	}
+	,isSimpleRender: function(camera) {
+		if(flixel_FlxG.renderTile) {
+			return false;
+		}
+		return this.isSimpleRenderBlit(camera);
+	}
+	,isSimpleRenderBlit: function(camera) {
+		var result = (this.angle == 0 || this.bakedRotationAngle > 0) && this.scale.x == 1 && this.scale.y == 1 && this.blend == null;
+		if(result) {
+			if(camera != null) {
+				result = this.isPixelPerfectRender(camera);
+			} else {
+				result = this.pixelPerfectRender;
+			}
+		} else {
+			result = false;
+		}
+		return result;
+	}
+	,setFacingFlip: function(Direction,FlipX,FlipY) {
+		this._facingFlip.h[Direction] = { x : FlipX, y : FlipY};
+	}
+	,setFrames: function(Frames,saveAnimations) {
+		if(saveAnimations == null) {
+			saveAnimations = true;
+		}
+		if(saveAnimations) {
+			var animations = this.animation._animations;
+			var reverse = false;
+			var index = 0;
+			var frameIndex = this.animation.frameIndex;
+			var currName = null;
+			if(this.animation._curAnim != null) {
+				reverse = this.animation._curAnim.reversed;
+				index = this.animation._curAnim.curFrame;
+				currName = this.animation._curAnim.name;
+			}
+			this.animation._animations = null;
+			this.set_frames(Frames);
+			this.set_frame(this.frames.frames[frameIndex]);
+			this.animation._animations = animations;
+			if(currName != null) {
+				this.animation.play(currName,false,reverse,index);
+			}
+		} else {
+			this.set_frames(Frames);
+		}
+		return this;
+	}
+	,get_pixels: function() {
+		if(this.graphic == null) {
+			return null;
+		} else {
+			return this.graphic.bitmap;
+		}
+	}
+	,set_pixels: function(Pixels) {
+		var key = flixel_FlxG.bitmap.findKeyForBitmap(Pixels);
+		if(key == null) {
+			key = flixel_FlxG.bitmap.getUniqueKey();
+			this.set_graphic(flixel_FlxG.bitmap.add(Pixels,false,key));
+		} else {
+			this.set_graphic(flixel_FlxG.bitmap.get(key));
+		}
+		this.set_frames(this.graphic.get_imageFrame());
+		return Pixels;
+	}
+	,set_frame: function(Value) {
+		this.frame = Value;
+		if(this.frame != null) {
+			if(this.frame != null) {
+				this.frameWidth = this.frame.sourceSize.x | 0;
+				this.frameHeight = this.frame.sourceSize.y | 0;
+			}
+			this._halfSize.set(0.5 * this.frameWidth,0.5 * this.frameHeight);
+			this._flashRect.x = 0;
+			this._flashRect.y = 0;
+			this._flashRect.width = this.frameWidth;
+			this._flashRect.height = this.frameHeight;
+			this.dirty = true;
+		} else if(this.frames != null && this.frames.frames != null && this.numFrames > 0) {
+			this.frame = this.frames.frames[0];
+			this.dirty = true;
+		} else {
+			return null;
+		}
+		if(flixel_FlxG.renderTile) {
+			this._frameGraphic = flixel_util_FlxDestroyUtil.destroy(this._frameGraphic);
+		}
+		if(this.clipRect != null) {
+			this._frame = this.frame.clipTo(this.clipRect,this._frame);
+		} else {
+			this._frame = this.frame.copyTo(this._frame);
+		}
+		return this.frame;
+	}
+	,set_facing: function(Direction) {
+		var flip = this._facingFlip.h[Direction];
+		if(flip != null) {
+			this.set_flipX(flip.x);
+			this.set_flipY(flip.y);
+		}
+		return this.facing = Direction;
+	}
+	,set_alpha: function(Alpha) {
+		if(this.alpha == Alpha) {
+			return Alpha;
+		}
+		var lowerBound = Alpha < 0?0:Alpha;
+		this.alpha = lowerBound > 1?1:lowerBound;
+		this.updateColorTransform();
+		return this.alpha;
+	}
+	,set_color: function(Color) {
+		if(this.color == Color) {
+			return Color;
+		}
+		this.color = Color;
+		this.updateColorTransform();
+		return this.color;
+	}
+	,set_angle: function(Value) {
+		var newAngle = this.angle != Value;
+		var ret = flixel_FlxObject.prototype.set_angle.call(this,Value);
+		if(newAngle) {
+			this._angleChanged = true;
+			this.animation.update(0);
+		}
+		return ret;
+	}
+	,updateTrig: function() {
+		if(this._angleChanged) {
+			var radians = this.angle * (Math.PI / 180);
+			this._sinAngle = Math.sin(radians);
+			this._cosAngle = Math.cos(radians);
+			this._angleChanged = false;
+		}
+	}
+	,set_blend: function(Value) {
+		return this.blend = Value;
+	}
+	,set_graphic: function(Value) {
+		var oldGraphic = this.graphic;
+		if(this.graphic != Value && Value != null) {
+			Value.set_useCount(Value.get_useCount() + 1);
+		}
+		if(oldGraphic != null && oldGraphic != Value) {
+			oldGraphic.set_useCount(oldGraphic.get_useCount() - 1);
+		}
+		return this.graphic = Value;
+	}
+	,set_clipRect: function(rect) {
+		if(rect != null) {
+			rect.x = Math.round(rect.x);
+			rect.y = Math.round(rect.y);
+			rect.width = Math.round(rect.width);
+			rect.height = Math.round(rect.height);
+			this.clipRect = rect;
+		} else {
+			this.clipRect = null;
+		}
+		if(this.frames != null) {
+			this.set_frame(this.frames.frames[this.animation.frameIndex]);
+		}
+		return rect;
+	}
+	,set_frames: function(Frames) {
+		if(this.animation != null) {
+			this.animation.destroyAnimations();
+		}
+		if(Frames != null) {
+			this.set_graphic(Frames.parent);
+			this.frames = Frames;
+			this.set_frame(this.frames.frames[0]);
+			this.numFrames = this.frames.frames.length;
+			this.resetHelpers();
+			this.bakedRotationAngle = 0;
+			this.animation.set_frameIndex(0);
+			this.graphicLoaded();
+		} else {
+			this.frames = null;
+			this.set_frame(null);
+			this.set_graphic(null);
+		}
+		this.set_clipRect(null);
+		return Frames;
+	}
+	,set_flipX: function(Value) {
+		if(flixel_FlxG.renderTile) {
+			this._facingHorizontalMult = Value?-1:1;
+		}
+		this.dirty = this.flipX != Value || this.dirty;
+		return this.flipX = Value;
+	}
+	,set_flipY: function(Value) {
+		if(flixel_FlxG.renderTile) {
+			this._facingVerticalMult = Value?-1:1;
+		}
+		this.dirty = this.flipY != Value || this.dirty;
+		return this.flipY = Value;
+	}
+	,set_antialiasing: function(value) {
+		return this.antialiasing = value;
+	}
+	,set_useFramePixels: function(value) {
+		if(flixel_FlxG.renderTile) {
+			if(value != this.useFramePixels) {
+				this.useFramePixels = value;
+				this.set_frame(this.frame);
+				if(value) {
+					this.updateFramePixels();
+				}
+			}
+			return value;
+		} else {
+			this.useFramePixels = true;
+			return true;
+		}
+	}
+	,checkFlipX: function() {
+		var doFlipX = this.flipX != this._frame.flipX;
+		if(this.animation._curAnim != null) {
+			return doFlipX != this.animation._curAnim.flipX;
+		}
+		return doFlipX;
+	}
+	,checkFlipY: function() {
+		var doFlipY = this.flipY != this._frame.flipY;
+		if(this.animation._curAnim != null) {
+			return doFlipY != this.animation._curAnim.flipY;
+		}
+		return doFlipY;
+	}
+	,__class__: flixel_FlxSprite
+	,__properties__: $extend(flixel_FlxObject.prototype.__properties__,{set_clipRect:"set_clipRect",set_color:"set_color",set_blend:"set_blend",set_flipY:"set_flipY",set_flipX:"set_flipX",set_facing:"set_facing",set_alpha:"set_alpha",set_graphic:"set_graphic",set_frames:"set_frames",set_frame:"set_frame",set_pixels:"set_pixels",get_pixels:"get_pixels",set_antialiasing:"set_antialiasing",set_useFramePixels:"set_useFramePixels"})
+});
+var Player = function(X,Y) {
+	if(Y == null) {
+		Y = 0;
+	}
+	if(X == null) {
+		X = 0;
+	}
+	this._vv = 800;
+	this._vx = 0;
+	this._vy = 0;
+	this._right = false;
+	this._left = false;
+	this._down = false;
+	this._up = false;
+	this.speed = 200;
+	flixel_FlxSprite.call(this,X,Y);
+	this.loadGraphic("assets/images/player.png");
+	this.scale.set(0.5,0.5);
+	this.updateHitbox();
+	this.drag.set_x(this.drag.set_y(1600));
+	this.angularDrag = 1600;
+	this.maxAngular = 1000;
+};
+$hxClasses["Player"] = Player;
+Player.__name__ = ["Player"];
+Player.__super__ = flixel_FlxSprite;
+Player.prototype = $extend(flixel_FlxSprite.prototype,{
+	update: function(elapsed) {
+		this.movement();
+		flixel_FlxSprite.prototype.update.call(this,elapsed);
+	}
+	,movement: function() {
+		this._up = flixel_FlxG.keys.checkKeyArrayState([38,87],1);
+		this._down = flixel_FlxG.keys.checkKeyArrayState([40,83],1);
+		this._left = flixel_FlxG.keys.checkKeyArrayState([37,65],1);
+		this._right = flixel_FlxG.keys.checkKeyArrayState([39,68],1);
+		this.acceleration.set_y(200);
+		if(this._up) {
+			this.acceleration.set_y(-500);
+		}
+		if(this.angle > 180) {
+			this.set_angle(this.angle - 360);
+		} else if(this.angle < -180) {
+			this.set_angle(this.angle + 360);
+		}
+		if(this.y > 200) {
+			var a = this.acceleration.y | 0;
+			this.acceleration.set_y(a > 0?0:a);
+			var a1 = this.velocity.y | 0;
+			this.velocity.set_y(a1 > 0?0:a1);
+			this.velocity.set_x(0);
+			this.angularAcceleration = 0;
+			this.angularVelocity = 0;
+			this.set_y(201);
+			if(this.angle > 100 || this.angle < -100) {
+				var nextState = new EndState();
+				if(flixel_FlxG.game._state.switchTo(nextState)) {
+					flixel_FlxG.game._requestedState = nextState;
+				}
+			}
+		} else {
+			if(this._right) {
+				this.angularAcceleration = this.speed;
+			} else if(this._left) {
+				this.angularAcceleration = -this.speed;
+			} else {
+				this.angularAcceleration = 0;
+			}
+			var _g = this;
+			_g.set_angle(_g.angle + this.angle / 100);
+			var a2 = this._vv + this.angle / 10 | 0;
+			var a3 = a2 > 100?100:a2;
+			this._vv = a3 > -100?a3:-100;
+			var Angle = this.angle;
+			var Speed = this._vv;
+			var a4 = Angle * (Math.PI / 180);
+			var X = Math.cos(a4) * Speed;
+			var Y = Math.sin(a4) * Speed;
+			var point = flixel_math_FlxPoint._pool.get().set(X,Y);
+			point._inPool = false;
+			var _g1 = this.velocity;
+			_g1.set_x(_g1.x + point.x / 3);
+			var _g2 = this.velocity;
+			_g2.set_y(_g2.y + point.y / 10);
+			var a5 = this.velocity.x | 0;
+			var a6 = a5 > 500?500:a5;
+			this.velocity.set_x(a6 > -500?a6:-500);
+		}
+	}
+	,__class__: Player
 });
 var Reflect = function() { };
 $hxClasses["Reflect"] = Reflect;
@@ -3516,6 +6459,13 @@ Reflect.makeVarArgs = function(f) {
 		return f(a);
 	};
 };
+var Reg = function() { };
+$hxClasses["Reg"] = Reg;
+Reg.__name__ = ["Reg"];
+Reg.state = null;
+Reg.children = null;
+Reg.timer = null;
+Reg.totalTime = null;
 var Std = function() { };
 $hxClasses["Std"] = Std;
 Std.__name__ = ["Std"];
@@ -3993,19 +6943,6 @@ openfl_VectorData.__name__ = ["openfl","VectorData"];
 openfl_VectorData.prototype = {
 	__class__: openfl_VectorData
 };
-var flixel_util_IFlxPooled = function() { };
-$hxClasses["flixel.util.IFlxPooled"] = flixel_util_IFlxPooled;
-flixel_util_IFlxPooled.__name__ = ["flixel","util","IFlxPooled"];
-flixel_util_IFlxPooled.__interfaces__ = [flixel_util_IFlxDestroyable];
-flixel_util_IFlxPooled.prototype = {
-	__class__: flixel_util_IFlxPooled
-};
-var flixel_util_IFlxPool = function() { };
-$hxClasses["flixel.util.IFlxPool"] = flixel_util_IFlxPool;
-flixel_util_IFlxPool.__name__ = ["flixel","util","IFlxPool"];
-flixel_util_IFlxPool.prototype = {
-	__class__: flixel_util_IFlxPool
-};
 var flixel_util_FlxPool_$flixel_$math_$FlxPoint = function(classObj) {
 	this._count = 0;
 	this._pool = [];
@@ -4324,427 +7261,6 @@ flixel_math_FlxPoint.prototype = {
 	}
 	,__class__: flixel_math_FlxPoint
 	,__properties__: {set_y:"set_y",set_x:"set_x"}
-};
-var flixel_util_FlxPool_$flixel_$math_$FlxRect = function(classObj) {
-	this._count = 0;
-	this._pool = [];
-	this._class = classObj;
-};
-$hxClasses["flixel.util.FlxPool_flixel_math_FlxRect"] = flixel_util_FlxPool_$flixel_$math_$FlxRect;
-flixel_util_FlxPool_$flixel_$math_$FlxRect.__name__ = ["flixel","util","FlxPool_flixel_math_FlxRect"];
-flixel_util_FlxPool_$flixel_$math_$FlxRect.__interfaces__ = [flixel_util_IFlxPool];
-flixel_util_FlxPool_$flixel_$math_$FlxRect.prototype = {
-	get: function() {
-		if(this._count == 0) {
-			return Type.createInstance(this._class,[]);
-		}
-		return this._pool[--this._count];
-	}
-	,put: function(obj) {
-		if(obj != null) {
-			var i = this._pool.indexOf(obj);
-			if(i == -1 || i >= this._count) {
-				obj.destroy();
-				this._pool[this._count++] = obj;
-			}
-		}
-	}
-	,putUnsafe: function(obj) {
-		if(obj != null) {
-			obj.destroy();
-			this._pool[this._count++] = obj;
-		}
-	}
-	,preAllocate: function(numObjects) {
-		while(numObjects-- > 0) this._pool[this._count++] = Type.createInstance(this._class,[]);
-	}
-	,clear: function() {
-		this._count = 0;
-		var oldPool = this._pool;
-		this._pool = [];
-		return oldPool;
-	}
-	,get_length: function() {
-		return this._count;
-	}
-	,__class__: flixel_util_FlxPool_$flixel_$math_$FlxRect
-	,__properties__: {get_length:"get_length"}
-};
-var flixel_math_FlxRect = function(X,Y,Width,Height) {
-	if(Height == null) {
-		Height = 0;
-	}
-	if(Width == null) {
-		Width = 0;
-	}
-	if(Y == null) {
-		Y = 0;
-	}
-	if(X == null) {
-		X = 0;
-	}
-	this._inPool = false;
-	this._weak = false;
-	this.x = X;
-	this.y = Y;
-	this.width = Width;
-	this.height = Height;
-};
-$hxClasses["flixel.math.FlxRect"] = flixel_math_FlxRect;
-flixel_math_FlxRect.__name__ = ["flixel","math","FlxRect"];
-flixel_math_FlxRect.__interfaces__ = [flixel_util_IFlxPooled];
-flixel_math_FlxRect.__properties__ = {get_pool:"get_pool"}
-flixel_math_FlxRect.get = function(X,Y,Width,Height) {
-	if(Height == null) {
-		Height = 0;
-	}
-	if(Width == null) {
-		Width = 0;
-	}
-	if(Y == null) {
-		Y = 0;
-	}
-	if(X == null) {
-		X = 0;
-	}
-	var _this = flixel_math_FlxRect._pool.get();
-	_this.x = X;
-	_this.y = Y;
-	_this.width = Width;
-	_this.height = Height;
-	_this._inPool = false;
-	return _this;
-};
-flixel_math_FlxRect.weak = function(X,Y,Width,Height) {
-	if(Height == null) {
-		Height = 0;
-	}
-	if(Width == null) {
-		Width = 0;
-	}
-	if(Y == null) {
-		Y = 0;
-	}
-	if(X == null) {
-		X = 0;
-	}
-	var _this = flixel_math_FlxRect._pool.get();
-	_this.x = X;
-	_this.y = Y;
-	_this.width = Width;
-	_this.height = Height;
-	_this._inPool = false;
-	_this._weak = true;
-	return _this;
-};
-flixel_math_FlxRect.get_pool = function() {
-	return flixel_math_FlxRect._pool;
-};
-flixel_math_FlxRect.prototype = {
-	put: function() {
-		if(!this._inPool) {
-			this._inPool = true;
-			this._weak = false;
-			flixel_math_FlxRect._pool.putUnsafe(this);
-		}
-	}
-	,putWeak: function() {
-		if(this._weak) {
-			if(!this._inPool) {
-				this._inPool = true;
-				this._weak = false;
-				flixel_math_FlxRect._pool.putUnsafe(this);
-			}
-		}
-	}
-	,setSize: function(Width,Height) {
-		this.width = Width;
-		this.height = Height;
-		return this;
-	}
-	,setPosition: function(x,y) {
-		this.x = x;
-		this.y = y;
-		return this;
-	}
-	,set: function(X,Y,Width,Height) {
-		if(Height == null) {
-			Height = 0;
-		}
-		if(Width == null) {
-			Width = 0;
-		}
-		if(Y == null) {
-			Y = 0;
-		}
-		if(X == null) {
-			X = 0;
-		}
-		this.x = X;
-		this.y = Y;
-		this.width = Width;
-		this.height = Height;
-		return this;
-	}
-	,copyFrom: function(Rect) {
-		this.x = Rect.x;
-		this.y = Rect.y;
-		this.width = Rect.width;
-		this.height = Rect.height;
-		if(Rect._weak) {
-			if(!Rect._inPool) {
-				Rect._inPool = true;
-				Rect._weak = false;
-				flixel_math_FlxRect._pool.putUnsafe(Rect);
-			}
-		}
-		return this;
-	}
-	,copyTo: function(Rect) {
-		Rect.x = this.x;
-		Rect.y = this.y;
-		Rect.width = this.width;
-		Rect.height = this.height;
-		if(Rect._weak) {
-			if(!Rect._inPool) {
-				Rect._inPool = true;
-				Rect._weak = false;
-				flixel_math_FlxRect._pool.putUnsafe(Rect);
-			}
-		}
-		return Rect;
-	}
-	,copyFromFlash: function(FlashRect) {
-		this.x = FlashRect.x;
-		this.y = FlashRect.y;
-		this.width = FlashRect.width;
-		this.height = FlashRect.height;
-		return this;
-	}
-	,copyToFlash: function(FlashRect) {
-		if(FlashRect == null) {
-			FlashRect = new openfl_geom_Rectangle();
-		}
-		FlashRect.x = this.x;
-		FlashRect.y = this.y;
-		FlashRect.width = this.width;
-		FlashRect.height = this.height;
-		return FlashRect;
-	}
-	,overlaps: function(Rect) {
-		var result = Rect.x + Rect.width > this.x && Rect.x < this.x + this.width && Rect.y + Rect.height > this.y && Rect.y < this.y + this.height;
-		if(Rect._weak) {
-			if(!Rect._inPool) {
-				Rect._inPool = true;
-				Rect._weak = false;
-				flixel_math_FlxRect._pool.putUnsafe(Rect);
-			}
-		}
-		return result;
-	}
-	,containsPoint: function(Point) {
-		var result = flixel_math_FlxMath.pointInFlxRect(Point.x,Point.y,this);
-		if(Point._weak) {
-			Point.put();
-		}
-		return result;
-	}
-	,union: function(Rect) {
-		var minX = Math.min(this.x,Rect.x);
-		var minY = Math.min(this.y,Rect.y);
-		var maxX = Math.max(this.x + this.width,Rect.x + Rect.width);
-		var maxY = Math.max(this.y + this.height,Rect.y + Rect.height);
-		if(Rect._weak) {
-			if(!Rect._inPool) {
-				Rect._inPool = true;
-				Rect._weak = false;
-				flixel_math_FlxRect._pool.putUnsafe(Rect);
-			}
-		}
-		this.x = minX;
-		this.y = minY;
-		this.width = maxX - minX;
-		this.height = maxY - minY;
-		return this;
-	}
-	,floor: function() {
-		this.x = Math.floor(this.x);
-		this.y = Math.floor(this.y);
-		this.width = Math.floor(this.width);
-		this.height = Math.floor(this.height);
-		return this;
-	}
-	,ceil: function() {
-		this.x = Math.ceil(this.x);
-		this.y = Math.ceil(this.y);
-		this.width = Math.ceil(this.width);
-		this.height = Math.ceil(this.height);
-		return this;
-	}
-	,round: function() {
-		this.x = Math.round(this.x);
-		this.y = Math.round(this.y);
-		this.width = Math.round(this.width);
-		this.height = Math.round(this.height);
-		return this;
-	}
-	,fromTwoPoints: function(Point1,Point2) {
-		var minX = Math.min(Point1.x,Point2.x);
-		var minY = Math.min(Point1.y,Point2.y);
-		var maxX = Math.max(Point1.x,Point2.x);
-		var maxY = Math.max(Point1.y,Point2.y);
-		if(Point1._weak) {
-			Point1.put();
-		}
-		if(Point2._weak) {
-			Point2.put();
-		}
-		this.x = minX;
-		this.y = minY;
-		this.width = maxX - minX;
-		this.height = maxY - minY;
-		return this;
-	}
-	,unionWithPoint: function(Point) {
-		var minX = Math.min(this.x,Point.x);
-		var minY = Math.min(this.y,Point.y);
-		var maxX = Math.max(this.x + this.width,Point.x);
-		var maxY = Math.max(this.y + this.height,Point.y);
-		if(Point._weak) {
-			Point.put();
-		}
-		this.x = minX;
-		this.y = minY;
-		this.width = maxX - minX;
-		this.height = maxY - minY;
-		return this;
-	}
-	,offset: function(dx,dy) {
-		this.x += dx;
-		this.y += dy;
-		return this;
-	}
-	,destroy: function() {
-	}
-	,equals: function(rect) {
-		var result = Math.abs(this.x - rect.x) <= 0.0000001 && Math.abs(this.y - rect.y) <= 0.0000001 && Math.abs(this.width - rect.width) <= 0.0000001 && Math.abs(this.height - rect.height) <= 0.0000001;
-		if(rect._weak) {
-			if(!rect._inPool) {
-				rect._inPool = true;
-				rect._weak = false;
-				flixel_math_FlxRect._pool.putUnsafe(rect);
-			}
-		}
-		return result;
-	}
-	,intersection: function(rect) {
-		var x0 = this.x < rect.x?rect.x:this.x;
-		var x1 = this.x + this.width > rect.x + rect.width?rect.x + rect.width:this.x + this.width;
-		if(x1 <= x0) {
-			if(rect._weak) {
-				if(!rect._inPool) {
-					rect._inPool = true;
-					rect._weak = false;
-					flixel_math_FlxRect._pool.putUnsafe(rect);
-				}
-			}
-			var _this = flixel_math_FlxRect._pool.get();
-			_this.x = 0;
-			_this.y = 0;
-			_this.width = 0;
-			_this.height = 0;
-			_this._inPool = false;
-			return _this;
-		}
-		var y0 = this.y < rect.y?rect.y:this.y;
-		var y1 = this.y + this.height > rect.y + rect.height?rect.y + rect.height:this.y + this.height;
-		if(y1 <= y0) {
-			if(rect._weak) {
-				if(!rect._inPool) {
-					rect._inPool = true;
-					rect._weak = false;
-					flixel_math_FlxRect._pool.putUnsafe(rect);
-				}
-			}
-			var _this1 = flixel_math_FlxRect._pool.get();
-			_this1.x = 0;
-			_this1.y = 0;
-			_this1.width = 0;
-			_this1.height = 0;
-			_this1._inPool = false;
-			return _this1;
-		}
-		if(rect._weak) {
-			if(!rect._inPool) {
-				rect._inPool = true;
-				rect._weak = false;
-				flixel_math_FlxRect._pool.putUnsafe(rect);
-			}
-		}
-		var _this2 = flixel_math_FlxRect._pool.get();
-		_this2.x = x0;
-		_this2.y = y0;
-		_this2.width = x1 - x0;
-		_this2.height = y1 - y0;
-		_this2._inPool = false;
-		return _this2;
-	}
-	,toString: function() {
-		var value = this.x;
-		var _this = flixel_util_LabelValuePair._pool.get();
-		_this.label = "x";
-		_this.value = value;
-		var value1 = this.y;
-		var _this1 = flixel_util_LabelValuePair._pool.get();
-		_this1.label = "y";
-		_this1.value = value1;
-		var value2 = this.width;
-		var _this2 = flixel_util_LabelValuePair._pool.get();
-		_this2.label = "w";
-		_this2.value = value2;
-		var value3 = this.height;
-		var _this3 = flixel_util_LabelValuePair._pool.get();
-		_this3.label = "h";
-		_this3.value = value3;
-		return flixel_util_FlxStringUtil.getDebugString([_this,_this1,_this2,_this3]);
-	}
-	,get_left: function() {
-		return this.x;
-	}
-	,set_left: function(Value) {
-		this.width -= Value - this.x;
-		return this.x = Value;
-	}
-	,get_right: function() {
-		return this.x + this.width;
-	}
-	,set_right: function(Value) {
-		this.width = Value - this.x;
-		return Value;
-	}
-	,get_top: function() {
-		return this.y;
-	}
-	,set_top: function(Value) {
-		this.height -= Value - this.y;
-		return this.y = Value;
-	}
-	,get_bottom: function() {
-		return this.y + this.height;
-	}
-	,set_bottom: function(Value) {
-		this.height = Value - this.y;
-		return Value;
-	}
-	,get_isEmpty: function() {
-		if(this.width != 0) {
-			return this.height == 0;
-		} else {
-			return true;
-		}
-	}
-	,__class__: flixel_math_FlxRect
-	,__properties__: {get_isEmpty:"get_isEmpty",set_bottom:"set_bottom",get_bottom:"get_bottom",set_top:"set_top",get_top:"get_top",set_right:"set_right",get_right:"get_right",set_left:"set_left",get_left:"get_left"}
 };
 var openfl_display_LoaderInfo = function() {
 	openfl_events_EventDispatcher.call(this);
@@ -8715,709 +11231,6 @@ flixel_FlxGame.prototype = $extend(openfl_display_Sprite.prototype,{
 	}
 	,__class__: flixel_FlxGame
 });
-var flixel_FlxObject = function(X,Y,Width,Height) {
-	if(Height == null) {
-		Height = 0;
-	}
-	if(Width == null) {
-		Width = 0;
-	}
-	if(Y == null) {
-		Y = 0;
-	}
-	if(X == null) {
-		X = 0;
-	}
-	var _this = flixel_math_FlxRect._pool.get();
-	_this.x = 0;
-	_this.y = 0;
-	_this.width = 0;
-	_this.height = 0;
-	_this._inPool = false;
-	this._rect = _this;
-	var point = flixel_math_FlxPoint._pool.get().set(0,0);
-	point._inPool = false;
-	this._point = point;
-	this.collisonXDrag = true;
-	this.allowCollisions = 4369;
-	this.wasTouching = 0;
-	this.touching = 0;
-	this.health = 1;
-	this.maxAngular = 10000;
-	this.angularDrag = 0;
-	this.angularAcceleration = 0;
-	this.angularVelocity = 0;
-	this.elasticity = 0;
-	this.mass = 1;
-	this.immovable = false;
-	this.moves = true;
-	this.angle = 0;
-	this.pixelPerfectPosition = true;
-	this.y = 0;
-	this.x = 0;
-	flixel_FlxBasic.call(this);
-	this.set_x(X);
-	this.set_y(Y);
-	this.set_width(Width);
-	this.set_height(Height);
-	this.initVars();
-};
-$hxClasses["flixel.FlxObject"] = flixel_FlxObject;
-flixel_FlxObject.__name__ = ["flixel","FlxObject"];
-flixel_FlxObject.separate = function(Object1,Object2) {
-	var separatedX = flixel_FlxObject.separateX(Object1,Object2);
-	var separatedY = flixel_FlxObject.separateY(Object1,Object2);
-	if(!separatedX) {
-		return separatedY;
-	} else {
-		return true;
-	}
-};
-flixel_FlxObject.updateTouchingFlags = function(Object1,Object2) {
-	var touchingX = flixel_FlxObject.updateTouchingFlagsX(Object1,Object2);
-	var touchingY = flixel_FlxObject.updateTouchingFlagsY(Object1,Object2);
-	if(!touchingX) {
-		return touchingY;
-	} else {
-		return true;
-	}
-};
-flixel_FlxObject.computeOverlapX = function(Object1,Object2,checkMaxOverlap) {
-	if(checkMaxOverlap == null) {
-		checkMaxOverlap = true;
-	}
-	var overlap = 0;
-	var obj1delta = Object1.x - Object1.last.x;
-	var obj2delta = Object2.x - Object2.last.x;
-	if(obj1delta != obj2delta) {
-		var obj1deltaAbs = obj1delta > 0?obj1delta:-obj1delta;
-		var obj2deltaAbs = obj2delta > 0?obj2delta:-obj2delta;
-		var _this = flixel_FlxObject._firstSeparateFlxRect;
-		var X = Object1.x - (obj1delta > 0?obj1delta:0);
-		var Y = Object1.last.y;
-		var Width = Object1.get_width() + obj1deltaAbs;
-		var Height = Object1.get_height();
-		_this.x = X;
-		_this.y = Y;
-		_this.width = Width;
-		_this.height = Height;
-		var _this1 = flixel_FlxObject._secondSeparateFlxRect;
-		var X1 = Object2.x - (obj2delta > 0?obj2delta:0);
-		var Y1 = Object2.last.y;
-		var Width1 = Object2.get_width() + obj2deltaAbs;
-		var Height1 = Object2.get_height();
-		_this1.x = X1;
-		_this1.y = Y1;
-		_this1.width = Width1;
-		_this1.height = Height1;
-		if(_this.x + _this.width > _this1.x && _this.x < _this1.x + _this1.width && _this.y + _this.height > _this1.y && _this.y < _this1.y + _this1.height) {
-			var maxOverlap = checkMaxOverlap?obj1deltaAbs + obj2deltaAbs + flixel_FlxObject.SEPARATE_BIAS:0;
-			if(obj1delta > obj2delta) {
-				overlap = Object1.x + Object1.get_width() - Object2.x;
-				if(checkMaxOverlap && overlap > maxOverlap || (Object1.allowCollisions & 16) == 0 || (Object2.allowCollisions & 1) == 0) {
-					overlap = 0;
-				} else {
-					Object1.touching |= 16;
-					Object2.touching |= 1;
-				}
-			} else if(obj1delta < obj2delta) {
-				overlap = Object1.x - Object2.get_width() - Object2.x;
-				if(checkMaxOverlap && -overlap > maxOverlap || (Object1.allowCollisions & 1) == 0 || (Object2.allowCollisions & 16) == 0) {
-					overlap = 0;
-				} else {
-					Object1.touching |= 1;
-					Object2.touching |= 16;
-				}
-			}
-		}
-	}
-	return overlap;
-};
-flixel_FlxObject.separateX = function(Object1,Object2) {
-	var obj1immovable = Object1.immovable;
-	var obj2immovable = Object2.immovable;
-	if(obj1immovable && obj2immovable) {
-		return false;
-	}
-	if(Object1.flixelType == 3) {
-		return Object1.overlapsWithCallback(Object2,flixel_FlxObject.separateX);
-	}
-	if(Object2.flixelType == 3) {
-		return Object2.overlapsWithCallback(Object1,flixel_FlxObject.separateX,true);
-	}
-	var overlap = flixel_FlxObject.computeOverlapX(Object1,Object2);
-	if(overlap != 0) {
-		var obj1v = Object1.velocity.x;
-		var obj2v = Object2.velocity.x;
-		if(!obj1immovable && !obj2immovable) {
-			overlap *= 0.5;
-			Object1.set_x(Object1.x - overlap);
-			Object2.set_x(Object2.x + overlap);
-			var obj1velocity = Math.sqrt(obj2v * obj2v * Object2.mass / Object1.mass) * (obj2v > 0?1:-1);
-			var obj2velocity = Math.sqrt(obj1v * obj1v * Object1.mass / Object2.mass) * (obj1v > 0?1:-1);
-			var average = (obj1velocity + obj2velocity) * 0.5;
-			obj1velocity -= average;
-			obj2velocity -= average;
-			Object1.velocity.set_x(average + obj1velocity * Object1.elasticity);
-			Object2.velocity.set_x(average + obj2velocity * Object2.elasticity);
-		} else if(!obj1immovable) {
-			Object1.set_x(Object1.x - overlap);
-			Object1.velocity.set_x(obj2v - obj1v * Object1.elasticity);
-		} else if(!obj2immovable) {
-			Object2.set_x(Object2.x + overlap);
-			Object2.velocity.set_x(obj1v - obj2v * Object2.elasticity);
-		}
-		return true;
-	}
-	return false;
-};
-flixel_FlxObject.updateTouchingFlagsX = function(Object1,Object2) {
-	if(Object1.flixelType == 3) {
-		return Object1.overlapsWithCallback(Object2,flixel_FlxObject.updateTouchingFlagsX);
-	}
-	if(Object2.flixelType == 3) {
-		return Object2.overlapsWithCallback(Object1,flixel_FlxObject.updateTouchingFlagsX,true);
-	}
-	return flixel_FlxObject.computeOverlapX(Object1,Object2,false) != 0;
-};
-flixel_FlxObject.computeOverlapY = function(Object1,Object2,checkMaxOverlap) {
-	if(checkMaxOverlap == null) {
-		checkMaxOverlap = true;
-	}
-	var overlap = 0;
-	var obj1delta = Object1.y - Object1.last.y;
-	var obj2delta = Object2.y - Object2.last.y;
-	if(obj1delta != obj2delta) {
-		var obj1deltaAbs = obj1delta > 0?obj1delta:-obj1delta;
-		var obj2deltaAbs = obj2delta > 0?obj2delta:-obj2delta;
-		var _this = flixel_FlxObject._firstSeparateFlxRect;
-		var X = Object1.x;
-		var Y = Object1.y - (obj1delta > 0?obj1delta:0);
-		var Width = Object1.get_width();
-		var Height = Object1.get_height() + obj1deltaAbs;
-		_this.x = X;
-		_this.y = Y;
-		_this.width = Width;
-		_this.height = Height;
-		var _this1 = flixel_FlxObject._secondSeparateFlxRect;
-		var X1 = Object2.x;
-		var Y1 = Object2.y - (obj2delta > 0?obj2delta:0);
-		var Width1 = Object2.get_width();
-		var Height1 = Object2.get_height() + obj2deltaAbs;
-		_this1.x = X1;
-		_this1.y = Y1;
-		_this1.width = Width1;
-		_this1.height = Height1;
-		if(_this.x + _this.width > _this1.x && _this.x < _this1.x + _this1.width && _this.y + _this.height > _this1.y && _this.y < _this1.y + _this1.height) {
-			var maxOverlap = checkMaxOverlap?obj1deltaAbs + obj2deltaAbs + flixel_FlxObject.SEPARATE_BIAS:0;
-			if(obj1delta > obj2delta) {
-				overlap = Object1.y + Object1.get_height() - Object2.y;
-				if(checkMaxOverlap && overlap > maxOverlap || (Object1.allowCollisions & 4096) == 0 || (Object2.allowCollisions & 256) == 0) {
-					overlap = 0;
-				} else {
-					Object1.touching |= 4096;
-					Object2.touching |= 256;
-				}
-			} else if(obj1delta < obj2delta) {
-				overlap = Object1.y - Object2.get_height() - Object2.y;
-				if(checkMaxOverlap && -overlap > maxOverlap || (Object1.allowCollisions & 256) == 0 || (Object2.allowCollisions & 4096) == 0) {
-					overlap = 0;
-				} else {
-					Object1.touching |= 256;
-					Object2.touching |= 4096;
-				}
-			}
-		}
-	}
-	return overlap;
-};
-flixel_FlxObject.separateY = function(Object1,Object2) {
-	var obj1immovable = Object1.immovable;
-	var obj2immovable = Object2.immovable;
-	if(obj1immovable && obj2immovable) {
-		return false;
-	}
-	if(Object1.flixelType == 3) {
-		return Object1.overlapsWithCallback(Object2,flixel_FlxObject.separateY);
-	}
-	if(Object2.flixelType == 3) {
-		return Object2.overlapsWithCallback(Object1,flixel_FlxObject.separateY,true);
-	}
-	var overlap = flixel_FlxObject.computeOverlapY(Object1,Object2);
-	if(overlap != 0) {
-		var obj1delta = Object1.y - Object1.last.y;
-		var obj2delta = Object2.y - Object2.last.y;
-		var obj1v = Object1.velocity.y;
-		var obj2v = Object2.velocity.y;
-		if(!obj1immovable && !obj2immovable) {
-			overlap *= 0.5;
-			Object1.set_y(Object1.y - overlap);
-			Object2.set_y(Object2.y + overlap);
-			var obj1velocity = Math.sqrt(obj2v * obj2v * Object2.mass / Object1.mass) * (obj2v > 0?1:-1);
-			var obj2velocity = Math.sqrt(obj1v * obj1v * Object1.mass / Object2.mass) * (obj1v > 0?1:-1);
-			var average = (obj1velocity + obj2velocity) * 0.5;
-			obj1velocity -= average;
-			obj2velocity -= average;
-			Object1.velocity.set_y(average + obj1velocity * Object1.elasticity);
-			Object2.velocity.set_y(average + obj2velocity * Object2.elasticity);
-		} else if(!obj1immovable) {
-			Object1.set_y(Object1.y - overlap);
-			Object1.velocity.set_y(obj2v - obj1v * Object1.elasticity);
-			if(Object1.collisonXDrag && Object2.active && Object2.moves && obj1delta > obj2delta) {
-				Object1.set_x(Object1.x + (Object2.x - Object2.last.x));
-			}
-		} else if(!obj2immovable) {
-			Object2.set_y(Object2.y + overlap);
-			Object2.velocity.set_y(obj1v - obj2v * Object2.elasticity);
-			if(Object2.collisonXDrag && Object1.active && Object1.moves && obj1delta < obj2delta) {
-				Object2.set_x(Object2.x + (Object1.x - Object1.last.x));
-			}
-		}
-		return true;
-	}
-	return false;
-};
-flixel_FlxObject.updateTouchingFlagsY = function(Object1,Object2) {
-	if(Object1.flixelType == 3) {
-		return Object1.overlapsWithCallback(Object2,flixel_FlxObject.updateTouchingFlagsY);
-	}
-	if(Object2.flixelType == 3) {
-		return Object2.overlapsWithCallback(Object1,flixel_FlxObject.updateTouchingFlagsY,true);
-	}
-	return flixel_FlxObject.computeOverlapY(Object1,Object2,false) != 0;
-};
-flixel_FlxObject.__super__ = flixel_FlxBasic;
-flixel_FlxObject.prototype = $extend(flixel_FlxBasic.prototype,{
-	initVars: function() {
-		this.flixelType = 1;
-		var X = this.x;
-		var Y = this.y;
-		var point = flixel_math_FlxPoint._pool.get().set(X,Y);
-		point._inPool = false;
-		this.last = point;
-		var point1 = flixel_math_FlxPoint._pool.get().set(1,1);
-		point1._inPool = false;
-		this.scrollFactor = point1;
-		this.pixelPerfectPosition = flixel_FlxObject.defaultPixelPerfectPosition;
-		var point2 = flixel_math_FlxPoint._pool.get().set(0,0);
-		point2._inPool = false;
-		this.velocity = point2;
-		var point3 = flixel_math_FlxPoint._pool.get().set(0,0);
-		point3._inPool = false;
-		this.acceleration = point3;
-		var point4 = flixel_math_FlxPoint._pool.get().set(0,0);
-		point4._inPool = false;
-		this.drag = point4;
-		var point5 = flixel_math_FlxPoint._pool.get().set(10000,10000);
-		point5._inPool = false;
-		this.maxVelocity = point5;
-	}
-	,initMotionVars: function() {
-		var point = flixel_math_FlxPoint._pool.get().set(0,0);
-		point._inPool = false;
-		this.velocity = point;
-		var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
-		point1._inPool = false;
-		this.acceleration = point1;
-		var point2 = flixel_math_FlxPoint._pool.get().set(0,0);
-		point2._inPool = false;
-		this.drag = point2;
-		var point3 = flixel_math_FlxPoint._pool.get().set(10000,10000);
-		point3._inPool = false;
-		this.maxVelocity = point3;
-	}
-	,destroy: function() {
-		flixel_FlxBasic.prototype.destroy.call(this);
-		this.velocity = flixel_util_FlxDestroyUtil.put(this.velocity);
-		this.acceleration = flixel_util_FlxDestroyUtil.put(this.acceleration);
-		this.drag = flixel_util_FlxDestroyUtil.put(this.drag);
-		this.maxVelocity = flixel_util_FlxDestroyUtil.put(this.maxVelocity);
-		this.scrollFactor = flixel_util_FlxDestroyUtil.put(this.scrollFactor);
-		this.last = flixel_util_FlxDestroyUtil.put(this.last);
-		this._point = flixel_util_FlxDestroyUtil.put(this._point);
-		this._rect = flixel_util_FlxDestroyUtil.put(this._rect);
-	}
-	,update: function(elapsed) {
-		this.last.set_x(this.x);
-		this.last.set_y(this.y);
-		if(this.path != null && this.path.active) {
-			this.path.update(elapsed);
-		}
-		if(this.moves) {
-			this.updateMotion(elapsed);
-		}
-		this.wasTouching = this.touching;
-		this.touching = 0;
-	}
-	,updateMotion: function(elapsed) {
-		var velocityDelta = 0.5 * (flixel_math_FlxVelocity.computeVelocity(this.angularVelocity,this.angularAcceleration,this.angularDrag,this.maxAngular,elapsed) - this.angularVelocity);
-		this.angularVelocity += velocityDelta;
-		var _g = this;
-		_g.set_angle(_g.angle + this.angularVelocity * elapsed);
-		this.angularVelocity += velocityDelta;
-		velocityDelta = 0.5 * (flixel_math_FlxVelocity.computeVelocity(this.velocity.x,this.acceleration.x,this.drag.x,this.maxVelocity.x,elapsed) - this.velocity.x);
-		var _g1 = this.velocity;
-		_g1.set_x(_g1.x + velocityDelta);
-		var delta = this.velocity.x * elapsed;
-		var _g2 = this.velocity;
-		_g2.set_x(_g2.x + velocityDelta);
-		var _g3 = this;
-		_g3.set_x(_g3.x + delta);
-		velocityDelta = 0.5 * (flixel_math_FlxVelocity.computeVelocity(this.velocity.y,this.acceleration.y,this.drag.y,this.maxVelocity.y,elapsed) - this.velocity.y);
-		var _g4 = this.velocity;
-		_g4.set_y(_g4.y + velocityDelta);
-		delta = this.velocity.y * elapsed;
-		var _g5 = this.velocity;
-		_g5.set_y(_g5.y + velocityDelta);
-		var _g6 = this;
-		_g6.set_y(_g6.y + delta);
-	}
-	,draw: function() {
-	}
-	,overlaps: function(ObjectOrGroup,InScreenSpace,Camera) {
-		if(InScreenSpace == null) {
-			InScreenSpace = false;
-		}
-		var group = flixel_group_FlxTypedGroup.resolveGroup(ObjectOrGroup);
-		if(group != null) {
-			return flixel_group_FlxTypedGroup.overlaps($bind(this,this.overlapsCallback),group,0,0,InScreenSpace,Camera);
-		}
-		if(ObjectOrGroup.flixelType == 3) {
-			return ObjectOrGroup.overlaps(this,InScreenSpace,Camera);
-		}
-		var object = ObjectOrGroup;
-		if(!InScreenSpace) {
-			if(object.x + object.get_width() > this.x && object.x < this.x + this.get_width() && object.y + object.get_height() > this.y) {
-				return object.y < this.y + this.get_height();
-			} else {
-				return false;
-			}
-		}
-		if(Camera == null) {
-			Camera = flixel_FlxG.camera;
-		}
-		var objectScreenPos = object.getScreenPosition(null,Camera);
-		this.getScreenPosition(this._point,Camera);
-		if(objectScreenPos.x + object.get_width() > this._point.x && objectScreenPos.x < this._point.x + this.get_width() && objectScreenPos.y + object.get_height() > this._point.y) {
-			return objectScreenPos.y < this._point.y + this.get_height();
-		} else {
-			return false;
-		}
-	}
-	,overlapsCallback: function(ObjectOrGroup,X,Y,InScreenSpace,Camera) {
-		return this.overlaps(ObjectOrGroup,InScreenSpace,Camera);
-	}
-	,overlapsAt: function(X,Y,ObjectOrGroup,InScreenSpace,Camera) {
-		if(InScreenSpace == null) {
-			InScreenSpace = false;
-		}
-		var group = flixel_group_FlxTypedGroup.resolveGroup(ObjectOrGroup);
-		if(group != null) {
-			return flixel_group_FlxTypedGroup.overlaps($bind(this,this.overlapsAtCallback),group,X,Y,InScreenSpace,Camera);
-		}
-		if(ObjectOrGroup.flixelType == 3) {
-			var tilemap = ObjectOrGroup;
-			return tilemap.overlapsAt(tilemap.x - (X - this.x),tilemap.y - (Y - this.y),this,InScreenSpace,Camera);
-		}
-		var object = ObjectOrGroup;
-		if(!InScreenSpace) {
-			if(object.x + object.get_width() > X && object.x < X + this.get_width() && object.y + object.get_height() > Y) {
-				return object.y < Y + this.get_height();
-			} else {
-				return false;
-			}
-		}
-		if(Camera == null) {
-			Camera = flixel_FlxG.camera;
-		}
-		var objectScreenPos = object.getScreenPosition(null,Camera);
-		this.getScreenPosition(this._point,Camera);
-		if(objectScreenPos.x + object.get_width() > this._point.x && objectScreenPos.x < this._point.x + this.get_width() && objectScreenPos.y + object.get_height() > this._point.y) {
-			return objectScreenPos.y < this._point.y + this.get_height();
-		} else {
-			return false;
-		}
-	}
-	,overlapsAtCallback: function(ObjectOrGroup,X,Y,InScreenSpace,Camera) {
-		return this.overlapsAt(X,Y,ObjectOrGroup,InScreenSpace,Camera);
-	}
-	,overlapsPoint: function(point,InScreenSpace,Camera) {
-		if(InScreenSpace == null) {
-			InScreenSpace = false;
-		}
-		if(!InScreenSpace) {
-			if(point.x >= this.x && point.x < this.x + this.get_width() && point.y >= this.y) {
-				return point.y < this.y + this.get_height();
-			} else {
-				return false;
-			}
-		}
-		if(Camera == null) {
-			Camera = flixel_FlxG.camera;
-		}
-		var xPos = point.x - Camera.scroll.x;
-		var yPos = point.y - Camera.scroll.y;
-		this.getScreenPosition(this._point,Camera);
-		if(point._weak) {
-			point.put();
-		}
-		if(xPos >= this._point.x && xPos < this._point.x + this.get_width() && yPos >= this._point.y) {
-			return yPos < this._point.y + this.get_height();
-		} else {
-			return false;
-		}
-	}
-	,inWorldBounds: function() {
-		var tmp;
-		var tmp1;
-		if(this.x + this.get_width() > flixel_FlxG.worldBounds.x) {
-			var _this = flixel_FlxG.worldBounds;
-			tmp1 = this.x < _this.x + _this.width;
-		} else {
-			tmp1 = false;
-		}
-		if(tmp1) {
-			tmp = this.y + this.get_height() > flixel_FlxG.worldBounds.y;
-		} else {
-			tmp = false;
-		}
-		if(tmp) {
-			var _this1 = flixel_FlxG.worldBounds;
-			return this.y < _this1.y + _this1.height;
-		} else {
-			return false;
-		}
-	}
-	,getScreenPosition: function(point,Camera) {
-		if(point == null) {
-			var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
-			point1._inPool = false;
-			point = point1;
-		}
-		if(Camera == null) {
-			Camera = flixel_FlxG.camera;
-		}
-		point.set(this.x,this.y);
-		if(this.pixelPerfectPosition) {
-			point.set_x(Math.floor(point.x));
-			point.set_y(Math.floor(point.y));
-		}
-		var X = Camera.scroll.x * this.scrollFactor.x;
-		var Y = Camera.scroll.y * this.scrollFactor.y;
-		var _g = point;
-		_g.set_x(_g.x - X);
-		var _g1 = point;
-		_g1.set_y(_g1.y - Y);
-		return point;
-	}
-	,getPosition: function(point) {
-		if(point == null) {
-			var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
-			point1._inPool = false;
-			point = point1;
-		}
-		return point.set(this.x,this.y);
-	}
-	,getMidpoint: function(point) {
-		if(point == null) {
-			var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
-			point1._inPool = false;
-			point = point1;
-		}
-		return point.set(this.x + this.get_width() * 0.5,this.y + this.get_height() * 0.5);
-	}
-	,getHitbox: function(rect) {
-		if(rect == null) {
-			var _this = flixel_math_FlxRect._pool.get();
-			_this.x = 0;
-			_this.y = 0;
-			_this.width = 0;
-			_this.height = 0;
-			_this._inPool = false;
-			rect = _this;
-		}
-		var X = this.x;
-		var Y = this.y;
-		var Width = this.get_width();
-		var Height = this.get_height();
-		rect.x = X;
-		rect.y = Y;
-		rect.width = Width;
-		rect.height = Height;
-		return rect;
-	}
-	,reset: function(X,Y) {
-		this.touching = 0;
-		this.wasTouching = 0;
-		this.setPosition(X,Y);
-		this.last.set(this.x,this.y);
-		this.velocity.set();
-		this.revive();
-	}
-	,isOnScreen: function(Camera) {
-		if(Camera == null) {
-			Camera = flixel_FlxG.camera;
-		}
-		this.getScreenPosition(this._point,Camera);
-		if(this._point.x + this.get_width() > 0 && this._point.x < Camera.width && this._point.y + this.get_height() > 0) {
-			return this._point.y < Camera.height;
-		} else {
-			return false;
-		}
-	}
-	,isPixelPerfectRender: function(Camera) {
-		if(Camera == null) {
-			Camera = flixel_FlxG.camera;
-		}
-		if(this.pixelPerfectRender == null) {
-			return Camera.pixelPerfectRender;
-		} else {
-			return this.pixelPerfectRender;
-		}
-	}
-	,isTouching: function(Direction) {
-		return (this.touching & Direction) > 0;
-	}
-	,justTouched: function(Direction) {
-		if((this.touching & Direction) > 0) {
-			return (this.wasTouching & Direction) <= 0;
-		} else {
-			return false;
-		}
-	}
-	,hurt: function(Damage) {
-		this.health = this.health - Damage;
-		if(this.health <= 0) {
-			this.kill();
-		}
-	}
-	,screenCenter: function(axes) {
-		if(axes == null) {
-			axes = flixel_util_FlxAxes.XY;
-		}
-		if(axes != flixel_util_FlxAxes.Y) {
-			this.set_x(flixel_FlxG.width / 2 - this.get_width() / 2);
-		}
-		if(axes != flixel_util_FlxAxes.X) {
-			this.set_y(flixel_FlxG.height / 2 - this.get_height() / 2);
-		}
-		return this;
-	}
-	,setPosition: function(X,Y) {
-		if(Y == null) {
-			Y = 0;
-		}
-		if(X == null) {
-			X = 0;
-		}
-		this.set_x(X);
-		this.set_y(Y);
-	}
-	,setSize: function(Width,Height) {
-		this.set_width(Width);
-		this.set_height(Height);
-	}
-	,getBoundingBox: function(camera) {
-		this.getScreenPosition(this._point,camera);
-		var _this = this._rect;
-		var X = this._point.x;
-		var Y = this._point.y;
-		var Width = this.get_width();
-		var Height = this.get_height();
-		_this.x = X;
-		_this.y = Y;
-		_this.width = Width;
-		_this.height = Height;
-		if(this.isPixelPerfectRender(camera)) {
-			var _this1 = this._rect;
-			_this1.x = Math.floor(_this1.x);
-			_this1.y = Math.floor(_this1.y);
-			_this1.width = Math.floor(_this1.width);
-			_this1.height = Math.floor(_this1.height);
-		}
-		return this._rect;
-	}
-	,toString: function() {
-		var value = this.x;
-		var _this = flixel_util_LabelValuePair._pool.get();
-		_this.label = "x";
-		_this.value = value;
-		var value1 = this.y;
-		var _this1 = flixel_util_LabelValuePair._pool.get();
-		_this1.label = "y";
-		_this1.value = value1;
-		var value2 = this.get_width();
-		var _this2 = flixel_util_LabelValuePair._pool.get();
-		_this2.label = "w";
-		_this2.value = value2;
-		var value3 = this.get_height();
-		var _this3 = flixel_util_LabelValuePair._pool.get();
-		_this3.label = "h";
-		_this3.value = value3;
-		var value4 = this.visible;
-		var _this4 = flixel_util_LabelValuePair._pool.get();
-		_this4.label = "visible";
-		_this4.value = value4;
-		var _this5 = flixel_util_LabelValuePair._pool.get();
-		_this5.label = "velocity";
-		_this5.value = this.velocity;
-		return flixel_util_FlxStringUtil.getDebugString([_this,_this1,_this2,_this3,_this4,_this5]);
-	}
-	,set_x: function(NewX) {
-		return this.x = NewX;
-	}
-	,set_y: function(NewY) {
-		return this.y = NewY;
-	}
-	,set_width: function(Width) {
-		return this.width = Width;
-	}
-	,set_height: function(Height) {
-		return this.height = Height;
-	}
-	,get_width: function() {
-		return this.width;
-	}
-	,get_height: function() {
-		return this.height;
-	}
-	,get_solid: function() {
-		return (this.allowCollisions & 4369) > 0;
-	}
-	,set_solid: function(Solid) {
-		this.set_allowCollisions(Solid?4369:0);
-		return Solid;
-	}
-	,set_angle: function(Value) {
-		return this.angle = Value;
-	}
-	,set_moves: function(Value) {
-		return this.moves = Value;
-	}
-	,set_immovable: function(Value) {
-		return this.immovable = Value;
-	}
-	,set_pixelPerfectRender: function(Value) {
-		return this.pixelPerfectRender = Value;
-	}
-	,set_allowCollisions: function(Value) {
-		return this.allowCollisions = Value;
-	}
-	,set_path: function(path) {
-		if(this.path == path) {
-			return path;
-		}
-		if(this.path != null) {
-			this.path.object = null;
-		}
-		if(path != null) {
-			path.object = this;
-		}
-		return this.path = path;
-	}
-	,__class__: flixel_FlxObject
-	,__properties__: $extend(flixel_FlxBasic.prototype.__properties__,{set_path:"set_path",set_allowCollisions:"set_allowCollisions",set_solid:"set_solid",get_solid:"get_solid",set_immovable:"set_immovable",set_moves:"set_moves",set_angle:"set_angle",set_pixelPerfectRender:"set_pixelPerfectRender",set_height:"set_height",get_height:"get_height",set_width:"set_width",get_width:"get_width",set_y:"set_y",set_x:"set_x"})
-});
 var openfl_display_BitmapData = function(width,height,transparent,fillColor) {
 	if(fillColor == null) {
 		fillColor = -1;
@@ -10484,904 +12297,6 @@ flixel__$FlxSprite_GraphicDefault.preload = null;
 flixel__$FlxSprite_GraphicDefault.__super__ = openfl_display_BitmapData;
 flixel__$FlxSprite_GraphicDefault.prototype = $extend(openfl_display_BitmapData.prototype,{
 	__class__: flixel__$FlxSprite_GraphicDefault
-});
-var flixel_FlxSprite = function(X,Y,SimpleGraphic) {
-	if(Y == null) {
-		Y = 0;
-	}
-	if(X == null) {
-		X = 0;
-	}
-	this._facingFlip = new haxe_ds_IntMap();
-	this._angleChanged = true;
-	this._cosAngle = 1;
-	this._sinAngle = 0;
-	this._facingVerticalMult = 1;
-	this._facingHorizontalMult = 1;
-	this.useColorTransform = false;
-	this.color = 16777215;
-	this.flipY = false;
-	this.flipX = false;
-	this.facing = 16;
-	this.alpha = 1.0;
-	this.bakedRotationAngle = 0;
-	this.numFrames = 0;
-	this.frameHeight = 0;
-	this.frameWidth = 0;
-	this.dirty = true;
-	this.antialiasing = false;
-	this.useFramePixels = true;
-	flixel_FlxObject.call(this,X,Y);
-	this.set_useFramePixels(flixel_FlxG.renderBlit);
-	if(SimpleGraphic != null) {
-		this.loadGraphic(SimpleGraphic);
-	}
-};
-$hxClasses["flixel.FlxSprite"] = flixel_FlxSprite;
-flixel_FlxSprite.__name__ = ["flixel","FlxSprite"];
-flixel_FlxSprite.__super__ = flixel_FlxObject;
-flixel_FlxSprite.prototype = $extend(flixel_FlxObject.prototype,{
-	initVars: function() {
-		flixel_FlxObject.prototype.initVars.call(this);
-		this.animation = new flixel_animation_FlxAnimationController(this);
-		this._flashPoint = new openfl_geom_Point();
-		this._flashRect = new openfl_geom_Rectangle();
-		this._flashRect2 = new openfl_geom_Rectangle();
-		this._flashPointZero = new openfl_geom_Point();
-		var point = flixel_math_FlxPoint._pool.get().set(0,0);
-		point._inPool = false;
-		this.offset = point;
-		var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
-		point1._inPool = false;
-		this.origin = point1;
-		var point2 = flixel_math_FlxPoint._pool.get().set(1,1);
-		point2._inPool = false;
-		this.scale = point2;
-		var point3 = flixel_math_FlxPoint._pool.get().set(0,0);
-		point3._inPool = false;
-		this._halfSize = point3;
-		this._matrix = new flixel_math_FlxMatrix();
-		this.colorTransform = new openfl_geom_ColorTransform();
-	}
-	,destroy: function() {
-		flixel_FlxObject.prototype.destroy.call(this);
-		this.animation = flixel_util_FlxDestroyUtil.destroy(this.animation);
-		this.offset = flixel_util_FlxDestroyUtil.put(this.offset);
-		this.origin = flixel_util_FlxDestroyUtil.put(this.origin);
-		this.scale = flixel_util_FlxDestroyUtil.put(this.scale);
-		this._halfSize = flixel_util_FlxDestroyUtil.put(this._halfSize);
-		this.framePixels = flixel_util_FlxDestroyUtil.dispose(this.framePixels);
-		this._flashPoint = null;
-		this._flashRect = null;
-		this._flashRect2 = null;
-		this._flashPointZero = null;
-		this._matrix = null;
-		this.colorTransform = null;
-		this.set_blend(null);
-		this.set_frames(null);
-		this.set_graphic(null);
-		this._frame = flixel_util_FlxDestroyUtil.destroy(this._frame);
-		this._frameGraphic = flixel_util_FlxDestroyUtil.destroy(this._frameGraphic);
-		this.shader = null;
-	}
-	,clone: function() {
-		return new flixel_FlxSprite().loadGraphicFromSprite(this);
-	}
-	,loadGraphicFromSprite: function(Sprite) {
-		this.set_frames(Sprite.frames);
-		this.bakedRotationAngle = Sprite.bakedRotationAngle;
-		if(this.bakedRotationAngle > 0) {
-			this.set_width(Sprite.get_width());
-			this.set_height(Sprite.get_height());
-			this.centerOffsets();
-		}
-		this.set_antialiasing(Sprite.antialiasing);
-		this.animation.copyFrom(Sprite.animation);
-		this.graphicLoaded();
-		this.set_clipRect(Sprite.clipRect);
-		return this;
-	}
-	,loadGraphic: function(Graphic,Animated,Width,Height,Unique,Key) {
-		if(Unique == null) {
-			Unique = false;
-		}
-		if(Height == null) {
-			Height = 0;
-		}
-		if(Width == null) {
-			Width = 0;
-		}
-		if(Animated == null) {
-			Animated = false;
-		}
-		var graph = flixel_FlxG.bitmap.add(Graphic,Unique,Key);
-		if(graph == null) {
-			return this;
-		}
-		if(Width == 0) {
-			if(Animated) {
-				Width = graph.height;
-			} else {
-				Width = graph.width;
-			}
-			if(Width > graph.width) {
-				Width = graph.width;
-			} else {
-				Width = Width;
-			}
-		}
-		if(Height == 0) {
-			if(Animated) {
-				Height = Width;
-			} else {
-				Height = graph.height;
-			}
-			if(Height > graph.height) {
-				Height = graph.height;
-			} else {
-				Height = Height;
-			}
-		}
-		if(Animated) {
-			var point = flixel_math_FlxPoint._pool.get().set(Width,Height);
-			point._inPool = false;
-			this.set_frames(flixel_graphics_frames_FlxTileFrames.fromGraphic(graph,point));
-		} else {
-			this.set_frames(graph.get_imageFrame());
-		}
-		return this;
-	}
-	,loadRotatedGraphic: function(Graphic,Rotations,Frame,AntiAliasing,AutoBuffer,Key) {
-		if(AutoBuffer == null) {
-			AutoBuffer = false;
-		}
-		if(AntiAliasing == null) {
-			AntiAliasing = false;
-		}
-		if(Frame == null) {
-			Frame = -1;
-		}
-		if(Rotations == null) {
-			Rotations = 16;
-		}
-		var brushGraphic = flixel_FlxG.bitmap.add(Graphic,false,Key);
-		if(brushGraphic == null) {
-			return this;
-		}
-		var brush = brushGraphic.bitmap;
-		var key = brushGraphic.key;
-		if(Frame >= 0) {
-			var brushSize = brush.height;
-			var framesNum = brush.width / brushSize | 0;
-			if(framesNum > Frame) {
-				Frame = Frame;
-			} else {
-				Frame %= framesNum;
-			}
-			key += ":" + Frame;
-			var full = brush;
-			brush = new openfl_display_BitmapData(brushSize,brushSize,true,0);
-			this._flashRect.setTo(Frame * brushSize,0,brushSize,brushSize);
-			brush.copyPixels(full,this._flashRect,this._flashPointZero);
-		}
-		key += ":" + Rotations + ":" + (AutoBuffer == null?"null":"" + AutoBuffer);
-		var tempGraph = flixel_FlxG.bitmap.get(key);
-		if(tempGraph == null) {
-			tempGraph = flixel_graphics_FlxGraphic.fromBitmapData(flixel_util_FlxBitmapDataUtil.generateRotations(brush,Rotations,AntiAliasing,AutoBuffer),false,key);
-		}
-		var max = brush.height > brush.width?brush.height:brush.width;
-		if(AutoBuffer) {
-			max = max * 1.5 | 0;
-		} else {
-			max = max;
-		}
-		var point = flixel_math_FlxPoint._pool.get().set(max,max);
-		point._inPool = false;
-		this.set_frames(flixel_graphics_frames_FlxTileFrames.fromGraphic(tempGraph,point));
-		if(AutoBuffer) {
-			this.set_width(brush.width);
-			this.set_height(brush.height);
-			this.centerOffsets();
-		}
-		this.bakedRotationAngle = 360 / Rotations;
-		this.animation.createPrerotated();
-		return this;
-	}
-	,loadRotatedFrame: function(Frame,Rotations,AntiAliasing,AutoBuffer) {
-		if(AutoBuffer == null) {
-			AutoBuffer = false;
-		}
-		if(AntiAliasing == null) {
-			AntiAliasing = false;
-		}
-		if(Rotations == null) {
-			Rotations = 16;
-		}
-		var key = Frame.parent.key;
-		if(Frame.name != null) {
-			key += ":" + Frame.name;
-		} else {
-			var _this = Frame.frame;
-			var value = _this.x;
-			var _this1 = flixel_util_LabelValuePair._pool.get();
-			_this1.label = "x";
-			_this1.value = value;
-			var value1 = _this.y;
-			var _this2 = flixel_util_LabelValuePair._pool.get();
-			_this2.label = "y";
-			_this2.value = value1;
-			var value2 = _this.width;
-			var _this3 = flixel_util_LabelValuePair._pool.get();
-			_this3.label = "w";
-			_this3.value = value2;
-			var value3 = _this.height;
-			var _this4 = flixel_util_LabelValuePair._pool.get();
-			_this4.label = "h";
-			_this4.value = value3;
-			key += ":" + flixel_util_FlxStringUtil.getDebugString([_this1,_this2,_this3,_this4]);
-		}
-		var graphic = flixel_FlxG.bitmap.get(key);
-		if(graphic == null) {
-			graphic = flixel_graphics_FlxGraphic.fromBitmapData(Frame.paint(),false,key);
-		}
-		return this.loadRotatedGraphic(graphic,Rotations,-1,AntiAliasing,AutoBuffer);
-	}
-	,makeGraphic: function(Width,Height,Color,Unique,Key) {
-		if(Unique == null) {
-			Unique = false;
-		}
-		if(Color == null) {
-			Color = -1;
-		}
-		this.set_frames(flixel_FlxG.bitmap.create(Width,Height,Color,Unique,Key).get_imageFrame());
-		return this;
-	}
-	,graphicLoaded: function() {
-	}
-	,resetSize: function() {
-		this._flashRect.x = 0;
-		this._flashRect.y = 0;
-		this._flashRect.width = this.frameWidth;
-		this._flashRect.height = this.frameHeight;
-	}
-	,resetFrameSize: function() {
-		if(this.frame != null) {
-			this.frameWidth = this.frame.sourceSize.x | 0;
-			this.frameHeight = this.frame.sourceSize.y | 0;
-		}
-		this._halfSize.set(0.5 * this.frameWidth,0.5 * this.frameHeight);
-		this._flashRect.x = 0;
-		this._flashRect.y = 0;
-		this._flashRect.width = this.frameWidth;
-		this._flashRect.height = this.frameHeight;
-	}
-	,resetSizeFromFrame: function() {
-		this.set_width(this.frameWidth);
-		this.set_height(this.frameHeight);
-	}
-	,resetFrame: function() {
-		this.set_frame(this.frame);
-	}
-	,setGraphicSize: function(Width,Height) {
-		if(Height == null) {
-			Height = 0;
-		}
-		if(Width == null) {
-			Width = 0;
-		}
-		if(Width <= 0 && Height <= 0) {
-			return;
-		}
-		var newScaleX = Width / this.frameWidth;
-		var newScaleY = Height / this.frameHeight;
-		this.scale.set(newScaleX,newScaleY);
-		if(Width <= 0) {
-			this.scale.set_x(newScaleY);
-		} else if(Height <= 0) {
-			this.scale.set_y(newScaleX);
-		}
-	}
-	,updateHitbox: function() {
-		this.set_width(Math.abs(this.scale.x) * this.frameWidth);
-		this.set_height(Math.abs(this.scale.y) * this.frameHeight);
-		this.offset.set(-0.5 * (this.get_width() - this.frameWidth),-0.5 * (this.get_height() - this.frameHeight));
-		this.origin.set(this.frameWidth * 0.5,this.frameHeight * 0.5);
-	}
-	,resetHelpers: function() {
-		if(this.frame != null) {
-			this.frameWidth = this.frame.sourceSize.x | 0;
-			this.frameHeight = this.frame.sourceSize.y | 0;
-		}
-		this._halfSize.set(0.5 * this.frameWidth,0.5 * this.frameHeight);
-		this._flashRect.x = 0;
-		this._flashRect.y = 0;
-		this._flashRect.width = this.frameWidth;
-		this._flashRect.height = this.frameHeight;
-		this.set_width(this.frameWidth);
-		this.set_height(this.frameHeight);
-		this._flashRect2.x = 0;
-		this._flashRect2.y = 0;
-		if(this.graphic != null) {
-			this._flashRect2.width = this.graphic.width;
-			this._flashRect2.height = this.graphic.height;
-		}
-		this.origin.set(this.frameWidth * 0.5,this.frameHeight * 0.5);
-		if(flixel_FlxG.renderBlit) {
-			this.dirty = true;
-			this.updateFramePixels();
-		}
-	}
-	,update: function(elapsed) {
-		flixel_FlxObject.prototype.update.call(this,elapsed);
-		this.updateAnimation(elapsed);
-	}
-	,updateAnimation: function(elapsed) {
-		this.animation.update(elapsed);
-	}
-	,draw: function() {
-		if(this._frame == null) {
-			this.loadGraphic(flixel_graphics_FlxGraphic.fromClass(flixel__$FlxSprite_GraphicDefault));
-		}
-		if(this.alpha == 0 || this._frame.type == 2) {
-			return;
-		}
-		if(this.dirty) {
-			this.calcFrame(this.useFramePixels);
-		}
-		var _g = 0;
-		var _g1 = this.get_cameras();
-		while(_g < _g1.length) {
-			var camera = _g1[_g];
-			++_g;
-			if(!camera.visible || !camera.exists || !this.isOnScreen(camera)) {
-				continue;
-			}
-			this.getScreenPosition(this._point,camera).subtractPoint(this.offset);
-			if(this.isSimpleRender(camera)) {
-				this.drawSimple(camera);
-			} else {
-				this.drawComplex(camera);
-			}
-		}
-	}
-	,drawSimple: function(camera) {
-		if(this.isPixelPerfectRender(camera)) {
-			var _this = this._point;
-			_this.set_x(Math.floor(_this.x));
-			_this.set_y(Math.floor(_this.y));
-		}
-		var _this1 = this._point;
-		var FlashPoint = this._flashPoint;
-		if(FlashPoint == null) {
-			FlashPoint = new openfl_geom_Point();
-		}
-		FlashPoint.x = _this1.x;
-		FlashPoint.y = _this1.y;
-		camera.copyPixels(this._frame,this.framePixels,this._flashRect,this._flashPoint,this.colorTransform,this.blend,this.antialiasing);
-	}
-	,drawComplex: function(camera) {
-		var doFlipX = this.flipX != this._frame.flipX;
-		var tmp = this.animation._curAnim != null?doFlipX != this.animation._curAnim.flipX:doFlipX;
-		var doFlipY = this.flipY != this._frame.flipY;
-		this._frame.prepareMatrix(this._matrix,0,tmp,this.animation._curAnim != null?doFlipY != this.animation._curAnim.flipY:doFlipY);
-		this._matrix.translate(-this.origin.x,-this.origin.y);
-		this._matrix.scale(this.scale.x,this.scale.y);
-		if(this.bakedRotationAngle <= 0) {
-			if(this._angleChanged) {
-				var radians = this.angle * (Math.PI / 180);
-				this._sinAngle = Math.sin(radians);
-				this._cosAngle = Math.cos(radians);
-				this._angleChanged = false;
-			}
-			if(this.angle != 0) {
-				var _this = this._matrix;
-				var cos = this._cosAngle;
-				var sin = this._sinAngle;
-				var a1 = _this.a * cos - _this.b * sin;
-				_this.b = _this.a * sin + _this.b * cos;
-				_this.a = a1;
-				var c1 = _this.c * cos - _this.d * sin;
-				_this.d = _this.c * sin + _this.d * cos;
-				_this.c = c1;
-				var tx1 = _this.tx * cos - _this.ty * sin;
-				_this.ty = _this.tx * sin + _this.ty * cos;
-				_this.tx = tx1;
-			}
-		}
-		var _this1 = this._point;
-		var X = this.origin.x;
-		var Y = this.origin.y;
-		_this1.set_x(_this1.x + X);
-		_this1.set_y(_this1.y + Y);
-		if(this.isPixelPerfectRender(camera)) {
-			var _this2 = this._point;
-			_this2.set_x(Math.floor(_this2.x));
-			_this2.set_y(Math.floor(_this2.y));
-		}
-		this._matrix.translate(this._point.x,this._point.y);
-		camera.drawPixels(this._frame,this.framePixels,this._matrix,this.colorTransform,this.blend,this.antialiasing,this.shader);
-	}
-	,stamp: function(Brush,X,Y) {
-		if(Y == null) {
-			Y = 0;
-		}
-		if(X == null) {
-			X = 0;
-		}
-		Brush.drawFrame();
-		if(this.graphic == null || Brush.graphic == null) {
-			throw new js__$Boot_HaxeError("Cannot stamp to or from a FlxSprite with no graphics.");
-		}
-		var bitmapData = Brush.framePixels;
-		if(this.isSimpleRenderBlit()) {
-			this._flashPoint.x = X + this.frame.frame.x;
-			this._flashPoint.y = Y + this.frame.frame.y;
-			this._flashRect2.width = bitmapData.width;
-			this._flashRect2.height = bitmapData.height;
-			this.graphic.bitmap.copyPixels(bitmapData,this._flashRect2,this._flashPoint,null,null,true);
-			this._flashRect2.width = this.graphic.bitmap.width;
-			this._flashRect2.height = this.graphic.bitmap.height;
-		} else {
-			this._matrix.identity();
-			this._matrix.translate(-Brush.origin.x,-Brush.origin.y);
-			this._matrix.scale(Brush.scale.x,Brush.scale.y);
-			if(Brush.angle != 0) {
-				this._matrix.rotate(Brush.angle * (Math.PI / 180));
-			}
-			this._matrix.translate(X + this.frame.frame.x + Brush.origin.x,Y + this.frame.frame.y + Brush.origin.y);
-			this.graphic.bitmap.draw(bitmapData,this._matrix,null,Brush.blend,null,Brush.antialiasing);
-		}
-		if(flixel_FlxG.renderBlit) {
-			this.dirty = true;
-			this.calcFrame();
-		}
-	}
-	,drawFrame: function(Force) {
-		if(Force == null) {
-			Force = false;
-		}
-		if(flixel_FlxG.renderBlit) {
-			if(Force || this.dirty) {
-				this.dirty = true;
-				this.calcFrame();
-			}
-		} else {
-			this.dirty = true;
-			this.calcFrame(true);
-		}
-	}
-	,centerOffsets: function(AdjustPosition) {
-		if(AdjustPosition == null) {
-			AdjustPosition = false;
-		}
-		this.offset.set_x((this.frameWidth - this.get_width()) * 0.5);
-		this.offset.set_y((this.frameHeight - this.get_height()) * 0.5);
-		if(AdjustPosition) {
-			var _g = this;
-			_g.set_x(_g.x + this.offset.x);
-			var _g1 = this;
-			_g1.set_y(_g1.y + this.offset.y);
-		}
-	}
-	,centerOrigin: function() {
-		this.origin.set(this.frameWidth * 0.5,this.frameHeight * 0.5);
-	}
-	,replaceColor: function(Color,NewColor,FetchPositions) {
-		if(FetchPositions == null) {
-			FetchPositions = false;
-		}
-		var positions = flixel_util_FlxBitmapDataUtil.replaceColor(this.graphic.bitmap,Color,NewColor,FetchPositions);
-		if(positions != null) {
-			this.dirty = true;
-		}
-		return positions;
-	}
-	,setColorTransform: function(redMultiplier,greenMultiplier,blueMultiplier,alphaMultiplier,redOffset,greenOffset,blueOffset,alphaOffset) {
-		if(alphaOffset == null) {
-			alphaOffset = 0;
-		}
-		if(blueOffset == null) {
-			blueOffset = 0;
-		}
-		if(greenOffset == null) {
-			greenOffset = 0;
-		}
-		if(redOffset == null) {
-			redOffset = 0;
-		}
-		if(alphaMultiplier == null) {
-			alphaMultiplier = 1.0;
-		}
-		if(blueMultiplier == null) {
-			blueMultiplier = 1.0;
-		}
-		if(greenMultiplier == null) {
-			greenMultiplier = 1.0;
-		}
-		if(redMultiplier == null) {
-			redMultiplier = 1.0;
-		}
-		var color = flixel_util__$FlxColor_FlxColor_$Impl_$._new();
-		var Value = Math.round(redMultiplier * 255);
-		color &= -16711681;
-		color |= (Value > 255?255:Value < 0?0:Value) << 16;
-		var Value1 = Math.round(greenMultiplier * 255);
-		color &= -65281;
-		color |= (Value1 > 255?255:Value1 < 0?0:Value1) << 8;
-		var Value2 = Math.round(blueMultiplier * 255);
-		color &= -256;
-		color |= Value2 > 255?255:Value2 < 0?0:Value2;
-		var Value3 = Math.round(255);
-		color &= 16777215;
-		color |= (Value3 > 255?255:Value3 < 0?0:Value3) << 24;
-		this.set_color(color & 16777215);
-		this.set_alpha(alphaMultiplier);
-		flixel_util_FlxColorTransformUtil.setMultipliers(this.colorTransform,redMultiplier,greenMultiplier,blueMultiplier,alphaMultiplier);
-		flixel_util_FlxColorTransformUtil.setOffsets(this.colorTransform,redOffset,greenOffset,blueOffset,alphaOffset);
-		this.useColorTransform = this.alpha != 1 || this.color != 16777215 || flixel_util_FlxColorTransformUtil.hasRGBOffsets(this.colorTransform);
-		this.dirty = true;
-	}
-	,updateColorTransform: function() {
-		if(this.colorTransform == null) {
-			this.colorTransform = new openfl_geom_ColorTransform();
-		}
-		this.useColorTransform = this.alpha != 1 || this.color != 16777215;
-		if(this.useColorTransform) {
-			flixel_util_FlxColorTransformUtil.setMultipliers(this.colorTransform,(this.color >> 16 & 255) / 255,(this.color >> 8 & 255) / 255,(this.color & 255) / 255,this.alpha);
-		} else {
-			flixel_util_FlxColorTransformUtil.setMultipliers(this.colorTransform,1,1,1,1);
-		}
-		this.dirty = true;
-	}
-	,pixelsOverlapPoint: function(point,Mask,Camera) {
-		if(Mask == null) {
-			Mask = 255;
-		}
-		if(Camera == null) {
-			Camera = flixel_FlxG.camera;
-		}
-		this.getScreenPosition(this._point,Camera);
-		this._point.subtractPoint(this.offset);
-		this._flashPoint.x = point.x - Camera.scroll.x - this._point.x;
-		this._flashPoint.y = point.y - Camera.scroll.y - this._point.y;
-		if(point._weak) {
-			point.put();
-		}
-		if(this._flashPoint.x < 0 || this._flashPoint.x > this.frameWidth || this._flashPoint.y < 0 || this._flashPoint.y > this.frameHeight) {
-			return false;
-		} else {
-			var pixelColor = this.updateFramePixels().getPixel32(this._flashPoint.x | 0,this._flashPoint.y | 0);
-			return (pixelColor >> 24 & 255) * this.alpha >= Mask;
-		}
-	}
-	,calcFrame: function(RunOnCpp) {
-		if(RunOnCpp == null) {
-			RunOnCpp = false;
-		}
-		if(this.frame == null) {
-			this.loadGraphic(flixel_graphics_FlxGraphic.fromClass(flixel__$FlxSprite_GraphicDefault));
-		}
-		if(flixel_FlxG.renderTile && !RunOnCpp) {
-			return;
-		}
-		this.updateFramePixels();
-	}
-	,updateFramePixels: function() {
-		if(this._frame == null || !this.dirty) {
-			return this.framePixels;
-		}
-		if(flixel_FlxG.renderTile && this._frameGraphic != null) {
-			this.dirty = false;
-			return this.framePixels;
-		}
-		var doFlipX = this.flipX != this._frame.flipX;
-		var doFlipX1 = this.animation._curAnim != null?doFlipX != this.animation._curAnim.flipX:doFlipX;
-		var doFlipY = this.flipY != this._frame.flipY;
-		var doFlipY1 = this.animation._curAnim != null?doFlipY != this.animation._curAnim.flipY:doFlipY;
-		if(!doFlipX1 && !doFlipY1 && this._frame.type == 0) {
-			this.framePixels = this._frame.paint(this.framePixels,this._flashPointZero,false,true);
-		} else {
-			this.framePixels = this._frame.paintRotatedAndFlipped(this.framePixels,this._flashPointZero,0,doFlipX1,doFlipY1,false,true);
-		}
-		if(this.useColorTransform) {
-			this.framePixels.colorTransform(this._flashRect,this.colorTransform);
-		}
-		if(flixel_FlxG.renderTile && this.useFramePixels) {
-			this._frameGraphic = flixel_util_FlxDestroyUtil.destroy(this._frameGraphic);
-			this._frameGraphic = flixel_graphics_FlxGraphic.fromBitmapData(this.framePixels,false,null,false);
-			this._frame = this._frameGraphic.get_imageFrame().get_frame().copyTo(this._frame);
-		}
-		this.dirty = false;
-		return this.framePixels;
-	}
-	,getGraphicMidpoint: function(point) {
-		if(point == null) {
-			var point1 = flixel_math_FlxPoint._pool.get().set(0,0);
-			point1._inPool = false;
-			point = point1;
-		}
-		return point.set(this.x + this.frameWidth * 0.5,this.y + this.frameHeight * 0.5);
-	}
-	,isOnScreen: function(Camera) {
-		if(Camera == null) {
-			Camera = flixel_FlxG.camera;
-		}
-		var minX = this.x - this.offset.x - Camera.scroll.x * this.scrollFactor.x;
-		var minY = this.y - this.offset.y - Camera.scroll.y * this.scrollFactor.y;
-		if((this.angle == 0 || this.bakedRotationAngle > 0) && this.scale.x == 1 && this.scale.y == 1) {
-			if(minX > Camera.width || minX + this.frameWidth < 0) {
-				return false;
-			}
-			if(minY > Camera.height || minY + this.frameHeight < 0) {
-				return false;
-			}
-		} else {
-			var radiusX = this._halfSize.x;
-			var radiusY = this._halfSize.y;
-			var ox = this.origin.x;
-			if(ox != radiusX) {
-				var x1 = Math.abs(ox);
-				radiusX = Math.max(Math.abs(this.frameWidth - ox),x1);
-			}
-			var oy = this.origin.y;
-			if(oy != radiusY) {
-				var y1 = Math.abs(oy);
-				radiusY = Math.max(Math.abs(this.frameHeight - oy),y1);
-			}
-			radiusX *= Math.abs(this.scale.x);
-			radiusY *= Math.abs(this.scale.y);
-			var radius = Math.max(radiusX,radiusY);
-			radius *= 1.41421356237;
-			minX += ox;
-			var maxX = minX + radius;
-			minX -= radius;
-			if(maxX < 0 || minX > Camera.width) {
-				return false;
-			}
-			minY += oy;
-			var maxY = minY + radius;
-			minY -= radius;
-			if(maxY < 0 || minY > Camera.height) {
-				return false;
-			}
-		}
-		return true;
-	}
-	,isSimpleRender: function(camera) {
-		if(flixel_FlxG.renderTile) {
-			return false;
-		}
-		return this.isSimpleRenderBlit(camera);
-	}
-	,isSimpleRenderBlit: function(camera) {
-		var result = (this.angle == 0 || this.bakedRotationAngle > 0) && this.scale.x == 1 && this.scale.y == 1 && this.blend == null;
-		if(result) {
-			if(camera != null) {
-				result = this.isPixelPerfectRender(camera);
-			} else {
-				result = this.pixelPerfectRender;
-			}
-		} else {
-			result = false;
-		}
-		return result;
-	}
-	,setFacingFlip: function(Direction,FlipX,FlipY) {
-		this._facingFlip.h[Direction] = { x : FlipX, y : FlipY};
-	}
-	,setFrames: function(Frames,saveAnimations) {
-		if(saveAnimations == null) {
-			saveAnimations = true;
-		}
-		if(saveAnimations) {
-			var animations = this.animation._animations;
-			var reverse = false;
-			var index = 0;
-			var frameIndex = this.animation.frameIndex;
-			var currName = null;
-			if(this.animation._curAnim != null) {
-				reverse = this.animation._curAnim.reversed;
-				index = this.animation._curAnim.curFrame;
-				currName = this.animation._curAnim.name;
-			}
-			this.animation._animations = null;
-			this.set_frames(Frames);
-			this.set_frame(this.frames.frames[frameIndex]);
-			this.animation._animations = animations;
-			if(currName != null) {
-				this.animation.play(currName,false,reverse,index);
-			}
-		} else {
-			this.set_frames(Frames);
-		}
-		return this;
-	}
-	,get_pixels: function() {
-		if(this.graphic == null) {
-			return null;
-		} else {
-			return this.graphic.bitmap;
-		}
-	}
-	,set_pixels: function(Pixels) {
-		var key = flixel_FlxG.bitmap.findKeyForBitmap(Pixels);
-		if(key == null) {
-			key = flixel_FlxG.bitmap.getUniqueKey();
-			this.set_graphic(flixel_FlxG.bitmap.add(Pixels,false,key));
-		} else {
-			this.set_graphic(flixel_FlxG.bitmap.get(key));
-		}
-		this.set_frames(this.graphic.get_imageFrame());
-		return Pixels;
-	}
-	,set_frame: function(Value) {
-		this.frame = Value;
-		if(this.frame != null) {
-			if(this.frame != null) {
-				this.frameWidth = this.frame.sourceSize.x | 0;
-				this.frameHeight = this.frame.sourceSize.y | 0;
-			}
-			this._halfSize.set(0.5 * this.frameWidth,0.5 * this.frameHeight);
-			this._flashRect.x = 0;
-			this._flashRect.y = 0;
-			this._flashRect.width = this.frameWidth;
-			this._flashRect.height = this.frameHeight;
-			this.dirty = true;
-		} else if(this.frames != null && this.frames.frames != null && this.numFrames > 0) {
-			this.frame = this.frames.frames[0];
-			this.dirty = true;
-		} else {
-			return null;
-		}
-		if(flixel_FlxG.renderTile) {
-			this._frameGraphic = flixel_util_FlxDestroyUtil.destroy(this._frameGraphic);
-		}
-		if(this.clipRect != null) {
-			this._frame = this.frame.clipTo(this.clipRect,this._frame);
-		} else {
-			this._frame = this.frame.copyTo(this._frame);
-		}
-		return this.frame;
-	}
-	,set_facing: function(Direction) {
-		var flip = this._facingFlip.h[Direction];
-		if(flip != null) {
-			this.set_flipX(flip.x);
-			this.set_flipY(flip.y);
-		}
-		return this.facing = Direction;
-	}
-	,set_alpha: function(Alpha) {
-		if(this.alpha == Alpha) {
-			return Alpha;
-		}
-		var lowerBound = Alpha < 0?0:Alpha;
-		this.alpha = lowerBound > 1?1:lowerBound;
-		this.updateColorTransform();
-		return this.alpha;
-	}
-	,set_color: function(Color) {
-		if(this.color == Color) {
-			return Color;
-		}
-		this.color = Color;
-		this.updateColorTransform();
-		return this.color;
-	}
-	,set_angle: function(Value) {
-		var newAngle = this.angle != Value;
-		var ret = flixel_FlxObject.prototype.set_angle.call(this,Value);
-		if(newAngle) {
-			this._angleChanged = true;
-			this.animation.update(0);
-		}
-		return ret;
-	}
-	,updateTrig: function() {
-		if(this._angleChanged) {
-			var radians = this.angle * (Math.PI / 180);
-			this._sinAngle = Math.sin(radians);
-			this._cosAngle = Math.cos(radians);
-			this._angleChanged = false;
-		}
-	}
-	,set_blend: function(Value) {
-		return this.blend = Value;
-	}
-	,set_graphic: function(Value) {
-		var oldGraphic = this.graphic;
-		if(this.graphic != Value && Value != null) {
-			Value.set_useCount(Value.get_useCount() + 1);
-		}
-		if(oldGraphic != null && oldGraphic != Value) {
-			oldGraphic.set_useCount(oldGraphic.get_useCount() - 1);
-		}
-		return this.graphic = Value;
-	}
-	,set_clipRect: function(rect) {
-		if(rect != null) {
-			rect.x = Math.round(rect.x);
-			rect.y = Math.round(rect.y);
-			rect.width = Math.round(rect.width);
-			rect.height = Math.round(rect.height);
-			this.clipRect = rect;
-		} else {
-			this.clipRect = null;
-		}
-		if(this.frames != null) {
-			this.set_frame(this.frames.frames[this.animation.frameIndex]);
-		}
-		return rect;
-	}
-	,set_frames: function(Frames) {
-		if(this.animation != null) {
-			this.animation.destroyAnimations();
-		}
-		if(Frames != null) {
-			this.set_graphic(Frames.parent);
-			this.frames = Frames;
-			this.set_frame(this.frames.frames[0]);
-			this.numFrames = this.frames.frames.length;
-			this.resetHelpers();
-			this.bakedRotationAngle = 0;
-			this.animation.set_frameIndex(0);
-			this.graphicLoaded();
-		} else {
-			this.frames = null;
-			this.set_frame(null);
-			this.set_graphic(null);
-		}
-		this.set_clipRect(null);
-		return Frames;
-	}
-	,set_flipX: function(Value) {
-		if(flixel_FlxG.renderTile) {
-			this._facingHorizontalMult = Value?-1:1;
-		}
-		this.dirty = this.flipX != Value || this.dirty;
-		return this.flipX = Value;
-	}
-	,set_flipY: function(Value) {
-		if(flixel_FlxG.renderTile) {
-			this._facingVerticalMult = Value?-1:1;
-		}
-		this.dirty = this.flipY != Value || this.dirty;
-		return this.flipY = Value;
-	}
-	,set_antialiasing: function(value) {
-		return this.antialiasing = value;
-	}
-	,set_useFramePixels: function(value) {
-		if(flixel_FlxG.renderTile) {
-			if(value != this.useFramePixels) {
-				this.useFramePixels = value;
-				this.set_frame(this.frame);
-				if(value) {
-					this.updateFramePixels();
-				}
-			}
-			return value;
-		} else {
-			this.useFramePixels = true;
-			return true;
-		}
-	}
-	,checkFlipX: function() {
-		var doFlipX = this.flipX != this._frame.flipX;
-		if(this.animation._curAnim != null) {
-			return doFlipX != this.animation._curAnim.flipX;
-		}
-		return doFlipX;
-	}
-	,checkFlipY: function() {
-		var doFlipY = this.flipY != this._frame.flipY;
-		if(this.animation._curAnim != null) {
-			return doFlipY != this.animation._curAnim.flipY;
-		}
-		return doFlipY;
-	}
-	,__class__: flixel_FlxSprite
-	,__properties__: $extend(flixel_FlxObject.prototype.__properties__,{set_clipRect:"set_clipRect",set_color:"set_color",set_blend:"set_blend",set_flipY:"set_flipY",set_flipX:"set_flipX",set_facing:"set_facing",set_alpha:"set_alpha",set_graphic:"set_graphic",set_frames:"set_frames",set_frame:"set_frame",set_pixels:"set_pixels",get_pixels:"get_pixels",set_antialiasing:"set_antialiasing",set_useFramePixels:"set_useFramePixels"})
 });
 var flixel_IFlxSprite = function() { };
 $hxClasses["flixel.IFlxSprite"] = flixel_IFlxSprite;
@@ -32677,6 +33592,155 @@ flixel_util_FlxDestroyUtil.removeChild = function(parent,child) {
 		parent.removeChild(child);
 	}
 	return null;
+};
+var flixel_util_FlxGradient = function() { };
+$hxClasses["flixel.util.FlxGradient"] = flixel_util_FlxGradient;
+flixel_util_FlxGradient.__name__ = ["flixel","util","FlxGradient"];
+flixel_util_FlxGradient.createGradientMatrix = function(width,height,colors,chunkSize,rotation) {
+	if(rotation == null) {
+		rotation = 90;
+	}
+	if(chunkSize == null) {
+		chunkSize = 1;
+	}
+	var gradientMatrix = new openfl_geom_Matrix();
+	gradientMatrix.createGradientBox(width,_$UInt_UInt_$Impl_$.toFloat(height) / _$UInt_UInt_$Impl_$.toFloat(chunkSize),rotation * (Math.PI / 180),0,0);
+	var alpha = [];
+	var _g1 = 0;
+	var _g = colors.length;
+	while(_g1 < _g) alpha.push((colors[_g1++] >> 24 & 255) / 255);
+	var ratio = [];
+	if(colors.length == 2) {
+		ratio[0] = 0;
+		ratio[1] = 255;
+	} else {
+		var spread = 255 / (colors.length - 1) | 0;
+		ratio.push(0);
+		var _g11 = 1;
+		var _g2 = colors.length - 1;
+		while(_g11 < _g2) ratio.push(_g11++ * spread);
+		ratio.push(255);
+	}
+	return { matrix : gradientMatrix, alpha : alpha, ratio : ratio};
+};
+flixel_util_FlxGradient.createGradientArray = function(width,height,colors,chunkSize,rotation,interpolate) {
+	if(interpolate == null) {
+		interpolate = true;
+	}
+	if(rotation == null) {
+		rotation = 90;
+	}
+	if(chunkSize == null) {
+		chunkSize = 1;
+	}
+	var data = flixel_util_FlxGradient.createGradientBitmapData(width,height,colors,chunkSize,rotation,interpolate);
+	var result = [];
+	var _g1 = 0;
+	var _g = data.height;
+	while(_g1 < _g) result.push(data.getPixel32(0,_g1++));
+	return result;
+};
+flixel_util_FlxGradient.createGradientFlxSprite = function(width,height,colors,chunkSize,rotation,interpolate) {
+	if(interpolate == null) {
+		interpolate = true;
+	}
+	if(rotation == null) {
+		rotation = 90;
+	}
+	if(chunkSize == null) {
+		chunkSize = 1;
+	}
+	var data = flixel_util_FlxGradient.createGradientBitmapData(width,height,colors,chunkSize,rotation,interpolate);
+	var dest = new flixel_FlxSprite();
+	dest.set_pixels(data);
+	return dest;
+};
+flixel_util_FlxGradient.createGradientBitmapData = function(width,height,colors,chunkSize,rotation,interpolate) {
+	if(interpolate == null) {
+		interpolate = true;
+	}
+	if(rotation == null) {
+		rotation = 90;
+	}
+	if(chunkSize == null) {
+		chunkSize = 1;
+	}
+	if(_$UInt_UInt_$Impl_$.gt(1,width)) {
+		width = 1;
+	}
+	if(_$UInt_UInt_$Impl_$.gt(1,height)) {
+		height = 1;
+	}
+	var gradient = flixel_util_FlxGradient.createGradientMatrix(width,height,colors,chunkSize,rotation);
+	var shape = new openfl_display_Shape();
+	shape.get_graphics().beginGradientFill(0,colors,gradient.alpha,gradient.ratio,gradient.matrix,0,interpolate?1:0,0);
+	shape.get_graphics().drawRect(0,0,_$UInt_UInt_$Impl_$.toFloat(width),_$UInt_UInt_$Impl_$.toFloat(height) / _$UInt_UInt_$Impl_$.toFloat(chunkSize));
+	var data = new openfl_display_BitmapData(width,height,true,0);
+	if(chunkSize == 1) {
+		data.draw(shape);
+	} else {
+		var tempBitmap = new openfl_display_Bitmap(new openfl_display_BitmapData(width,_$UInt_UInt_$Impl_$.toFloat(height) / _$UInt_UInt_$Impl_$.toFloat(chunkSize) | 0,true,0));
+		tempBitmap.bitmapData.draw(shape);
+		tempBitmap.set_scaleY(_$UInt_UInt_$Impl_$.toFloat(chunkSize));
+		var sM = new openfl_geom_Matrix();
+		sM.scale(tempBitmap.get_scaleX(),tempBitmap.get_scaleY());
+		data.draw(tempBitmap,sM);
+	}
+	return data;
+};
+flixel_util_FlxGradient.overlayGradientOnFlxSprite = function(dest,width,height,colors,destX,destY,chunkSize,rotation,interpolate) {
+	if(interpolate == null) {
+		interpolate = true;
+	}
+	if(rotation == null) {
+		rotation = 90;
+	}
+	if(chunkSize == null) {
+		chunkSize = 1;
+	}
+	if(destY == null) {
+		destY = 0;
+	}
+	if(destX == null) {
+		destX = 0;
+	}
+	if(width > dest.get_width()) {
+		width = dest.get_width() | 0;
+	}
+	if(height > dest.get_height()) {
+		height = dest.get_height() | 0;
+	}
+	var source = flixel_util_FlxGradient.createGradientFlxSprite(width,height,colors,chunkSize,rotation,interpolate);
+	dest.stamp(source,destX,destY);
+	source.destroy();
+	return dest;
+};
+flixel_util_FlxGradient.overlayGradientOnBitmapData = function(dest,width,height,colors,destX,destY,chunkSize,rotation,interpolate) {
+	if(interpolate == null) {
+		interpolate = true;
+	}
+	if(rotation == null) {
+		rotation = 90;
+	}
+	if(chunkSize == null) {
+		chunkSize = 1;
+	}
+	if(destY == null) {
+		destY = 0;
+	}
+	if(destX == null) {
+		destX = 0;
+	}
+	if(width > dest.width) {
+		width = dest.width;
+	}
+	if(height > dest.height) {
+		height = dest.height;
+	}
+	var source = flixel_util_FlxGradient.createGradientBitmapData(width,height,colors,chunkSize,rotation,interpolate);
+	dest.copyPixels(source,new openfl_geom_Rectangle(0,0,source.width,source.height),new openfl_geom_Point(destX,destY),null,null,true);
+	source.dispose();
+	return dest;
 };
 var flixel_util_FlxHorizontalAlign = $hxClasses["flixel.util.FlxHorizontalAlign"] = { __ename__ : ["flixel","util","FlxHorizontalAlign"], __constructs__ : ["LEFT","CENTER","RIGHT"] };
 flixel_util_FlxHorizontalAlign.LEFT = ["LEFT",0];
@@ -71713,6 +72777,40 @@ openfl_display_DisplayObject.__worldRenderDirty = 0;
 openfl_display_DisplayObject.__worldTransformDirty = 0;
 openfl_display_DisplayObject.__cacheAsBitmapMode = false;
 openfl_text_Font.__registeredFonts = [];
+flixel_math_FlxRect._pool = new flixel_util_FlxPool_$flixel_$math_$FlxRect(flixel_math_FlxRect);
+flixel_FlxObject.defaultPixelPerfectPosition = false;
+flixel_FlxObject.SEPARATE_BIAS = 4;
+flixel_FlxObject.LEFT = 1;
+flixel_FlxObject.RIGHT = 16;
+flixel_FlxObject.UP = 256;
+flixel_FlxObject.DOWN = 4096;
+flixel_FlxObject.NONE = 0;
+flixel_FlxObject.CEILING = 256;
+flixel_FlxObject.FLOOR = 4096;
+flixel_FlxObject.WALL = 17;
+flixel_FlxObject.ANY = 4369;
+flixel_FlxObject._firstSeparateFlxRect = (function($this) {
+	var $r;
+	var _this = flixel_math_FlxRect._pool.get();
+	_this.x = 0;
+	_this.y = 0;
+	_this.width = 0;
+	_this.height = 0;
+	_this._inPool = false;
+	$r = _this;
+	return $r;
+}(this));
+flixel_FlxObject._secondSeparateFlxRect = (function($this) {
+	var $r;
+	var _this = flixel_math_FlxRect._pool.get();
+	_this.x = 0;
+	_this.y = 0;
+	_this.width = 0;
+	_this.height = 0;
+	_this._inPool = false;
+	$r = _this;
+	return $r;
+}(this));
 Xml.Element = 0;
 Xml.PCData = 1;
 Xml.CData = 2;
@@ -71721,7 +72819,6 @@ Xml.DocType = 4;
 Xml.ProcessingInstruction = 5;
 Xml.Document = 6;
 flixel_math_FlxPoint._pool = new flixel_util_FlxPool_$flixel_$math_$FlxPoint(flixel_math_FlxPoint);
-flixel_math_FlxRect._pool = new flixel_util_FlxPool_$flixel_$math_$FlxRect(flixel_math_FlxRect);
 openfl_display_LoaderInfo.__rootURL = window.document.URL;
 openfl_system_ApplicationDomain.currentDomain = new openfl_system_ApplicationDomain(null);
 openfl_geom_Matrix.__identity = new openfl_geom_Matrix();
@@ -71794,39 +72891,6 @@ flixel_FlxG.initialWidth = 0;
 flixel_FlxG.initialHeight = 0;
 flixel_FlxG.initialZoom = 0;
 flixel_FlxG.signals = new flixel_system_frontEnds_SignalFrontEnd();
-flixel_FlxObject.defaultPixelPerfectPosition = false;
-flixel_FlxObject.SEPARATE_BIAS = 4;
-flixel_FlxObject.LEFT = 1;
-flixel_FlxObject.RIGHT = 16;
-flixel_FlxObject.UP = 256;
-flixel_FlxObject.DOWN = 4096;
-flixel_FlxObject.NONE = 0;
-flixel_FlxObject.CEILING = 256;
-flixel_FlxObject.FLOOR = 4096;
-flixel_FlxObject.WALL = 17;
-flixel_FlxObject.ANY = 4369;
-flixel_FlxObject._firstSeparateFlxRect = (function($this) {
-	var $r;
-	var _this = flixel_math_FlxRect._pool.get();
-	_this.x = 0;
-	_this.y = 0;
-	_this.width = 0;
-	_this.height = 0;
-	_this._inPool = false;
-	$r = _this;
-	return $r;
-}(this));
-flixel_FlxObject._secondSeparateFlxRect = (function($this) {
-	var $r;
-	var _this = flixel_math_FlxRect._pool.get();
-	_this.x = 0;
-	_this.y = 0;
-	_this.width = 0;
-	_this.height = 0;
-	_this._inPool = false;
-	$r = _this;
-	return $r;
-}(this));
 openfl_display_BitmapData.__isGLES = null;
 flixel__$FlxSprite_GraphicDefault.resourceType = "image/png";
 flixel__$FlxSprite_GraphicDefault.resourceName = "__ASSET__:bitmap_flixel__FlxSprite_GraphicDefault";

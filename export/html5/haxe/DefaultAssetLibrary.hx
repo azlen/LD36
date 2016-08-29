@@ -53,6 +53,46 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_achafont_ttf);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_metamorphous_regular_ttf);
+		
+		
+		
+		
 		
 		
 		
@@ -65,12 +105,92 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#if flash
 		
+		className.set ("assets/Achafont.eot", __ASSET__assets_achafont_eot);
+		type.set ("assets/Achafont.eot", AssetType.BINARY);
+		className.set ("assets/Achafont.svg", __ASSET__assets_achafont_svg);
+		type.set ("assets/Achafont.svg", AssetType.TEXT);
+		className.set ("assets/Achafont.ttf", __ASSET__assets_achafont_ttf);
+		type.set ("assets/Achafont.ttf", AssetType.FONT);
+		className.set ("assets/Achafont.woff", __ASSET__assets_achafont_woff);
+		type.set ("assets/Achafont.woff", AssetType.BINARY);
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/images/children/child1.png", __ASSET__assets_images_children_child1_png);
+		type.set ("assets/images/children/child1.png", AssetType.IMAGE);
+		className.set ("assets/images/children/child2.png", __ASSET__assets_images_children_child2_png);
+		type.set ("assets/images/children/child2.png", AssetType.IMAGE);
+		className.set ("assets/images/clouds/cloud1.png", __ASSET__assets_images_clouds_cloud1_png);
+		type.set ("assets/images/clouds/cloud1.png", AssetType.IMAGE);
+		className.set ("assets/images/clouds/cloud10.png", __ASSET__assets_images_clouds_cloud10_png);
+		type.set ("assets/images/clouds/cloud10.png", AssetType.IMAGE);
+		className.set ("assets/images/clouds/cloud11.png", __ASSET__assets_images_clouds_cloud11_png);
+		type.set ("assets/images/clouds/cloud11.png", AssetType.IMAGE);
+		className.set ("assets/images/clouds/cloud2.png", __ASSET__assets_images_clouds_cloud2_png);
+		type.set ("assets/images/clouds/cloud2.png", AssetType.IMAGE);
+		className.set ("assets/images/clouds/cloud3.png", __ASSET__assets_images_clouds_cloud3_png);
+		type.set ("assets/images/clouds/cloud3.png", AssetType.IMAGE);
+		className.set ("assets/images/clouds/cloud4.png", __ASSET__assets_images_clouds_cloud4_png);
+		type.set ("assets/images/clouds/cloud4.png", AssetType.IMAGE);
+		className.set ("assets/images/clouds/cloud5.png", __ASSET__assets_images_clouds_cloud5_png);
+		type.set ("assets/images/clouds/cloud5.png", AssetType.IMAGE);
+		className.set ("assets/images/clouds/cloud6.png", __ASSET__assets_images_clouds_cloud6_png);
+		type.set ("assets/images/clouds/cloud6.png", AssetType.IMAGE);
+		className.set ("assets/images/clouds/cloud7.png", __ASSET__assets_images_clouds_cloud7_png);
+		type.set ("assets/images/clouds/cloud7.png", AssetType.IMAGE);
+		className.set ("assets/images/clouds/cloud8.png", __ASSET__assets_images_clouds_cloud8_png);
+		type.set ("assets/images/clouds/cloud8.png", AssetType.IMAGE);
+		className.set ("assets/images/clouds/cloud9.png", __ASSET__assets_images_clouds_cloud9_png);
+		type.set ("assets/images/clouds/cloud9.png", AssetType.IMAGE);
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		className.set ("assets/images/menuscreen.png", __ASSET__assets_images_menuscreen_png);
+		type.set ("assets/images/menuscreen.png", AssetType.IMAGE);
+		className.set ("assets/images/moon.png", __ASSET__assets_images_moon_png);
+		type.set ("assets/images/moon.png", AssetType.IMAGE);
+		className.set ("assets/images/playbtn.png", __ASSET__assets_images_playbtn_png);
+		type.set ("assets/images/playbtn.png", AssetType.IMAGE);
+		className.set ("assets/images/playbtn_hover.png", __ASSET__assets_images_playbtn_hover_png);
+		type.set ("assets/images/playbtn_hover.png", AssetType.IMAGE);
+		className.set ("assets/images/playbutton.png", __ASSET__assets_images_playbutton_png);
+		type.set ("assets/images/playbutton.png", AssetType.IMAGE);
+		className.set ("assets/images/player.png", __ASSET__assets_images_player_png);
+		type.set ("assets/images/player.png", AssetType.IMAGE);
+		className.set ("assets/images/player_old.png", __ASSET__assets_images_player_old_png);
+		type.set ("assets/images/player_old.png", AssetType.IMAGE);
+		className.set ("assets/images/trees/tree1.png", __ASSET__assets_images_trees_tree1_png);
+		type.set ("assets/images/trees/tree1.png", AssetType.IMAGE);
+		className.set ("assets/images/trees/tree2.png", __ASSET__assets_images_trees_tree2_png);
+		type.set ("assets/images/trees/tree2.png", AssetType.IMAGE);
+		className.set ("assets/images/trees/tree3.png", __ASSET__assets_images_trees_tree3_png);
+		type.set ("assets/images/trees/tree3.png", AssetType.IMAGE);
+		className.set ("assets/images/trees/tree4.png", __ASSET__assets_images_trees_tree4_png);
+		type.set ("assets/images/trees/tree4.png", AssetType.IMAGE);
+		className.set ("assets/images/trees/tree5.png", __ASSET__assets_images_trees_tree5_png);
+		type.set ("assets/images/trees/tree5.png", AssetType.IMAGE);
+		className.set ("assets/images/trees/tree6.png", __ASSET__assets_images_trees_tree6_png);
+		type.set ("assets/images/trees/tree6.png", AssetType.IMAGE);
+		className.set ("assets/images/trees/tree7.png", __ASSET__assets_images_trees_tree7_png);
+		type.set ("assets/images/trees/tree7.png", AssetType.IMAGE);
+		className.set ("assets/images/trees/tree8.png", __ASSET__assets_images_trees_tree8_png);
+		type.set ("assets/images/trees/tree8.png", AssetType.IMAGE);
+		className.set ("assets/images/trees/tree9.png", __ASSET__assets_images_trees_tree9_png);
+		type.set ("assets/images/trees/tree9.png", AssetType.IMAGE);
+		className.set ("assets/Metamorphous-Regular.eot", __ASSET__assets_metamorphous_regular_eot);
+		type.set ("assets/Metamorphous-Regular.eot", AssetType.BINARY);
+		className.set ("assets/Metamorphous-Regular.svg", __ASSET__assets_metamorphous_regular_svg);
+		type.set ("assets/Metamorphous-Regular.svg", AssetType.TEXT);
+		className.set ("assets/Metamorphous-Regular.ttf", __ASSET__assets_metamorphous_regular_ttf);
+		type.set ("assets/Metamorphous-Regular.ttf", AssetType.FONT);
+		className.set ("assets/Metamorphous-Regular.woff", __ASSET__assets_metamorphous_regular_woff);
+		type.set ("assets/Metamorphous-Regular.woff", AssetType.BINARY);
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/sounds/child.wav", __ASSET__assets_sounds_child_wav);
+		type.set ("assets/sounds/child.wav", AssetType.SOUND);
+		className.set ("assets/sounds/playbtn_click.wav", __ASSET__assets_sounds_playbtn_click_wav);
+		type.set ("assets/sounds/playbtn_click.wav", AssetType.SOUND);
+		className.set ("assets/sounds/playbtn_hover.wav", __ASSET__assets_sounds_playbtn_hover_wav);
+		type.set ("assets/sounds/playbtn_hover.wav", AssetType.SOUND);
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
 		className.set ("flixel/sounds/beep.ogg", __ASSET__flixel_sounds_beep_ogg);
@@ -88,18 +208,178 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#elseif html5
 		
 		var id;
+		id = "assets/Achafont.eot";
+		path.set (id, id);
+		
+		type.set (id, AssetType.BINARY);
+		id = "assets/Achafont.svg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/Achafont.ttf";
+		className.set (id, __ASSET__assets_achafont_ttf);
+		
+		type.set (id, AssetType.FONT);
+		id = "assets/Achafont.woff";
+		path.set (id, id);
+		
+		type.set (id, AssetType.BINARY);
 		id = "assets/data/data-goes-here.txt";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/children/child1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/children/child2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clouds/cloud1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clouds/cloud10.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clouds/cloud11.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clouds/cloud2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clouds/cloud3.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clouds/cloud4.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clouds/cloud5.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clouds/cloud6.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clouds/cloud7.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clouds/cloud8.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/clouds/cloud9.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/images-go-here.txt";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/menuscreen.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/moon.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/playbtn.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/playbtn_hover.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/playbutton.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/player.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/player_old.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/trees/tree1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/trees/tree2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/trees/tree3.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/trees/tree4.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/trees/tree5.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/trees/tree6.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/trees/tree7.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/trees/tree8.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/trees/tree9.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/Metamorphous-Regular.eot";
+		path.set (id, id);
+		
+		type.set (id, AssetType.BINARY);
+		id = "assets/Metamorphous-Regular.svg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/Metamorphous-Regular.ttf";
+		className.set (id, __ASSET__assets_metamorphous_regular_ttf);
+		
+		type.set (id, AssetType.FONT);
+		id = "assets/Metamorphous-Regular.woff";
+		path.set (id, id);
+		
+		type.set (id, AssetType.BINARY);
 		id = "assets/music/music-goes-here.txt";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/sounds/child.wav";
+		path.set (id, id);
+		
+		type.set (id, AssetType.SOUND);
+		id = "assets/sounds/playbtn_click.wav";
+		path.set (id, id);
+		
+		type.set (id, AssetType.SOUND);
+		id = "assets/sounds/playbtn_hover.wav";
+		path.set (id, id);
+		
+		type.set (id, AssetType.SOUND);
 		id = "assets/sounds/sounds-go-here.txt";
 		path.set (id, id);
 		
@@ -142,14 +422,134 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		var useManifest = false;
 		
+		className.set ("assets/Achafont.eot", __ASSET__assets_achafont_eot);
+		type.set ("assets/Achafont.eot", AssetType.BINARY);
+		
+		className.set ("assets/Achafont.svg", __ASSET__assets_achafont_svg);
+		type.set ("assets/Achafont.svg", AssetType.TEXT);
+		
+		className.set ("assets/Achafont.ttf", __ASSET__assets_achafont_ttf);
+		type.set ("assets/Achafont.ttf", AssetType.FONT);
+		
+		className.set ("assets/Achafont.woff", __ASSET__assets_achafont_woff);
+		type.set ("assets/Achafont.woff", AssetType.BINARY);
+		
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		
+		className.set ("assets/images/children/child1.png", __ASSET__assets_images_children_child1_png);
+		type.set ("assets/images/children/child1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/children/child2.png", __ASSET__assets_images_children_child2_png);
+		type.set ("assets/images/children/child2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clouds/cloud1.png", __ASSET__assets_images_clouds_cloud1_png);
+		type.set ("assets/images/clouds/cloud1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clouds/cloud10.png", __ASSET__assets_images_clouds_cloud10_png);
+		type.set ("assets/images/clouds/cloud10.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clouds/cloud11.png", __ASSET__assets_images_clouds_cloud11_png);
+		type.set ("assets/images/clouds/cloud11.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clouds/cloud2.png", __ASSET__assets_images_clouds_cloud2_png);
+		type.set ("assets/images/clouds/cloud2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clouds/cloud3.png", __ASSET__assets_images_clouds_cloud3_png);
+		type.set ("assets/images/clouds/cloud3.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clouds/cloud4.png", __ASSET__assets_images_clouds_cloud4_png);
+		type.set ("assets/images/clouds/cloud4.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clouds/cloud5.png", __ASSET__assets_images_clouds_cloud5_png);
+		type.set ("assets/images/clouds/cloud5.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clouds/cloud6.png", __ASSET__assets_images_clouds_cloud6_png);
+		type.set ("assets/images/clouds/cloud6.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clouds/cloud7.png", __ASSET__assets_images_clouds_cloud7_png);
+		type.set ("assets/images/clouds/cloud7.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clouds/cloud8.png", __ASSET__assets_images_clouds_cloud8_png);
+		type.set ("assets/images/clouds/cloud8.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/clouds/cloud9.png", __ASSET__assets_images_clouds_cloud9_png);
+		type.set ("assets/images/clouds/cloud9.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		
+		className.set ("assets/images/menuscreen.png", __ASSET__assets_images_menuscreen_png);
+		type.set ("assets/images/menuscreen.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/moon.png", __ASSET__assets_images_moon_png);
+		type.set ("assets/images/moon.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/playbtn.png", __ASSET__assets_images_playbtn_png);
+		type.set ("assets/images/playbtn.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/playbtn_hover.png", __ASSET__assets_images_playbtn_hover_png);
+		type.set ("assets/images/playbtn_hover.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/playbutton.png", __ASSET__assets_images_playbutton_png);
+		type.set ("assets/images/playbutton.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/player.png", __ASSET__assets_images_player_png);
+		type.set ("assets/images/player.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/player_old.png", __ASSET__assets_images_player_old_png);
+		type.set ("assets/images/player_old.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/trees/tree1.png", __ASSET__assets_images_trees_tree1_png);
+		type.set ("assets/images/trees/tree1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/trees/tree2.png", __ASSET__assets_images_trees_tree2_png);
+		type.set ("assets/images/trees/tree2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/trees/tree3.png", __ASSET__assets_images_trees_tree3_png);
+		type.set ("assets/images/trees/tree3.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/trees/tree4.png", __ASSET__assets_images_trees_tree4_png);
+		type.set ("assets/images/trees/tree4.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/trees/tree5.png", __ASSET__assets_images_trees_tree5_png);
+		type.set ("assets/images/trees/tree5.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/trees/tree6.png", __ASSET__assets_images_trees_tree6_png);
+		type.set ("assets/images/trees/tree6.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/trees/tree7.png", __ASSET__assets_images_trees_tree7_png);
+		type.set ("assets/images/trees/tree7.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/trees/tree8.png", __ASSET__assets_images_trees_tree8_png);
+		type.set ("assets/images/trees/tree8.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/trees/tree9.png", __ASSET__assets_images_trees_tree9_png);
+		type.set ("assets/images/trees/tree9.png", AssetType.IMAGE);
+		
+		className.set ("assets/Metamorphous-Regular.eot", __ASSET__assets_metamorphous_regular_eot);
+		type.set ("assets/Metamorphous-Regular.eot", AssetType.BINARY);
+		
+		className.set ("assets/Metamorphous-Regular.svg", __ASSET__assets_metamorphous_regular_svg);
+		type.set ("assets/Metamorphous-Regular.svg", AssetType.TEXT);
+		
+		className.set ("assets/Metamorphous-Regular.ttf", __ASSET__assets_metamorphous_regular_ttf);
+		type.set ("assets/Metamorphous-Regular.ttf", AssetType.FONT);
+		
+		className.set ("assets/Metamorphous-Regular.woff", __ASSET__assets_metamorphous_regular_woff);
+		type.set ("assets/Metamorphous-Regular.woff", AssetType.BINARY);
+		
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
+		
+		className.set ("assets/sounds/child.wav", __ASSET__assets_sounds_child_wav);
+		type.set ("assets/sounds/child.wav", AssetType.SOUND);
+		
+		className.set ("assets/sounds/playbtn_click.wav", __ASSET__assets_sounds_playbtn_click_wav);
+		type.set ("assets/sounds/playbtn_click.wav", AssetType.SOUND);
+		
+		className.set ("assets/sounds/playbtn_hover.wav", __ASSET__assets_sounds_playbtn_hover_wav);
+		type.set ("assets/sounds/playbtn_hover.wav", AssetType.SOUND);
 		
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
@@ -813,9 +1213,49 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if !display
 #if flash
 
+@:keep @:bind #if display private #end class __ASSET__assets_achafont_eot extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_achafont_svg extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_achafont_ttf extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_achafont_woff extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_children_child1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_children_child2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_clouds_cloud1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_clouds_cloud10_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_clouds_cloud11_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_clouds_cloud2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_clouds_cloud3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_clouds_cloud4_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_clouds_cloud5_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_clouds_cloud6_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_clouds_cloud7_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_clouds_cloud8_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_clouds_cloud9_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_menuscreen_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_moon_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_playbtn_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_playbtn_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_playbutton_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_player_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_player_old_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_trees_tree1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_trees_tree2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_trees_tree3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_trees_tree4_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_trees_tree5_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_trees_tree6_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_trees_tree7_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_trees_tree8_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_trees_tree9_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_metamorphous_regular_eot extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_metamorphous_regular_svg extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_metamorphous_regular_ttf extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_metamorphous_regular_woff extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_child_wav extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_playbtn_click_wav extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_playbtn_hover_wav extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
@@ -825,6 +1265,46 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
+
+@:keep #if display private #end class __ASSET__assets_achafont_ttf extends lime.text.Font { public function new () { super (); name = "A Charming Font"; } } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@:keep #if display private #end class __ASSET__assets_metamorphous_regular_ttf extends lime.text.Font { public function new () { super (); name = "Metamorphous"; } } 
+
 
 
 
@@ -844,9 +1324,49 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if (windows || mac || linux || cpp)
 
 
+@:file("assets/Achafont.eot") #if display private #end class __ASSET__assets_achafont_eot extends lime.utils.Bytes {}
+@:file("assets/Achafont.svg") #if display private #end class __ASSET__assets_achafont_svg extends lime.utils.Bytes {}
+@:font("assets/Achafont.ttf") #if display private #end class __ASSET__assets_achafont_ttf extends lime.text.Font {}
+@:file("assets/Achafont.woff") #if display private #end class __ASSET__assets_achafont_woff extends lime.utils.Bytes {}
 @:file("assets/data/data-goes-here.txt") #if display private #end class __ASSET__assets_data_data_goes_here_txt extends lime.utils.Bytes {}
+@:image("assets/images/children/child1.png") #if display private #end class __ASSET__assets_images_children_child1_png extends lime.graphics.Image {}
+@:image("assets/images/children/child2.png") #if display private #end class __ASSET__assets_images_children_child2_png extends lime.graphics.Image {}
+@:image("assets/images/clouds/cloud1.png") #if display private #end class __ASSET__assets_images_clouds_cloud1_png extends lime.graphics.Image {}
+@:image("assets/images/clouds/cloud10.png") #if display private #end class __ASSET__assets_images_clouds_cloud10_png extends lime.graphics.Image {}
+@:image("assets/images/clouds/cloud11.png") #if display private #end class __ASSET__assets_images_clouds_cloud11_png extends lime.graphics.Image {}
+@:image("assets/images/clouds/cloud2.png") #if display private #end class __ASSET__assets_images_clouds_cloud2_png extends lime.graphics.Image {}
+@:image("assets/images/clouds/cloud3.png") #if display private #end class __ASSET__assets_images_clouds_cloud3_png extends lime.graphics.Image {}
+@:image("assets/images/clouds/cloud4.png") #if display private #end class __ASSET__assets_images_clouds_cloud4_png extends lime.graphics.Image {}
+@:image("assets/images/clouds/cloud5.png") #if display private #end class __ASSET__assets_images_clouds_cloud5_png extends lime.graphics.Image {}
+@:image("assets/images/clouds/cloud6.png") #if display private #end class __ASSET__assets_images_clouds_cloud6_png extends lime.graphics.Image {}
+@:image("assets/images/clouds/cloud7.png") #if display private #end class __ASSET__assets_images_clouds_cloud7_png extends lime.graphics.Image {}
+@:image("assets/images/clouds/cloud8.png") #if display private #end class __ASSET__assets_images_clouds_cloud8_png extends lime.graphics.Image {}
+@:image("assets/images/clouds/cloud9.png") #if display private #end class __ASSET__assets_images_clouds_cloud9_png extends lime.graphics.Image {}
 @:file("assets/images/images-go-here.txt") #if display private #end class __ASSET__assets_images_images_go_here_txt extends lime.utils.Bytes {}
+@:image("assets/images/menuscreen.png") #if display private #end class __ASSET__assets_images_menuscreen_png extends lime.graphics.Image {}
+@:image("assets/images/moon.png") #if display private #end class __ASSET__assets_images_moon_png extends lime.graphics.Image {}
+@:image("assets/images/playbtn.png") #if display private #end class __ASSET__assets_images_playbtn_png extends lime.graphics.Image {}
+@:image("assets/images/playbtn_hover.png") #if display private #end class __ASSET__assets_images_playbtn_hover_png extends lime.graphics.Image {}
+@:image("assets/images/playbutton.png") #if display private #end class __ASSET__assets_images_playbutton_png extends lime.graphics.Image {}
+@:image("assets/images/player.png") #if display private #end class __ASSET__assets_images_player_png extends lime.graphics.Image {}
+@:image("assets/images/player_old.png") #if display private #end class __ASSET__assets_images_player_old_png extends lime.graphics.Image {}
+@:image("assets/images/trees/tree1.png") #if display private #end class __ASSET__assets_images_trees_tree1_png extends lime.graphics.Image {}
+@:image("assets/images/trees/tree2.png") #if display private #end class __ASSET__assets_images_trees_tree2_png extends lime.graphics.Image {}
+@:image("assets/images/trees/tree3.png") #if display private #end class __ASSET__assets_images_trees_tree3_png extends lime.graphics.Image {}
+@:image("assets/images/trees/tree4.png") #if display private #end class __ASSET__assets_images_trees_tree4_png extends lime.graphics.Image {}
+@:image("assets/images/trees/tree5.png") #if display private #end class __ASSET__assets_images_trees_tree5_png extends lime.graphics.Image {}
+@:image("assets/images/trees/tree6.png") #if display private #end class __ASSET__assets_images_trees_tree6_png extends lime.graphics.Image {}
+@:image("assets/images/trees/tree7.png") #if display private #end class __ASSET__assets_images_trees_tree7_png extends lime.graphics.Image {}
+@:image("assets/images/trees/tree8.png") #if display private #end class __ASSET__assets_images_trees_tree8_png extends lime.graphics.Image {}
+@:image("assets/images/trees/tree9.png") #if display private #end class __ASSET__assets_images_trees_tree9_png extends lime.graphics.Image {}
+@:file("assets/Metamorphous-Regular.eot") #if display private #end class __ASSET__assets_metamorphous_regular_eot extends lime.utils.Bytes {}
+@:file("assets/Metamorphous-Regular.svg") #if display private #end class __ASSET__assets_metamorphous_regular_svg extends lime.utils.Bytes {}
+@:font("assets/Metamorphous-Regular.ttf") #if display private #end class __ASSET__assets_metamorphous_regular_ttf extends lime.text.Font {}
+@:file("assets/Metamorphous-Regular.woff") #if display private #end class __ASSET__assets_metamorphous_regular_woff extends lime.utils.Bytes {}
 @:file("assets/music/music-goes-here.txt") #if display private #end class __ASSET__assets_music_music_goes_here_txt extends lime.utils.Bytes {}
+@:file("assets/sounds/child.wav") #if display private #end class __ASSET__assets_sounds_child_wav extends lime.utils.Bytes {}
+@:file("assets/sounds/playbtn_click.wav") #if display private #end class __ASSET__assets_sounds_playbtn_click_wav extends lime.utils.Bytes {}
+@:file("assets/sounds/playbtn_hover.wav") #if display private #end class __ASSET__assets_sounds_playbtn_hover_wav extends lime.utils.Bytes {}
 @:file("assets/sounds/sounds-go-here.txt") #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends lime.utils.Bytes {}
 @:file("/usr/local/lib/haxe/lib/flixel/4,1,1/assets/sounds/beep.ogg") #if display private #end class __ASSET__flixel_sounds_beep_ogg extends lime.utils.Bytes {}
 @:file("/usr/local/lib/haxe/lib/flixel/4,1,1/assets/sounds/flixel.ogg") #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends lime.utils.Bytes {}
@@ -860,6 +1380,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 #end
 
 #if (openfl && !flash)
+@:keep #if display private #end class __ASSET__OPENFL__assets_achafont_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_achafont_ttf (); src = font.src; name = font.name; super (); }}
+@:keep #if display private #end class __ASSET__OPENFL__assets_metamorphous_regular_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_metamorphous_regular_ttf (); src = font.src; name = font.name; super (); }}
 @:keep #if display private #end class __ASSET__OPENFL__flixel_fonts_nokiafc22_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__flixel_fonts_nokiafc22_ttf (); src = font.src; name = font.name; super (); }}
 @:keep #if display private #end class __ASSET__OPENFL__flixel_fonts_monsterrat_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__flixel_fonts_monsterrat_ttf (); src = font.src; name = font.name; super (); }}
 

@@ -30,16 +30,176 @@ class ApplicationMain {
 		var types = [];
 		
 		
+		urls.push ("assets/Achafont.eot");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
+		urls.push ("assets/Achafont.svg");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("A Charming Font");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("assets/Achafont.woff");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
 		urls.push ("assets/data/data-goes-here.txt");
 		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/children/child1.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/children/child2.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/clouds/cloud1.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/clouds/cloud10.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/clouds/cloud11.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/clouds/cloud2.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/clouds/cloud3.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/clouds/cloud4.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/clouds/cloud5.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/clouds/cloud6.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/clouds/cloud7.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/clouds/cloud8.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/clouds/cloud9.png");
+		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
 		urls.push ("assets/images/images-go-here.txt");
 		types.push (lime.Assets.AssetType.TEXT);
 		
 		
+		urls.push ("assets/images/menuscreen.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/moon.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/playbtn.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/playbtn_hover.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/playbutton.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/player.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/player_old.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/trees/tree1.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/trees/tree2.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/trees/tree3.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/trees/tree4.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/trees/tree5.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/trees/tree6.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/trees/tree7.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/trees/tree8.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/trees/tree9.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/Metamorphous-Regular.eot");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
+		urls.push ("assets/Metamorphous-Regular.svg");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("Metamorphous");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("assets/Metamorphous-Regular.woff");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
 		urls.push ("assets/music/music-goes-here.txt");
 		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/sounds/child.wav");
+		types.push (lime.Assets.AssetType.SOUND);
+		
+		
+		urls.push ("assets/sounds/playbtn_click.wav");
+		types.push (lime.Assets.AssetType.SOUND);
+		
+		
+		urls.push ("assets/sounds/playbtn_hover.wav");
+		types.push (lime.Assets.AssetType.SOUND);
 		
 		
 		urls.push ("assets/sounds/sounds-go-here.txt");
@@ -127,7 +287,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "10",
+			build: "385",
 			company: "HaxeFlixel",
 			file: "HelloWorld",
 			fps: 60,
@@ -145,13 +305,13 @@ class ApplicationMain {
 					display: 0,
 					fullscreen: false,
 					hardware: false,
-					height: 480,
+					height: 675,
 					parameters: "{}",
 					resizable: false,
 					stencilBuffer: true,
 					title: "HelloWorld",
 					vsync: true,
-					width: 640,
+					width: 1080,
 					x: null,
 					y: null
 				},
@@ -169,7 +329,7 @@ class ApplicationMain {
 		
 		#if (js && html5)
 		#if (munit || utest)
-		openfl.Lib.embed (null, 640, 480, "000000");
+		openfl.Lib.embed (null, 1080, 675, "000000");
 		#end
 		#else
 		create ();

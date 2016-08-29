@@ -16,6 +16,7 @@ import flixel.util.FlxGradient;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import flixel.math.FlxRect;
+import flixel.system.FlxSound;
 
 
 class PlayState extends FlxState
@@ -26,13 +27,14 @@ class PlayState extends FlxState
 	private var _player:Player;
 	private var _moon:FlxSprite;
 	private var _children:Array<FlxSprite> = [];
+	private var _killSound:FlxSound;
 
 	override public function create():Void
 	{
 		// Make variables accessible to other classes?
 		Reg.state = this;
 		Reg.children = 0;
-		Reg.timer = Reg.totalTime = 60 * 2;
+		Reg.timer = Reg.totalTime = 60;
 
 		var _gradient:FlxSprite = FlxGradient.createGradientFlxSprite(1080, 675, [0xFF103e4d, 0xFF2d244a]);
 		_gradient.scrollFactor.set(0, 0);
@@ -53,10 +55,10 @@ class PlayState extends FlxState
 		add(_moon);
 
 		//var _clouds:FlxSpriteGroup = new FlxSpriteGroup(0, 0);
-		for(i in 0...1200)
+		for(i in 0...500)
 		{
 			var _cloud:FlxSprite = new FlxSprite(i * 100, _random.int(-100, 100));
-			var _n:Int = _random.int(1, 11, []);
+			var _n:Int = _random.int(1, 11, [11]);
 			_cloud.loadGraphic('assets/images/clouds/cloud' + Std.string(_n) + '.png');
 			var _scale:Float = _random.float(0.35, 0.65);
 			_cloud.scale.set(_scale, _scale);
@@ -65,9 +67,12 @@ class PlayState extends FlxState
 			_cloud.flipX = [false, true][_random.int(0, 1)];
 			add(_cloud);
 		}
+
+
+		 _killSound = FlxG.sound.load('assets/sounds/child.wav');
 		//add(_clouds);
 
-		_ground = new FlxSprite(0, 340);
+		/*_ground = new FlxSprite(0, 340);
 		_ground.makeGraphic(9900, 999, 0x00000000, true);
 		var vertices:Array<FlxPoint> = new Array<FlxPoint>();
 		//vertices[0] = new FlxPoint(100, 100);
@@ -82,15 +87,16 @@ class PlayState extends FlxState
 		}
 		_ground.drawPolygon(vertices, 0xFF000000, {color: 0x00000000, thickness: 0});
 		//_ground.solid = _ground.immovable = true;
-		add(_ground);
+		add(_ground);*/
 
 		var _ground2:FlxSprite = new FlxSprite(0, 390);
-		_ground2.makeGraphic(100000, 999, 0xFF000000);
+		_ground2.makeGraphic(1080, 999, 0xFF000000);
+		_ground2.scrollFactor.set(0, 1);
 		add(_ground2);
 
 		var _trees:FlxSpriteGroup = new FlxSpriteGroup(0, 0);
 		var _last:Int = 0;
-		for(i in 0...2000)
+		for(i in 0...200)
 		{
 			if(_random.int(1,5) == 1)
 				continue;
@@ -104,7 +110,7 @@ class PlayState extends FlxState
 		}
 		add(_trees);
 
-		for(i in 0...1000)
+		for(i in 0...700)
 		{
 			if(_random.int(1,5) == 1)
 				continue;
@@ -142,7 +148,7 @@ class PlayState extends FlxState
 
 		// Camera should follow the player
 		FlxG.camera.follow(_player, FlxCameraFollowStyle.PLATFORMER, 1);
-		FlxG.camera.setScrollBoundsRect(0, -1000, 100000, 1500, true);
+		FlxG.camera.setScrollBoundsRect(0, -1000, 40000, 1500, true);
 		// FlxG.camera.minScrollX = 0;
 		// FlxG.camera.maxScrollY = 500;
 		FlxG.camera.antialiasing = true;
@@ -161,6 +167,7 @@ class PlayState extends FlxState
 		if(Reg.timer < 0)
 		{
 			Reg.timer = 0;
+			FlxG.switchState(new EndState());
 			// end game?
 		}
 		var _seconds = Std.string(Std.int(Reg.timer % 60));
@@ -174,10 +181,11 @@ class PlayState extends FlxState
 			//if(_player.overlaps(_children[i]))
 			if(FlxG.overlap(_player, _children[i]))
 			{
-				trace('KILL');
 				var _temp:FlxSprite = _children[i];
 				_children.remove(_temp);
 				_temp.destroy();
+
+				_killSound.play();
 
 				Reg.children += 1;
 			}

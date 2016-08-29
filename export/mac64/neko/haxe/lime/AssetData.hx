@@ -16,8 +16,14 @@ class AssetData {
 		
 		if (!initialized) {
 			
+			path.set ("assets/Achafont.eot", "assets/Achafont.eot");
+			type.set ("assets/Achafont.eot", Reflect.field (AssetType, "binary".toUpperCase ()));
+			path.set ("assets/Achafont.svg", "assets/Achafont.svg");
+			type.set ("assets/Achafont.svg", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/Achafont.ttf", "assets/Achafont.ttf");
 			type.set ("assets/Achafont.ttf", Reflect.field (AssetType, "font".toUpperCase ()));
+			path.set ("assets/Achafont.woff", "assets/Achafont.woff");
+			type.set ("assets/Achafont.woff", Reflect.field (AssetType, "binary".toUpperCase ()));
 			path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 			type.set ("assets/data/data-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/images/children/child1.png", "assets/images/children/child1.png");
@@ -80,10 +86,18 @@ class AssetData {
 			type.set ("assets/images/trees/tree8.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/trees/tree9.png", "assets/images/trees/tree9.png");
 			type.set ("assets/images/trees/tree9.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/Metamorphous-Regular.eot", "assets/Metamorphous-Regular.eot");
+			type.set ("assets/Metamorphous-Regular.eot", Reflect.field (AssetType, "binary".toUpperCase ()));
+			path.set ("assets/Metamorphous-Regular.svg", "assets/Metamorphous-Regular.svg");
+			type.set ("assets/Metamorphous-Regular.svg", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/Metamorphous-Regular.ttf", "assets/Metamorphous-Regular.ttf");
 			type.set ("assets/Metamorphous-Regular.ttf", Reflect.field (AssetType, "font".toUpperCase ()));
+			path.set ("assets/Metamorphous-Regular.woff", "assets/Metamorphous-Regular.woff");
+			type.set ("assets/Metamorphous-Regular.woff", Reflect.field (AssetType, "binary".toUpperCase ()));
 			path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
 			type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+			path.set ("assets/sounds/child.wav", "assets/sounds/child.wav");
+			type.set ("assets/sounds/child.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
 			path.set ("assets/sounds/playbtn_click.wav", "assets/sounds/playbtn_click.wav");
 			type.set ("assets/sounds/playbtn_click.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
 			path.set ("assets/sounds/playbtn_hover.wav", "assets/sounds/playbtn_hover.wav");

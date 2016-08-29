@@ -56,7 +56,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		super ();
 		
 		
+		
+		
 		Font.registerFont (__ASSET__assets_achafont_ttf);
+		
+		
+		
 		
 		
 		
@@ -95,6 +100,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
 		Font.registerFont (__ASSET__flixel_fonts_nokiafc22_ttf);
 		Font.registerFont (__ASSET__flixel_fonts_monsterrat_ttf);
 		
@@ -103,6 +110,13 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -641,7 +655,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#if (openfl && !flash)
 		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_achafont_ttf);
+		
+		
+		
 		
 		
 		
@@ -680,6 +699,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -688,8 +709,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#if flash
 		
+		path.set ("assets/Achafont.eot", "assets/Achafont.eot");
+		type.set ("assets/Achafont.eot", AssetType.BINARY);
+		path.set ("assets/Achafont.svg", "assets/Achafont.svg");
+		type.set ("assets/Achafont.svg", AssetType.TEXT);
 		path.set ("assets/Achafont.ttf", "assets/Achafont.ttf");
 		type.set ("assets/Achafont.ttf", AssetType.FONT);
+		path.set ("assets/Achafont.woff", "assets/Achafont.woff");
+		type.set ("assets/Achafont.woff", AssetType.BINARY);
 		path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/images/children/child1.png", "assets/images/children/child1.png");
@@ -752,10 +779,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/trees/tree8.png", AssetType.IMAGE);
 		path.set ("assets/images/trees/tree9.png", "assets/images/trees/tree9.png");
 		type.set ("assets/images/trees/tree9.png", AssetType.IMAGE);
+		path.set ("assets/Metamorphous-Regular.eot", "assets/Metamorphous-Regular.eot");
+		type.set ("assets/Metamorphous-Regular.eot", AssetType.BINARY);
+		path.set ("assets/Metamorphous-Regular.svg", "assets/Metamorphous-Regular.svg");
+		type.set ("assets/Metamorphous-Regular.svg", AssetType.TEXT);
 		path.set ("assets/Metamorphous-Regular.ttf", "assets/Metamorphous-Regular.ttf");
 		type.set ("assets/Metamorphous-Regular.ttf", AssetType.FONT);
+		path.set ("assets/Metamorphous-Regular.woff", "assets/Metamorphous-Regular.woff");
+		type.set ("assets/Metamorphous-Regular.woff", AssetType.BINARY);
 		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
+		path.set ("assets/sounds/child.wav", "assets/sounds/child.wav");
+		type.set ("assets/sounds/child.wav", AssetType.SOUND);
 		path.set ("assets/sounds/playbtn_click.wav", "assets/sounds/playbtn_click.wav");
 		type.set ("assets/sounds/playbtn_click.wav", AssetType.SOUND);
 		path.set ("assets/sounds/playbtn_hover.wav", "assets/sounds/playbtn_hover.wav");
@@ -777,9 +812,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#elseif html5
 		
 		var id;
+		id = "assets/Achafont.eot";
+		path.set (id, id);
+		type.set (id, AssetType.BINARY);
+		id = "assets/Achafont.svg";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
 		id = "assets/Achafont.ttf";
 		path.set (id, id);
 		type.set (id, AssetType.FONT);
+		id = "assets/Achafont.woff";
+		path.set (id, id);
+		type.set (id, AssetType.BINARY);
 		id = "assets/data/data-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
@@ -873,12 +917,24 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/trees/tree9.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+		id = "assets/Metamorphous-Regular.eot";
+		path.set (id, id);
+		type.set (id, AssetType.BINARY);
+		id = "assets/Metamorphous-Regular.svg";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
 		id = "assets/Metamorphous-Regular.ttf";
 		path.set (id, id);
 		type.set (id, AssetType.FONT);
+		id = "assets/Metamorphous-Regular.woff";
+		path.set (id, id);
+		type.set (id, AssetType.BINARY);
 		id = "assets/music/music-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
+		id = "assets/sounds/child.wav";
+		path.set (id, id);
+		type.set (id, AssetType.SOUND);
 		id = "assets/sounds/playbtn_click.wav";
 		path.set (id, id);
 		type.set (id, AssetType.SOUND);
@@ -925,6 +981,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
 		
 		className.set ("assets/Achafont.ttf", __ASSET__assets_achafont_ttf);
 		type.set ("assets/Achafont.ttf", AssetType.FONT);
@@ -959,9 +1017,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		
 		className.set ("assets/Metamorphous-Regular.ttf", __ASSET__assets_metamorphous_regular_ttf);
 		type.set ("assets/Metamorphous-Regular.ttf", AssetType.FONT);
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1736,6 +1799,13 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
+
+
+
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -1744,6 +1814,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
 
 @:keep #if display private #end class __ASSET__assets_achafont_ttf extends lime.text.Font { public function new () { super (); name = "A Charming Font"; } } 
 
@@ -1777,7 +1849,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
 @:keep #if display private #end class __ASSET__assets_metamorphous_regular_ttf extends lime.text.Font { public function new () { super (); name = "Metamorphous"; } } 
+
+
 
 
 

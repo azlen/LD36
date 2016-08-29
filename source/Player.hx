@@ -18,7 +18,7 @@ class Player extends FlxSprite
 
  	var _vy:Int = 0;
  	var _vx:Int = 0;
- 	var _vv:Int = 0;
+ 	var _vv:Int = 800;
 
 	public function new(?X:Float=0, ?Y:Float=0)
 	{
@@ -86,6 +86,8 @@ class Player extends FlxSprite
 			angularAcceleration = 0;
 			angularVelocity = 0;
 			y = 201;
+			if(angle > 100 || angle < -100)
+				FlxG.switchState(new EndState());
 		}
 		else
 		{
